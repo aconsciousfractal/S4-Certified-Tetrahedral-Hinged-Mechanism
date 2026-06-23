@@ -57,6 +57,11 @@ def sha256(path):
             h.update(chunk)
     return h.hexdigest()
 
+def pdf_page_count(path):
+    data = path.read_bytes()
+    # Sufficient for the deterministic pdfTeX output shipped here; catches stale manifest metadata.
+    return data.count(b"/Type /Page") - data.count(b"/Type /Pages")
+
 def load_json(rel):
     path = ROOT / rel
     if not path.exists():
@@ -182,6 +187,12 @@ if manifest_path.exists():
     check("public package manifest file hashes match", not hash_fail, ", ".join(hash_fail[:8]))
     check("public package does not claim physical validation", manifest.get("physical_validation_claimed") is False)
     check("public package records deterministic PDF build policy", manifest.get("deterministic_pdf_build") is True)
+    pdf_rel = "paper/s4_certified_tetrahedral_hinged_mechanism.pdf"
+    observed_pages = pdf_page_count(ROOT / pdf_rel) if path_exists(pdf_rel) else None
+    manifest_pages = manifest.get("summary", {}).get("paper_pdf_pages_observed_from_pdflatex")
+    check("public package manifest PDF page count matches shipped PDF",
+          observed_pages is not None and manifest_pages == observed_pages,
+          f"manifest={manifest_pages} observed={observed_pages}")
 
 
 # Public-facing surfaces must not expose internal methodology labels.

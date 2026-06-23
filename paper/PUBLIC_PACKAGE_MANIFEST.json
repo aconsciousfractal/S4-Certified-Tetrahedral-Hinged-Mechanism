@@ -11,7 +11,7 @@
     "local_public_package_gates_passed": true,
     "paper_pdf_present": true,
     "tex_source_present": true,
-    "paper_pdf_pages_observed_from_pdflatex": 9,
+    "paper_pdf_pages_observed_from_pdflatex": 10,
     "paper_pdf_sha256_after_deterministic_build": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6",
     "physical_validation_claimed": false,
     "rw12_supplementary_only": true,
@@ -118,8 +118,8 @@
     {
       "path": ".github/workflows/ci.yml",
       "exists": true,
-      "size_bytes": 479,
-      "sha256": "877dae58d06afce1ac851ad8a6fa98bfdd216bb7ac4353fdd8b785a1468cfa67"
+      "size_bytes": 584,
+      "sha256": "887a567926f354968a41a03b702041c80e805cc0ea2ede3607c5b6ef6b4f1d50"
     },
     {
       "path": ".gitignore",
@@ -268,14 +268,14 @@
     {
       "path": "certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md",
       "exists": true,
-      "size_bytes": 20199,
-      "sha256": "d2e958084bcef853f51357d1709bf42e1b90e188ea556e5f2bf8f1446d5d9b52"
+      "size_bytes": 20532,
+      "sha256": "b697932211fddd3750a74a865ef773310ed197ac8603bd08f68c1dbbe0775a60"
     },
     {
       "path": "certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md",
       "exists": true,
-      "size_bytes": 17880,
-      "sha256": "c35083dcff5df1ed1ca8b1b9681feccd286dd99befce6a8d6352da426dede808"
+      "size_bytes": 18213,
+      "sha256": "319dc3824c1d5afcfed2b82f6f68d34c0ed78dda720f79111348d9eae61a9b12"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md",
@@ -304,62 +304,62 @@
     {
       "path": "certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md",
       "exists": true,
-      "size_bytes": 7024,
-      "sha256": "16bd92955729ecdd56712bbf881b09ed1470f5b126ecd8a3b3510616328ebe51"
+      "size_bytes": 7357,
+      "sha256": "5fcc1febccf16e4e659098b0cce91e708d3434bc934348ce4f23a0d17ee17371"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md",
       "exists": true,
-      "size_bytes": 10563,
-      "sha256": "ef27eb53b711f99a746858c64da3065587c5a6163c89d130c596bc4829439650"
+      "size_bytes": 10896,
+      "sha256": "0fffe8eb0e1037f9e0cf08bded8572ef63940af3e7c121a1ba4c9595d9a83cb7"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md",
       "exists": true,
-      "size_bytes": 9754,
-      "sha256": "b06cda09ae7e9b973bec694e779beb532048cd44a1f41dc9e08c396a6cc72fae"
+      "size_bytes": 10087,
+      "sha256": "fbc977973f49e953fd494654df625250552621f1baae1c505c1742ae66765893"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md",
       "exists": true,
-      "size_bytes": 15105,
-      "sha256": "eb01fd8a135ca19326ae8120c8b622d5c8f9c7b4117ee1a32d416eb9ba04265c"
+      "size_bytes": 15438,
+      "sha256": "7ad9b95186177745ae39a160b9ebd05258805b74b94b7a45d0718292615a114a"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md",
       "exists": true,
-      "size_bytes": 16931,
-      "sha256": "3c6628df1ebfec2da0c773b3c24a1c1de2fdcbec1a78a93d4e6ec4e53ae0e5da"
+      "size_bytes": 17264,
+      "sha256": "7859cb8c246283723f42554cbc14cd1ac54da1f2844ad870690dfc5da075f969"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md",
       "exists": true,
-      "size_bytes": 13346,
-      "sha256": "08040a4d39c9dec16772ee9ba6d267b6f6e0ad28b252d849b28482b2024a00bd"
+      "size_bytes": 13679,
+      "sha256": "0398fa55899db4152f29e9faaedab733ef0203cd8fb6f18609b928d20314cdee"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md",
       "exists": true,
-      "size_bytes": 11375,
-      "sha256": "6d3f13cf0bcc5b94fd23e7cf886c07e9e326e553afd6a7f18c2bd8a140c3998a"
+      "size_bytes": 11708,
+      "sha256": "8a0876b9c995d638ee841ce286f82c0335a5869729240096060c3fd3f4806106"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md",
       "exists": true,
-      "size_bytes": 13285,
-      "sha256": "33b613a3c8f6474b5c7c634c0a73649dbfd617b3a3625d8e7c510c35069dda36"
+      "size_bytes": 13964,
+      "sha256": "ecd82c99f7a1f540400dd9781053acaaa23ca244a3487f4fd70b751e580ba0b9"
     },
     {
       "path": "certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md",
       "exists": true,
-      "size_bytes": 3810,
-      "sha256": "efd991db2689c90d943083c22f0be8dbba58e7577f59f6643d08e507df6cef78"
+      "size_bytes": 4248,
+      "sha256": "6cdb2c3494981c838be75c70582b9176364c4835df547e08d704880d7753e389"
     },
     {
       "path": "CITATION.cff",
       "exists": true,
-      "size_bytes": 1174,
-      "sha256": "1009c08834918ca17a0ac84a33eacdacafd0f3f1e07b7119c55d0e1d91db4c7b"
+      "size_bytes": 1139,
+      "sha256": "1ac7dfb60214f57e1d956b7b9a0bcb2b8f1e6ed2a328c535cb9ec9a213aea4e2"
     },
     {
       "path": "data/.gitkeep",
@@ -502,8 +502,8 @@
     {
       "path": "paper/CITATION.cff",
       "exists": true,
-      "size_bytes": 1174,
-      "sha256": "1009c08834918ca17a0ac84a33eacdacafd0f3f1e07b7119c55d0e1d91db4c7b"
+      "size_bytes": 1139,
+      "sha256": "1ac7dfb60214f57e1d956b7b9a0bcb2b8f1e6ed2a328c535cb9ec9a213aea4e2"
     },
     {
       "path": "paper/CLAIM_BOUNDARY.md",
@@ -832,8 +832,8 @@
     {
       "path": "scripts/check_public_package.py",
       "exists": true,
-      "size_bytes": 10228,
-      "sha256": "2b2434b4f2f0060bcde5b9f037be1e53fbe0fd0b9ee0a55246bd1a8e0002f0bd"
+      "size_bytes": 10925,
+      "sha256": "fda1aab09465da80331f4d01004296ff1994221587d9e29c6b743cd34d633315"
     },
     {
       "path": "scripts/computation/audit_historical_s2_median.py",
@@ -1769,7 +1769,7 @@
     "public_package_checker": {
       "command": "python scripts/run_all_reproducibility_checks.py",
       "status": "pass",
-      "summary": "419/419 checks passed"
+      "summary": "420/420 checks passed"
     },
     "paper_build_after_deterministic_fix": {
       "command": "pdflatex/bibtex/pdflatex/pdflatex",

@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "checks_total": 419,
-  "checks_pass": 419,
+  "checks_total": 420,
+  "checks_pass": 420,
   "checks_fail": 0,
   "checks": [
     {
@@ -2093,6 +2093,11 @@
       "name": "public package records deterministic PDF build policy",
       "passed": true,
       "detail": ""
+    },
+    {
+      "name": "public package manifest PDF page count matches shipped PDF",
+      "passed": true,
+      "detail": "manifest=10 observed=10"
     },
     {
       "name": "public-facing text has no internal methodology labels",

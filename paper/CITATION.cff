@@ -1,18 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this package after public release, please cite it as below."
+message: "If you use this package, please cite it as below."
 title: "S4 Certified Tetrahedral Hinged Mechanism Package"
 type: software
 authors:
   - family-names: "Babanskyy"
     given-names: "Oleksiy"
     orcid: "https://orcid.org/0009-0001-6176-6208"
-version: "0.2.0-review"
+version: "0.2.0"
 date-released: "2026-06-23"
 year: 2026
 license: MIT
-repository-code: "https://github.com/aconsciousfractal/S4-certified-tetrahedral-hinged-mechanism"
-url: "https://github.com/aconsciousfractal/S4-certified-tetrahedral-hinged-mechanism"
-abstract: "Frozen-snapshot reviewer bundle for a scoped zero-thickness, one-parameter S4 tetrahedral hinged-mechanism certificate, including package-local B04/A7c selected-hinge bridge records and an RW12 supplementary digital fabrication handoff."
+repository-code: "https://github.com/aconsciousfractal/S4-Certified-Tetrahedral-Hinged-Mechanism"
+url: "https://github.com/aconsciousfractal/S4-Certified-Tetrahedral-Hinged-Mechanism"
+abstract: "Public companion package for a scoped zero-thickness, one-parameter S4 tetrahedral hinged-mechanism certificate, including package-local B04/A7c selected-hinge bridge records and an RW12 supplementary digital fabrication handoff."
 keywords:
   - tetrahedral-geometry
   - hinged-mechanism

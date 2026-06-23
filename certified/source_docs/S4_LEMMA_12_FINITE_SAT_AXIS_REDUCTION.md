@@ -1,3 +1,9 @@
+> **Package provenance note.** This is a historical or future-scope source
+> snapshot retained for audit trail only. It may contain words such as
+> `draft`, `blocker`, or `Not a CL5 theorem`; those statements are not public
+> claims of the current paper-as-public-package and do not widen the scoped
+> zero-thickness theorem.
+
 # S4 Lemma 12: Finite SAT Axis Reduction
 
 Date: 2026-06-22
