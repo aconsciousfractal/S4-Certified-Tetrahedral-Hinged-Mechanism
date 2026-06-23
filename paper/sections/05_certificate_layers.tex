@@ -1,0 +1,89 @@
+\section{Certificate layers A6--A7d}
+\label{sec:layers}
+
+This section records the certificate layers used by Theorem~\ref{thm:wrapper}.
+The layers are package-local and source-backed; their role is to discharge the
+routed pair obligations, not to prove a broader mechanism theorem.
+
+\begin{certprop}[A6: B05 common-edge projection]
+The B05 common-edge projection layer is symbolically closed on the one-parameter
+ray for the relevant records.  A6 packages the A3/A4 and A5 algebraic
+certificates: A3/A4 proves full-domain raw gap, normalized gap, and axis
+positivity on the open ray, while A5 splits at \(t=1\) and proves post-switch
+support signatures and projection gaps on \(1<t<7/4\), which contains
+\(1<t\le\sqrt3\).  The A7d wrapper uses four B05 pair routes.
+\end{certprop}
+
+\begin{proof}[Certification]
+The source is
+\path{certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md}.
+It records seven symbolic B05 closures in the source package and the one-
+parameter B05 closure chain used by the wrapper.  The public wrapper consumes
+the B05 role through \path{certified/a7d_one_parameter_theorem_wrapper_manifest.json}.
+\end{proof}
+
+\begin{certprop}[A7a: B06/B07 shared-face residual]
+For the two one-parameter shared-face residual targets,
+\[
+\treeA{}:P_2-P_3,
+\qquad
+\treeB{}:P_0-P_2,
+\]
+the residual shared-face formula is positive on the open ray.  In half-angle
+coordinate the certified rational form is
+\[
+\frac{t^3}{(1+t^2)^2},
+\qquad 0<t<2.
+\]
+In particular it is positive on \(0<t\le\sqrt3\).
+\end{certprop}
+
+\begin{proof}
+The trigonometric formula from the source layer is
+\[
+\frac{(1-\cos\theta)\sin\theta}{4}
+  =\sin^3(\theta/2)\cos(\theta/2).
+\]
+With \(t=\tan(\theta/2)\), this becomes
+\[
+\frac{t^3}{(1+t^2)^2}.
+\]
+The numerator and denominator have no open roots on \(0<t<2\); at \(t=1\) both
+are positive.  Therefore the expression is positive on the certified open
+superset, hence on the audited ray domain.  The Sturm/root-count certificate is
+recorded in
+\path{certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md}.
+\end{proof}
+
+\begin{certprop}[A7b: B03 route vacuity]
+There are no route-clean ordinary non-contact B03 obligations on the audited
+one-parameter representative rays.  Across the two representatives, the twelve
+pair obligations route as six selected-hinge contacts, four residual shared-edge
+common-edge projections, and two residual shared-face targets.
+\end{certprop}
+
+\begin{proof}[Certification]
+This is the A7b route-vacuity certificate in
+\path{certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md}.  It
+records \texttt{one-parameter pair records: 12}, \texttt{B03 route-clean pairs:
+0}, and \texttt{B03 Sturm obligations: 0}.
+\end{proof}
+
+\begin{certprop}[A7c: selected-hinge signed orientation]
+For the six selected B04 rows, A7c certifies the sign of the selected hinge
+angle on the open ray.  The signed orientation has the same sign as \(s_h t\)
+on \(0<t<2\), with ray-sign counts \(+1:4\) and \(-1:2\).
+\end{certprop}
+
+\begin{proof}
+Lemma~\ref{lem:kinematics} fixes the signed-ray convention
+\(d_h(\theta)=s_h\theta\).  In half-angle coordinates, the relevant signed
+orientation is sign-equivalent to \(s_h t\).  The only root is at \(t=0\),
+which is excluded from the open ray.  The sample point \(t=1\) fixes the sign.
+The six rows are recorded in
+\path{certified/a7c_selected_hinge_contact_side_certificate_manifest.json} and
+\path{certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md}.
+\end{proof}
+
+A7c alone is not the B04 contact-side proof.  It is the signed-orientation
+source layer consumed by the bridge in Section~\ref{sec:b04}.

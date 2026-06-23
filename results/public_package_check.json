@@ -1,0 +1,2103 @@
+{
+  "status": "pass",
+  "checks_total": 419,
+  "checks_pass": 419,
+  "checks_fail": 0,
+  "checks": [
+    {
+      "name": "required file exists: README.md",
+      "passed": true,
+      "detail": "README.md"
+    },
+    {
+      "name": "required file exists: README_REVIEWER.md",
+      "passed": true,
+      "detail": "README_REVIEWER.md"
+    },
+    {
+      "name": "required file exists: REPRODUCE.md",
+      "passed": true,
+      "detail": "REPRODUCE.md"
+    },
+    {
+      "name": "required file exists: CITATION.cff",
+      "passed": true,
+      "detail": "CITATION.cff"
+    },
+    {
+      "name": "required file exists: LICENSE",
+      "passed": true,
+      "detail": "LICENSE"
+    },
+    {
+      "name": "required file exists: paper/s4_certified_tetrahedral_hinged_mechanism.tex",
+      "passed": true,
+      "detail": "paper/s4_certified_tetrahedral_hinged_mechanism.tex"
+    },
+    {
+      "name": "required file exists: paper/s4_certified_tetrahedral_hinged_mechanism.pdf",
+      "passed": true,
+      "detail": "paper/s4_certified_tetrahedral_hinged_mechanism.pdf"
+    },
+    {
+      "name": "required file exists: paper/BUILD.md",
+      "passed": true,
+      "detail": "paper/BUILD.md"
+    },
+    {
+      "name": "required file exists: paper/refs.bib",
+      "passed": true,
+      "detail": "paper/refs.bib"
+    },
+    {
+      "name": "required file exists: docs/PUBLIC_CLAIM_BOUNDARY.md",
+      "passed": true,
+      "detail": "docs/PUBLIC_CLAIM_BOUNDARY.md"
+    },
+    {
+      "name": "required file exists: docs/CLAIM_LEDGER.md",
+      "passed": true,
+      "detail": "docs/CLAIM_LEDGER.md"
+    },
+    {
+      "name": "required file exists: docs/PROOF_OBLIGATIONS.md",
+      "passed": true,
+      "detail": "docs/PROOF_OBLIGATIONS.md"
+    },
+    {
+      "name": "required file exists: certified/a7d_one_parameter_theorem_wrapper_manifest.json",
+      "passed": true,
+      "detail": "certified/a7d_one_parameter_theorem_wrapper_manifest.json"
+    },
+    {
+      "name": "required file exists: certified/b04_a7c_contact_side_bridge_manifest.json",
+      "passed": true,
+      "detail": "certified/b04_a7c_contact_side_bridge_manifest.json"
+    },
+    {
+      "name": "required file exists: certified/source_docs/README.md",
+      "passed": true,
+      "detail": "certified/source_docs/README.md"
+    },
+    {
+      "name": "required file exists: results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json",
+      "passed": true,
+      "detail": "results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json"
+    },
+    {
+      "name": "required file exists: results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
+      "passed": true,
+      "detail": "results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip"
+    },
+    {
+      "name": "required file exists: paper/PUBLIC_PACKAGE_MANIFEST.json",
+      "passed": true,
+      "detail": "paper/PUBLIC_PACKAGE_MANIFEST.json"
+    },
+    {
+      "name": "B04/A7c bridge accepted count is 6",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "B04/A7c bridge row count is 6",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "B04 bridge package-local source dependencies exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B04 bridge package-local record paths exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "RW12 physical claim not promoted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "RW12 zip hash matches report",
+      "passed": true,
+      "detail": "e1109aa7d9b21e95405a585448ba4b1e4e3102da5ac5262c7825931bf730ff71"
+    },
+    {
+      "name": "forbidden phrase absent from README.md: physically validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from README.md: physical hingeability is proved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from README.md: printed prototype validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from README.md: measured prototype passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from paper/s4_certified_tetrahedral_hinged_mechanism.tex: physically validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from paper/s4_certified_tetrahedral_hinged_mechanism.tex: physical hingeability is proved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from paper/s4_certified_tetrahedral_hinged_mechanism.tex: printed prototype validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from paper/s4_certified_tetrahedral_hinged_mechanism.tex: measured prototype passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: physically validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: physical hingeability is proved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: printed prototype validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "forbidden phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: measured prototype passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from LICENSE_NOTE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from PUBLICATION_PLAN.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from README_REVIEWER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from REPRODUCE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from THIRD_PARTY_NOTICES.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/AGENT_PACKAGE_INVOCATION_RECORDS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_BOUNDARY.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/CLAIM_LEDGER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/EXPERIMENT_LEDGER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NEGATIVE_RESULTS_ATLAS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/NORMALIZATION_LOCK.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PAPER_TO_ENGINE_TRACEABILITY.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PORTABLE_REPLAY_PROVENANCE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PROOF_OBLIGATIONS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_CLAIM_BOUNDARY.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/PUBLIC_EXPORT_DECISION_PACKET.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RED_TEAM_REPORT.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RELATED_WORK_POSITIONING.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/RW12_EDITORIAL_DECISION.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_LOCK.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SOURCE_REPLAY_A8_STATUS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/SUPERSESSION_STATUS_NOTE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from docs/THEOREM_PROSE_AUDIT.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/BUILD.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/CLAIM_BOUNDARY.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/README_REVIEWER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/REPRODUCE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/SOURCE_MAP.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/01_introduction.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/02_model_and_notation.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/03_endpoint_and_kinematics.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/04_one_parameter_theorem.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/05_certificate_layers.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/06_b04_bridge.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/07_public_package.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/08_rw12_boundary.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from paper/sections/09_related_work.tex: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/README.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: paper package still remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: public export remains blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: internal package only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: paper/main.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: appendix/rw12_external_fabrication_review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stale/blocking phrase absent from certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md: PAPER_WORKSPACE_MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7d statement cites B04/A7c bridge",
+      "passed": true,
+      "detail": "For the catalogued S4 median-plane pieces, TREE_007 and TREE_021 have a zero-thickness one-parameter ray wrapper on theta=0 plus 0<theta<=120 degrees: theta=0 is the closed-contact endpoint, and all open-ray unordered piece pairs route to completed A6, A7a, A7b, and A7c-plus-B04/A7c-bridge certificate layers."
+    },
+    {
+      "name": "A7d statement no longer routes to A7c alone",
+      "passed": true,
+      "detail": "For the catalogued S4 median-plane pieces, TREE_007 and TREE_021 have a zero-thickness one-parameter ray wrapper on theta=0 plus 0<theta<=120 degrees: theta=0 is the closed-contact endpoint, and all open-ray unordered piece pairs route to completed A6, A7a, A7b, and A7c-plus-B04/A7c-bridge certificate layers."
+    },
+    {
+      "name": "A7d package-local sources exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7d records do not use nonlocal object_record fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7c package-local record paths exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A7c legacy accepted_real_report=false is explained in each row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "historical/internal JSON references are provenance-labelled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public package manifest file hashes match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public package does not claim physical validation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public package records deterministic PDF build policy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public-facing text has no internal methodology labels",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

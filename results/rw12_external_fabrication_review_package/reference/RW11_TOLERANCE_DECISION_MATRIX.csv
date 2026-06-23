@@ -1,0 +1,6 @@
+variant_id,pin_diameter_mm,nominal_hole_diameter_mm,diametral_clearance_mm,radial_clearance_mm,strategy,use_note,physical_claim
+v01_loose_debug_2p20,2.20,3.10,0.90,0.45,loose_debug,First external-fit debug option if printed holes shrink strongly or if insertion must be very easy.,none
+v02_loose_fdm_2p40,2.40,3.10,0.70,0.35,loose_fdm_first,Conservative first FDM option; leaves extra clearance while staying closer to nominal.,none
+v03_nominal_rw10_2p50,2.50,3.10,0.60,0.30,rw10_nominal,RW10 nominal pin diameter; preferred reference for external metal/dowel pins before printed pins.,none
+v04_tight_2p60,2.60,3.10,0.50,0.25,tight_after_measurement,Use only if measured holes are close to nominal or oversized and more stiffness is desired.,none
+v05_very_tight_2p80,2.80,3.10,0.30,0.15,risky_after_measurement_only,Do not use first; included to bracket tolerance space if holes print substantially oversized.,none

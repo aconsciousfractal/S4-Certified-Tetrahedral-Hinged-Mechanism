@@ -1,0 +1,39 @@
+{
+  "status": "rw12_external_fabrication_review_package_ready_no_physical_claim",
+  "claim_boundary": "RW12 is a compact digital external-fabrication review package only. It does not claim physical print success, measured tolerances, insertion, rotation, durability, support-cleanup safety, or hingeability.",
+  "summary": {
+    "body_piece_files": 8,
+    "body_piece_components": 4,
+    "included_pin_variant_sets": [
+      "v02_loose_fdm_2p40",
+      "v03_nominal_rw10_2p50",
+      "v04_tight_2p60"
+    ],
+    "pin_variant_stl_files": 9,
+    "assembly_preview_included": false,
+    "all_expected_hashes_match": true,
+    "physical_claim_promoted": false,
+    "zip_bytes": 130988,
+    "zip_sha256": "e1109aa7d9b21e95405a585448ba4b1e4e3102da5ac5262c7825931bf730ff71"
+  },
+  "acceptance": {
+    "rw10_manifest_found": true,
+    "rw11_report_found": true,
+    "four_body_components_included_as_stl_and_3mf": true,
+    "three_practical_pin_variants_included_for_three_axes": true,
+    "assembly_preview_omitted": true,
+    "hash_manifest_written": true,
+    "zip_written": true,
+    "no_physical_claim_promoted": true
+  },
+  "artifacts": {
+    "output_dir": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package",
+    "zip": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
+    "file_manifest_csv": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/RW12_FILE_MANIFEST.csv",
+    "file_manifest_json": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/rw12_external_fabrication_review_manifest.json",
+    "report": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json",
+    "readme": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/README_RW12_EXTERNAL_FABRICATION_REVIEW.md",
+    "checklist": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/RW12_FABRICATOR_CHECKLIST.csv",
+    "doc": "docs/S4_RW12_EXTERNAL_FABRICATION_REVIEW_PACKAGE.md"
+  }
+}

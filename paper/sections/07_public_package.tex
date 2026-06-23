@@ -1,0 +1,45 @@
+﻿\section{Public package and reproducibility}
+\label{sec:package}
+
+The repository is organized as a paper-as-public-package: the manuscript,
+certificate manifests, row-level records, replay scripts, hash manifest, and
+claim-boundary ledgers are shipped together.  This follows established
+reproducible-artifact practice rather than asserting a new standard; its role
+here is to make the computational dependencies auditable while separating the
+mathematical theorem from supplementary digital-fabrication artifacts
+\cite{smith2017joss,rougier2017rescience}.  The main paper source and PDF live
+in \path{paper/}.  Mathematical and certificate controls live in
+\path{docs/}, \path{certified/}, \path{scripts/}, and \path{results/}.  The
+public package manifest is \path{paper/PUBLIC_PACKAGE_MANIFEST.json}.
+
+\begin{certprop}[Public package gate]
+The local public package gate passes.  The command
+\begin{center}
+\path{python scripts/run_all_reproducibility_checks.py}
+\end{center}
+checks required files, B04/A7c bridge row counts, RW12 hash consistency,
+manifest hashes, and absence of promoted physical-validation phrases.  The
+current public package check records all checks passing.
+\end{certprop}
+
+\begin{proof}[Certification]
+The generated report is \path{results/public_package_check.json}.  The pytest
+wrapper \path{tests/test_public_package.py} runs the same package checker.  The
+manifest records \texttt{LOCAL\_RELEASE\_GATES\_PASSED},
+\texttt{public\_export\_ready=true}, and
+\texttt{physical\_validation\_claimed=false}.
+\end{proof}
+
+The source-lock boundary is intentionally duplicated: the paper cites concise
+Certified Propositions, while the repository ships the longer source documents
+under \path{certified/source_docs/}.  In particular, the public package includes
+S4 Lemmas 00--12 and the B04 contact-orientation review notes, so the bridge
+source dependencies are present in the package rather than only in the private
+workspace.
+
+\begin{remark}[What the tests do not prove]
+The public tests verify package integrity and row-level consistency.  They do
+not replace the mathematical content of Lemmas~\ref{lem:tiling}--\ref{lem:wedge}
+and Theorem~\ref{thm:wrapper}; they keep the shipped artifacts synchronized with
+the claim boundary.
+\end{remark}

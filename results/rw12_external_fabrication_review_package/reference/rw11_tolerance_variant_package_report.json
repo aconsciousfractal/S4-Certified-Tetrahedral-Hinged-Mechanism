@@ -1,0 +1,31 @@
+{
+  "status": "rw11_tolerance_variant_package_ready_external_review_no_physical_claim",
+  "summary": {
+    "baseline_rw10_files_copied": 14,
+    "baseline_hashes_match_rw10": true,
+    "pin_variant_count": 5,
+    "generated_pin_stl_count": 15,
+    "all_generated_pin_meshes_watertight": true,
+    "all_generated_pin_meshes_valid_volume": true,
+    "rw10_body_geometry_modified": false,
+    "physical_claim_promoted": false
+  },
+  "acceptance": {
+    "rw10_manifest_found": true,
+    "baseline_files_preserve_rw10_hashes": true,
+    "three_pin_axes_variantized": true,
+    "five_clearance_variants_present": true,
+    "no_body_mesh_variant_generated": true,
+    "no_physical_claim_promoted": true
+  },
+  "artifacts": {
+    "manifest": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/rw11_tolerance_variant_manifest.json",
+    "report": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/rw11_tolerance_variant_package_report.json",
+    "decision_matrix": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/RW11_TOLERANCE_DECISION_MATRIX.csv",
+    "external_review_request": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/RW11_EXTERNAL_TOLERANCE_REVIEW.md",
+    "baseline_dir": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/rw10_baseline_fabrication_files",
+    "pin_variants_dir": "results/historical_s4_median_planes/real_world/rw11_tolerance_variant_package/pin_variants",
+    "doc": "docs/S4_RW11_TOLERANCE_VARIANT_PACKAGE.md"
+  },
+  "claim_boundary": "digital tolerance support package only; no physical fit, print, or hingeability claim"
+}

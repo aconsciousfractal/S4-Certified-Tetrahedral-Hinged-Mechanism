@@ -1,0 +1,114 @@
+% S4 certified tetrahedral hinged mechanism --- paper source
+%
+% Public-facing claims are controlled by paper/CLAIM_BOUNDARY.md and
+% docs/PUBLIC_CLAIM_BOUNDARY.md.  RW12 is supplementary digital material only.
+
+\documentclass[11pt,a4paper]{article}
+
+
+% Reproducible pdfLaTeX output: avoid timestamp/trailer nondeterminism so the
+% built PDF can be hashed in the public package manifest.
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdfsuppressptexinfo\pdfsuppressptexinfo=-1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  citecolor=blue!55!black,
+  urlcolor=blue!55!black,
+  pdftitle={A Scoped Zero-Thickness S4 Tetrahedral Hinge-Tree Certificate},
+  pdfauthor={Oleksiy Babanskyy},
+  pdfsubject={S4 tetrahedral hinged mechanism certificate package},
+  pdfkeywords={tetrahedron, hinged mechanism, computational certificate, route wrapper, digital fabrication}
+}
+\emergencystretch=2em
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{certprop}[theorem]{Certified Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathcal T}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\Rot}{\operatorname{Rot}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Pairs}{\mathcal P}
+\newcommand{\treeA}{\texttt{TREE\_007}}
+\newcommand{\treeB}{\texttt{TREE\_021}}
+
+\title{A Scoped Zero-Thickness S4 Tetrahedral Hinge-Tree Certificate:\\
+Median-Plane Geometry, One-Parameter Route Wrappers, and a Selected-Hinge Contact Bridge}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give a scoped, reproducible certificate package for a specific four-piece
+(``S4'') dissection of the regular tetrahedron by two opposite-edge median
+planes.  The static dissection consists of four congruent tetrahedra whose
+closed union is the ambient tetrahedron.  The moving model is a zero-thickness
+rigid-piece hinge-tree model on two audited representative signed rays,
+\treeA{} and \treeB{}, with parameter domain
+\[
+  \theta=0 \quad\text{and}\quad 0<\theta\le 120^\circ.
+\]
+At \(\theta=0\), the pieces form a closed-contact tiling with no strict
+interior overlap.  On the open ray, every unordered piece-pair obligation in
+the two representative trees is routed to one of three certified predicate
+layers: six selected-hinge B04 rows, four common-edge B05 rows, and two
+shared-face B06/B07 rows; route-clean B03 obligations are vacuous on this
+one-parameter spine.
+
+The main theorem is intentionally narrow.  It is not a proof of physical
+hingeability, positive-thickness printability, global collision-free motion, or
+three-parameter bounded-cell closure.  The nontrivial semantic point is the
+selected-hinge layer: an A7c signed-orientation certificate is not used alone.
+A package-local B04/A7c bridge records six row-level wedge certificates showing
+that the selected opening side implies boundary hinge contact and no strict
+local interior overlap at the contact plane, excluding the hinge axis.  The
+repository also includes RW12, a corrected body-preserving digital fabrication
+handoff for \treeA{}; RW12 is supplementary digital material and not physical
+validation.
+\end{abstract}
+
+\noindent\textbf{Keywords.} regular tetrahedron; hinged mechanisms; rigid-piece
+kinematics; computational certificates; Sturm certificates; route wrappers;
+digital fabrication handoff.
+
+\input{sections/01_introduction}
+\input{sections/02_model_and_notation}
+\input{sections/03_endpoint_and_kinematics}
+\input{sections/04_one_parameter_theorem}
+\input{sections/05_certificate_layers}
+\input{sections/06_b04_bridge}
+\input{sections/07_public_package}
+\input{sections/08_rw12_boundary}
+\input{sections/09_related_work}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

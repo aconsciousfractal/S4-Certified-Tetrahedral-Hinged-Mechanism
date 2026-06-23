@@ -1,0 +1,91 @@
+\section{The scoped one-parameter wrapper}
+\label{sec:wrapper}
+
+The one-parameter open domain is
+\[
+0<\theta\le120^\circ.
+\]
+The certificate uses the half-angle coordinate
+\[
+t=\tan(\theta/2),\qquad 0<t\le\sqrt3,
+\]
+and many sign proofs are carried out on the rational open superset
+\[
+0<t<2.
+\]
+
+Every representative tree has six unordered pair obligations.  The A7d wrapper
+routes the twelve obligations across the two trees as follows.
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Tree & Pair & Route\\
+\midrule
+\treeA{} & \(P_0-P_1\) & B04 selected-hinge contact-side\\
+\treeA{} & \(P_0-P_2\) & B04 selected-hinge contact-side\\
+\treeA{} & \(P_0-P_3\) & B05 common-edge projection\\
+\treeA{} & \(P_1-P_2\) & B05 common-edge projection\\
+\treeA{} & \(P_1-P_3\) & B04 selected-hinge contact-side\\
+\treeA{} & \(P_2-P_3\) & B06/B07 shared-face residual\\
+\midrule
+\treeB{} & \(P_0-P_1\) & B04 selected-hinge contact-side\\
+\treeB{} & \(P_0-P_2\) & B06/B07 shared-face residual\\
+\treeB{} & \(P_0-P_3\) & B05 common-edge projection\\
+\treeB{} & \(P_1-P_2\) & B05 common-edge projection\\
+\treeB{} & \(P_1-P_3\) & B04 selected-hinge contact-side\\
+\treeB{} & \(P_2-P_3\) & B04 selected-hinge contact-side\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Scoped zero-thickness one-parameter wrapper]
+\label{thm:wrapper}
+For the catalogued median-plane S4 pieces, the public package records a closed
+zero-thickness one-parameter wrapper for the two audited representatives
+\treeA{} and \treeB{} on the domain
+\[
+\theta=0\quad\text{and}\quad 0<\theta\le120^\circ.
+\]
+At \(\theta=0\), the configuration is the closed-contact endpoint of
+Lemma~\ref{lem:endpoint}.  On the open ray, every unordered pair obligation in
+each representative tree is assigned to a completed certificate layer: six B04
+selected-hinge bridge rows, four B05 common-edge projection rows, and two
+B06/B07 shared-face residual rows.  There are no route-clean B03 obligations on
+this one-parameter spine.
+\end{theorem}
+
+\begin{proof}
+The endpoint clause follows from Lemmas~\ref{lem:tiling}--\ref{lem:kinematics}:
+at \(\theta=0\), all rooted transforms are identity and the pieces are in the
+catalogued closed tiling.
+
+For the open ray, the A7d manifest is a pair-route ledger.  It contains two
+wrapper records, one for \treeA{} and one for \treeB{}, each with six unordered
+piece-pair obligations.  The manifest records the predicate route counts
+\[
+\text{B04}=6,
+\qquad
+\text{B05}=4,
+\qquad
+\text{B06/B07}=2.
+\]
+The B03 count is zero by the A7b route-vacuity certificate.  The routed layers
+are discharged by the certified propositions in Sections~\ref{sec:layers} and
+\ref{sec:b04}.  Thus every open-ray pair obligation is routed to a completed
+package-local layer, and no additional B03 obligation remains on this scoped
+one-parameter domain.
+\end{proof}
+
+\begin{certprop}[A7d manifest]
+The theorem wrapper above is the statement recorded in
+\path{certified/a7d_one_parameter_theorem_wrapper_manifest.json}.  The manifest
+has \texttt{record\_count=2}, \texttt{wrapper\_closed\_count=2}, and object
+status count
+\texttt{a7d\_one\_parameter\_ray\_wrapper\_closed: 2}.
+\end{certprop}
+
+\begin{remark}[Scope]
+The theorem is a route-wrapper theorem for a zero-thickness one-parameter model.
+It is not a positive-thickness fabrication theorem, not a global collision-free
+motion theorem, and not a three-parameter bounded-cell theorem.
+\end{remark}

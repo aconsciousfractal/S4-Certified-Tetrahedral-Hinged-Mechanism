@@ -1,0 +1,1780 @@
+{
+  "metadata": {
+    "project": "S4 Certified Tetrahedral Hinged Mechanism",
+    "package": "s4_certified_tetrahedral_hinged_mechanism_release_review",
+    "generated_date": "2026-06-23",
+    "repository_role": "public companion repository with reproducibility checks"
+  },
+  "summary": {
+    "recommended_status": "LOCAL_RELEASE_GATES_PASSED",
+    "public_export_ready": true,
+    "local_public_package_gates_passed": true,
+    "paper_pdf_present": true,
+    "tex_source_present": true,
+    "paper_pdf_pages_observed_from_pdflatex": 9,
+    "paper_pdf_sha256_after_deterministic_build": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6",
+    "physical_validation_claimed": false,
+    "rw12_supplementary_only": true,
+    "source_scripts_included": true,
+    "development_workspace_dump": false,
+    "next_gate": "optional remote GitHub publication after human metadata/release review; rerun python -m pytest -q and python scripts/run_all_reproducibility_checks.py after any final edits"
+  },
+  "recommended_status": "LOCAL_RELEASE_GATES_PASSED",
+  "public_export_ready": true,
+  "local_public_package_gates_passed": true,
+  "physical_validation_claimed": false,
+  "rw12_supplementary_only": true,
+  "deterministic_pdf_build": true,
+  "deterministic_pdf_build_policy": {
+    "tex_primitives": [
+      "pdfinfoomitdate=1",
+      "pdfsuppressptexinfo=-1",
+      "pdftrailerid{}"
+    ],
+    "observed_double_build_sha256": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6",
+    "observed_double_build_result": "same hash across two consecutive full pdflatex/bibtex builds"
+  },
+  "guardrails": [
+    "Do not promote physical prototype validation from RW12.",
+    "Do not promote positive-thickness or global collision-free claims.",
+    "Do not treat computation scripts as a replacement for certified row records.",
+    "Keep TeX/PDF/docs/manifest synchronized after edits.",
+    "Historical source paths must appear only under source_original/provenance-labelled fields."
+  ],
+  "public_export_sources": [
+    "paper/s4_certified_tetrahedral_hinged_mechanism.tex",
+    "paper/s4_certified_tetrahedral_hinged_mechanism.pdf",
+    "certified/a7d_one_parameter_theorem_wrapper_manifest.json",
+    "certified/b04_a7c_contact_side_bridge_manifest.json",
+    "results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json"
+  ],
+  "appendix_only_sources": [
+    "results/rw12_external_fabrication_review_package/",
+    "certified/a7c_b04_contact_side_bridge_records/",
+    "certified/a7c_selected_hinge_contact_side_records/"
+  ],
+  "development_only_inputs": [
+    {
+      "artifact": "full historical exploratory result tree",
+      "reason": "not shipped; superseded by curated certified/results rows"
+    },
+    {
+      "artifact": "invalid early physical previews",
+      "reason": "not shipped; captured as negative-result boundary only"
+    }
+  ],
+  "checks": {
+    "scope_policy_has_no_violations": true,
+    "public_package_manifest_ready": true,
+    "paper_pdf_ready": true,
+    "rw12_physical_claim_promoted": false
+  },
+  "required_files": [
+    "README.md",
+    "README_REVIEWER.md",
+    "REPRODUCE.md",
+    "CITATION.cff",
+    "LICENSE",
+    "paper/s4_certified_tetrahedral_hinged_mechanism.tex",
+    "paper/s4_certified_tetrahedral_hinged_mechanism.pdf",
+    "paper/BUILD.md",
+    "paper/refs.bib",
+    "docs/PUBLIC_CLAIM_BOUNDARY.md",
+    "docs/CLAIM_LEDGER.md",
+    "docs/PROOF_OBLIGATIONS.md",
+    "certified/a7d_one_parameter_theorem_wrapper_manifest.json",
+    "certified/b04_a7c_contact_side_bridge_manifest.json",
+    "certified/source_docs/README.md",
+    "results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json",
+    "results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
+    "paper/PUBLIC_PACKAGE_MANIFEST.json"
+  ],
+  "manifest_exclusions": [
+    "PUBLIC_PACKAGE_MANIFEST.json",
+    "public_package_check.json",
+    ".aux",
+    ".bbl",
+    ".blg",
+    ".fdb_latexmk",
+    ".fls",
+    ".lof",
+    ".log",
+    ".lot",
+    ".out",
+    ".synctex.gz",
+    ".toc",
+    ".git",
+    ".pytest_cache",
+    "__pycache__"
+  ],
+  "paper_package_file_count": 275,
+  "paper_package_files": [
+    {
+      "path": ".gitattributes",
+      "exists": true,
+      "size_bytes": 215,
+      "sha256": "81e5a5f49c259d549577c1b49446686917600160dca6b38f2fb6a31ea6a5db7c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "exists": true,
+      "size_bytes": 479,
+      "sha256": "877dae58d06afce1ac851ad8a6fa98bfdd216bb7ac4353fdd8b785a1468cfa67"
+    },
+    {
+      "path": ".gitignore",
+      "exists": true,
+      "size_bytes": 284,
+      "sha256": "403bc8d64e4dc678c11c677b6b51c3d4511c88671e2f67362cc2170204ce0dc1"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_007_h0_a_m_ab_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4490,
+      "sha256": "b5c28e676f1a3bbdc04a83f23ed5138c267bb0d59c4f08d3d7616cfb456dc039"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_007_h4_c_m_cd_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4522,
+      "sha256": "6570d9bb2a24b97d58b0d249a09dd00f9ac73a0d51e81b56c5f5adaf6d4a2725"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_007_h7_d_m_cd_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4532,
+      "sha256": "f0880d5b581c420f9004135f3c6f11db751393fe31adbe0a5adbfa1c8d3145f0"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_021_h0_a_m_ab_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4490,
+      "sha256": "fbab95a401922f001f5ab2b2128b5487b409e2a97409b00717ba3d099311a9a1"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_021_h7_d_m_cd_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4532,
+      "sha256": "c8725d4c6e35cbb4811212d6b57a4e3106f994090d4cc7c6d0e9b25ad61f197c"
+    },
+    {
+      "path": "certified/a7c_b04_contact_side_bridge_records/tree_021_h9_b_m_ab_a7c_b04_bridge.json",
+      "exists": true,
+      "size_bytes": 4490,
+      "sha256": "96d173d7ee5fe0dacba5f2b2192ed482a94c302842c65cea5f30c2d2d870b10c"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_certificate_manifest.json",
+      "exists": true,
+      "size_bytes": 6544,
+      "sha256": "8e840c1033415e7e0904fb05d5d0e30a916634dfff45d7b777ff777765a820a4"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_007_h0_a_m_ab_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3646,
+      "sha256": "0b1f4d05fb211e572b1bd2d21f8782705809ff157582c7e8409ef0108021639c"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_007_h4_c_m_cd_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3678,
+      "sha256": "1a67f4677c8bcf80a8686cca501aa442b2728f7acf1c4bf7b3041f3f75e7ff54"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_007_h7_d_m_cd_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3694,
+      "sha256": "d5ebc8679b74debef3ce7fbad24fcb0e8d28d4f10396781a0c059a7c9ba11043"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_021_h0_a_m_ab_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3646,
+      "sha256": "38acc88a8e07b9273b133de8c44dfb06ed9d709b97f8b8cfb6170422e57436ea"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_021_h7_d_m_cd_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3694,
+      "sha256": "138a96219c7b5a84d1f5bc3fd1f46f6a6614fdfe8beeed5f2817bddec813d934"
+    },
+    {
+      "path": "certified/a7c_selected_hinge_contact_side_records/tree_021_h9_b_m_ab_a7c_b04_contact_side.json",
+      "exists": true,
+      "size_bytes": 3646,
+      "sha256": "aae3abed729387cf9ba93dcbb06ca30e42a22e7e28b0d27f32d9fcb285feb9d7"
+    },
+    {
+      "path": "certified/a7d_one_parameter_theorem_wrapper_manifest.json",
+      "exists": true,
+      "size_bytes": 4712,
+      "sha256": "79b63896535b49393a6f1784999934d8b14f02d25774a6bac25ef6d9951c9778"
+    },
+    {
+      "path": "certified/b04_a7c_contact_side_bridge_manifest.json",
+      "exists": true,
+      "size_bytes": 8005,
+      "sha256": "7f23b36b1a4321267ad6396597b814961a39469c7eaf54d331f89990369245d1"
+    },
+    {
+      "path": "certified/README.md",
+      "exists": true,
+      "size_bytes": 587,
+      "sha256": "5b20a120eafce6ee6e70d66b5a50ad081113e573f08db9a9f1ef9b63d25f5514"
+    },
+    {
+      "path": "certified/source_docs/README.md",
+      "exists": true,
+      "size_bytes": 1371,
+      "sha256": "88462c2a3b89489e81c6338ee3858a46fe620b2ba82ce6a4ac4196c6ccd47ca6"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md",
+      "exists": true,
+      "size_bytes": 2312,
+      "sha256": "0d9fbf26a1c9b251a57b4491564d11a9130201c89177abca8590a1d2e4211c75"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md",
+      "exists": true,
+      "size_bytes": 2220,
+      "sha256": "d9784f6985d396688ef62768965797061508b51f172bfa10cec0c52e41dafe93"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md",
+      "exists": true,
+      "size_bytes": 2675,
+      "sha256": "5b649aa2e2fdd96d4475824b094dd3208d0d4d8160c81449e5593a39edf6c4a0"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md",
+      "exists": true,
+      "size_bytes": 6028,
+      "sha256": "514d7b4f2b58cf75fabb8aeb889dd85eb6dcddda396889df0fd31f72547c6241"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A7C_SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE.md",
+      "exists": true,
+      "size_bytes": 4368,
+      "sha256": "a732a74b549eef622e46d46f0d89b7b4eb8d090a5b62647cc940fc9950f17c31"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md",
+      "exists": true,
+      "size_bytes": 5152,
+      "sha256": "c15ec6b76c4bca114e2b4cfbb85d14b8f434d2eee824d44b549a932b68db1f91"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_EXACT_REPORT_IMPLEMENTATION_PLAN.md",
+      "exists": true,
+      "size_bytes": 20199,
+      "sha256": "d2e958084bcef853f51357d1709bf42e1b90e188ea556e5f2bf8f1446d5d9b52"
+    },
+    {
+      "path": "certified/source_docs/S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW.md",
+      "exists": true,
+      "size_bytes": 17880,
+      "sha256": "c35083dcff5df1ed1ca8b1b9681feccd286dd99befce6a8d6352da426dede808"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md",
+      "exists": true,
+      "size_bytes": 15674,
+      "sha256": "ee4a102f379d512030f3e1e897b7959e135874604d0441f4fcd06487704581bc"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md",
+      "exists": true,
+      "size_bytes": 9186,
+      "sha256": "e379ea16fc125a323917b5a2f1ba2be7f9b1bda98e268cbe554669d92298c679"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_02_CLOSED_ENDPOINT.md",
+      "exists": true,
+      "size_bytes": 9447,
+      "sha256": "d5ac848266ff360214c690248836ac7964162b32cc6896c9194b3ba116c5afa9"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_03_KINEMATICS_AND_SIGNS.md",
+      "exists": true,
+      "size_bytes": 10461,
+      "sha256": "a65b54f6baa662cf528b8303e35c57a06c12614e77324b8c5ca0bee9f4e2c2aa"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_04_SIGNED_RAY_CLASSES.md",
+      "exists": true,
+      "size_bytes": 7024,
+      "sha256": "16bd92955729ecdd56712bbf881b09ed1470f5b126ecd8a3b3510616328ebe51"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_05_RAY_FINITE_COVER_LEDGER.md",
+      "exists": true,
+      "size_bytes": 10563,
+      "sha256": "ef27eb53b711f99a746858c64da3065587c5a6163c89d130c596bc4829439650"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_06_NEAR_ZERO_BRIDGE_FORMULAS.md",
+      "exists": true,
+      "size_bytes": 9754,
+      "sha256": "b06cda09ae7e9b973bec694e779beb532048cd44a1f41dc9e08c396a6cc72fae"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_07_REFINED_EDGE_RESIDUAL_CLOSURE.md",
+      "exists": true,
+      "size_bytes": 15105,
+      "sha256": "eb01fd8a135ca19326ae8120c8b622d5c8f9c7b4117ee1a32d416eb9ba04265c"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_08_BOUNDED_CELL_FIRST_PASS_AND_FALLBACK_GUARDS.md",
+      "exists": true,
+      "size_bytes": 16931,
+      "sha256": "3c6628df1ebfec2da0c773b3c24a1c1de2fdcbec1a78a93d4e6ec4e53ae0e5da"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_09_ADAPTIVE_SUBDIVISION_AND_OVERLAY_INVARIANT.md",
+      "exists": true,
+      "size_bytes": 13346,
+      "sha256": "08040a4d39c9dec16772ee9ba6d267b6f6e0ad28b252d849b28482b2024a00bd"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_10_ARITHMETIC_AND_EXACTNESS_BOUNDARY.md",
+      "exists": true,
+      "size_bytes": 11375,
+      "sha256": "6d3f13cf0bcc5b94fd23e7cf886c07e9e326e553afd6a7f18c2bd8a140c3998a"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_11_SCOPED_ZERO_THICKNESS_THEOREM_WRAPPER.md",
+      "exists": true,
+      "size_bytes": 13285,
+      "sha256": "33b613a3c8f6474b5c7c634c0a73649dbfd617b3a3625d8e7c510c35069dda36"
+    },
+    {
+      "path": "certified/source_docs/S4_LEMMA_12_FINITE_SAT_AXIS_REDUCTION.md",
+      "exists": true,
+      "size_bytes": 3810,
+      "sha256": "efd991db2689c90d943083c22f0be8dbba58e7577f59f6643d08e507df6cef78"
+    },
+    {
+      "path": "CITATION.cff",
+      "exists": true,
+      "size_bytes": 1174,
+      "sha256": "1009c08834918ca17a0ac84a33eacdacafd0f3f1e07b7119c55d0e1d91db4c7b"
+    },
+    {
+      "path": "data/.gitkeep",
+      "exists": true,
+      "size_bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "docs/AGENT_PACKAGE_INVOCATION_RECORDS.md",
+      "exists": true,
+      "size_bytes": 3355,
+      "sha256": "302fd269cc189f3e988edb92cdd48d69f07494c260ddc2ab22e49b420c20f7ee"
+    },
+    {
+      "path": "docs/CLAIM_BOUNDARY.md",
+      "exists": true,
+      "size_bytes": 1769,
+      "sha256": "84c926994f5d2f8135f0c8b07d198c3f4c4cd748e2cf5c031288bd305c26fa37"
+    },
+    {
+      "path": "docs/CLAIM_LEDGER.md",
+      "exists": true,
+      "size_bytes": 3550,
+      "sha256": "7bb82d5e109a729aac5f1f6bd158dc9b9d764aec947646ec6cbc740c28c5e841"
+    },
+    {
+      "path": "docs/EXPERIMENT_LEDGER.md",
+      "exists": true,
+      "size_bytes": 1451,
+      "sha256": "009d26e3fb2f4d72539b1738333399b389312b4025305278509a6577290e5e17"
+    },
+    {
+      "path": "docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md",
+      "exists": true,
+      "size_bytes": 4085,
+      "sha256": "edc9aeea08ab635b0e23d9d36207d50b84acb885308a6fe3c045f893b055f9de"
+    },
+    {
+      "path": "docs/NEGATIVE_RESULTS_ATLAS.md",
+      "exists": true,
+      "size_bytes": 610,
+      "sha256": "fcc7ec75a8007de0c2e345b46a326029be8e052a5fe8c491e54aff26530c3be0"
+    },
+    {
+      "path": "docs/NORMALIZATION_LOCK.md",
+      "exists": true,
+      "size_bytes": 494,
+      "sha256": "44c7240316f9045cd237d762ce38ceb4f2c111f133215d39e418ff2575e58604"
+    },
+    {
+      "path": "docs/PAPER_TO_ENGINE_TRACEABILITY.md",
+      "exists": true,
+      "size_bytes": 1592,
+      "sha256": "0f1d141642d7f33e14001d67ea995b25bf9a6e4bb1f0ce5b49055e57c1ff44f6"
+    },
+    {
+      "path": "docs/PORTABLE_REPLAY_PROVENANCE.md",
+      "exists": true,
+      "size_bytes": 2027,
+      "sha256": "c07436257e918a168c9156f288d2a0cf5e073e249dbdf907afb72e6dadc1bc3c"
+    },
+    {
+      "path": "docs/PROOF_OBLIGATIONS.md",
+      "exists": true,
+      "size_bytes": 1561,
+      "sha256": "d0a0f8590b1d345fbefa77999d46b0e7f56a980eb7e6446a637b79bd745ba76e"
+    },
+    {
+      "path": "docs/PUBLIC_CLAIM_BOUNDARY.md",
+      "exists": true,
+      "size_bytes": 1769,
+      "sha256": "84c926994f5d2f8135f0c8b07d198c3f4c4cd748e2cf5c031288bd305c26fa37"
+    },
+    {
+      "path": "docs/PUBLIC_EXPORT_DECISION_PACKET.md",
+      "exists": true,
+      "size_bytes": 1704,
+      "sha256": "b7de1514f70af34502e11242fb0c2ebd4fd0f9c91b48fdae9d20ab9e721ca89d"
+    },
+    {
+      "path": "docs/RED_TEAM_REPORT.md",
+      "exists": true,
+      "size_bytes": 3430,
+      "sha256": "170e1ac62725194233cab0bbef4e07cf488b3ef0c499cb7c32367f1e45980c6e"
+    },
+    {
+      "path": "docs/RELATED_WORK_POSITIONING.md",
+      "exists": true,
+      "size_bytes": 5776,
+      "sha256": "db4c0a67202a928e3b29bf8cf54526ece7ee60052ecd02ccfdb4640363887965"
+    },
+    {
+      "path": "docs/RW12_EDITORIAL_DECISION.md",
+      "exists": true,
+      "size_bytes": 1328,
+      "sha256": "eac6e3268351c12ae40a86ac29a138c829877ccac32e499817bca474277624f9"
+    },
+    {
+      "path": "docs/SOURCE_LOCK.md",
+      "exists": true,
+      "size_bytes": 774,
+      "sha256": "511930483a7eec6ed7796bc72256aefd2c695a380639f6f72a4aea15f3d002f0"
+    },
+    {
+      "path": "docs/SOURCE_REPLAY_A8_STATUS.md",
+      "exists": true,
+      "size_bytes": 1299,
+      "sha256": "96d0f9bb9dff9863fd3d66151c10d29c37413d967a0640c0070319ac8e00d1b9"
+    },
+    {
+      "path": "docs/SUPERSESSION_STATUS_NOTE.md",
+      "exists": true,
+      "size_bytes": 557,
+      "sha256": "d987d709dd0033c96805f7c58e8c142af1c0ca8fbb40cd45d32c42faa12683ed"
+    },
+    {
+      "path": "docs/THEOREM_PROSE_AUDIT.md",
+      "exists": true,
+      "size_bytes": 1222,
+      "sha256": "84d193a4e073cd30ca9d617679928590bb5961907717d4a122efc7714756678f"
+    },
+    {
+      "path": "LICENSE",
+      "exists": true,
+      "size_bytes": 1308,
+      "sha256": "c4e08d4904cd3f9362381315e6e954e6d442480f799dec084e3b92fab465f19f"
+    },
+    {
+      "path": "LICENSE_NOTE.md",
+      "exists": true,
+      "size_bytes": 1138,
+      "sha256": "d6c6dfe38b3ff2fe96478c24fce89f9db83f23c3a6391cca07ec81628d6d68c6"
+    },
+    {
+      "path": "paper/BUILD.md",
+      "exists": true,
+      "size_bytes": 931,
+      "sha256": "a3f5f6a93614c8ca8d43731c7987b47158532f07d9286e9e62311ea8e5310d80"
+    },
+    {
+      "path": "paper/CITATION.cff",
+      "exists": true,
+      "size_bytes": 1174,
+      "sha256": "1009c08834918ca17a0ac84a33eacdacafd0f3f1e07b7119c55d0e1d91db4c7b"
+    },
+    {
+      "path": "paper/CLAIM_BOUNDARY.md",
+      "exists": true,
+      "size_bytes": 1769,
+      "sha256": "84c926994f5d2f8135f0c8b07d198c3f4c4cd748e2cf5c031288bd305c26fa37"
+    },
+    {
+      "path": "paper/figures/.gitkeep",
+      "exists": true,
+      "size_bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "paper/LICENSE",
+      "exists": true,
+      "size_bytes": 1308,
+      "sha256": "c4e08d4904cd3f9362381315e6e954e6d442480f799dec084e3b92fab465f19f"
+    },
+    {
+      "path": "paper/README.md",
+      "exists": true,
+      "size_bytes": 212,
+      "sha256": "ad61a325c5ef876b8aaee6d43c0ab4b1a10856385eaa05db408ee3d9ef6c0c7f"
+    },
+    {
+      "path": "paper/README_REVIEWER.md",
+      "exists": true,
+      "size_bytes": 1308,
+      "sha256": "f9356a503a265b9bfecc7e1637e1da65a9f260540d73ed8db3b2c333633e4e85"
+    },
+    {
+      "path": "paper/refs.bib",
+      "exists": true,
+      "size_bytes": 3302,
+      "sha256": "dbe9ebfaeb2d261447045e43d3f2a555987c426ca9c3d0d8a2fcd6ed8a4495eb"
+    },
+    {
+      "path": "paper/REPRODUCE.md",
+      "exists": true,
+      "size_bytes": 891,
+      "sha256": "d7270d5ee48bf9b95a4995a17d19e84a717e5adf9c4cca18e909d9e35a5edad3"
+    },
+    {
+      "path": "paper/requirements.txt",
+      "exists": true,
+      "size_bytes": 40,
+      "sha256": "6924b977bed1fb30eefb2e336807b037dbe307158ba26bcedec927a045e4d980"
+    },
+    {
+      "path": "paper/s4_certified_tetrahedral_hinged_mechanism.pdf",
+      "exists": true,
+      "size_bytes": 356372,
+      "sha256": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6"
+    },
+    {
+      "path": "paper/s4_certified_tetrahedral_hinged_mechanism.tex",
+      "exists": true,
+      "size_bytes": 4469,
+      "sha256": "f2ae19fd8e4d0bda1f7546975cb5e2a323af279455a6acde733ddabf04a79e62"
+    },
+    {
+      "path": "paper/sections/01_introduction.tex",
+      "exists": true,
+      "size_bytes": 2912,
+      "sha256": "40b77a3191cd6ff7e1a8cad0063055ec05ec70a51a99fe114987e112081c19eb"
+    },
+    {
+      "path": "paper/sections/02_model_and_notation.tex",
+      "exists": true,
+      "size_bytes": 3132,
+      "sha256": "c95c3683e6c8a9f8b67a6edd4c371116745b96d297d65b8649f311db877ffa1f"
+    },
+    {
+      "path": "paper/sections/03_endpoint_and_kinematics.tex",
+      "exists": true,
+      "size_bytes": 3429,
+      "sha256": "3ef0510902e90eb59d0f2ce0bf6bc8a62d7839a3cf26f388e5ca21ed9c96f2b0"
+    },
+    {
+      "path": "paper/sections/04_one_parameter_theorem.tex",
+      "exists": true,
+      "size_bytes": 3511,
+      "sha256": "d710b6567aa06c5f2caddf406731d0939dec43b44aba7c2fd0d4099e1018f782"
+    },
+    {
+      "path": "paper/sections/05_certificate_layers.tex",
+      "exists": true,
+      "size_bytes": 3662,
+      "sha256": "b2715342fa8c614218dad52fe99fab7c2679e2fdf2448d8019e3e6c872177b52"
+    },
+    {
+      "path": "paper/sections/06_b04_bridge.tex",
+      "exists": true,
+      "size_bytes": 4098,
+      "sha256": "96f36454e1bcbe4b593965bafadaec4719d725ce61c0eafd3f58fdc16c545b32"
+    },
+    {
+      "path": "paper/sections/07_public_package.tex",
+      "exists": true,
+      "size_bytes": 2314,
+      "sha256": "8fa323942954522d2b1fe6d3644c4fbd36784a10e70357dde76d90157dc1877e"
+    },
+    {
+      "path": "paper/sections/08_rw12_boundary.tex",
+      "exists": true,
+      "size_bytes": 1424,
+      "sha256": "5a45f1678ec1a9d4e921cfb48222349767a62daf6715f7a2fe4ece14c8665e4e"
+    },
+    {
+      "path": "paper/sections/09_related_work.tex",
+      "exists": true,
+      "size_bytes": 1794,
+      "sha256": "28fe33bbf78ea4fb04bf13406faab74e3eaae9f7275a2bc8cd1c7aca0150b886"
+    },
+    {
+      "path": "paper/SOURCE_MAP.md",
+      "exists": true,
+      "size_bytes": 660,
+      "sha256": "bad7cc5e606e5fd9305c56a9f64781e46be103d60b58febf965e62b598480e29"
+    },
+    {
+      "path": "PUBLICATION_PLAN.md",
+      "exists": true,
+      "size_bytes": 485,
+      "sha256": "dd936e3a69b94f676740e5b1392c07d8e12168872f734ddf5f4a18f97798d130"
+    },
+    {
+      "path": "pytest.ini",
+      "exists": true,
+      "size_bytes": 29,
+      "sha256": "ddfcf6e0017476e9b9e8e55559c80e166c21f4f1ac242c7468dc85ad9dc69e52"
+    },
+    {
+      "path": "README.md",
+      "exists": true,
+      "size_bytes": 2434,
+      "sha256": "6f9989b582d2bd49ef55f683fefca9e13e49e89f4b4099fa4bfb62a5ceb101d5"
+    },
+    {
+      "path": "README_REVIEWER.md",
+      "exists": true,
+      "size_bytes": 1308,
+      "sha256": "f9356a503a265b9bfecc7e1637e1da65a9f260540d73ed8db3b2c333633e4e85"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "exists": true,
+      "size_bytes": 1202,
+      "sha256": "d59ade1cfd575482929b2ff073dafe2a464f5d6fee4e38c9c6b9a6c324fb0703"
+    },
+    {
+      "path": "requirements.txt",
+      "exists": true,
+      "size_bytes": 40,
+      "sha256": "6924b977bed1fb30eefb2e336807b037dbe307158ba26bcedec927a045e4d980"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/CLAIM_BOUNDARY.md",
+      "exists": true,
+      "size_bytes": 580,
+      "sha256": "4e6ed220b9c748a6e373a03a5e547fd3fa236b928fc351f6a4413978a98c9be2"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P0_printed_body_with_bosses.3mf",
+      "exists": true,
+      "size_bytes": 14276,
+      "sha256": "0d1e2cab35bd735b7d9f8971074d47c4b731eab3b90a0e5eb3412461aa3ca568"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P0_printed_body_with_bosses.stl",
+      "exists": true,
+      "size_bytes": 61684,
+      "sha256": "b86a2bdb6be675eb57e480cbc95bf1b5f596d2be4edb1d53b86bec86eb42cbed"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P1_printed_body_with_bosses.3mf",
+      "exists": true,
+      "size_bytes": 12557,
+      "sha256": "794cbe86936fa7cfaf557a5e7428072f985e5e5dbd3bc81e486096b9da3a937c"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P1_printed_body_with_bosses.stl",
+      "exists": true,
+      "size_bytes": 50484,
+      "sha256": "6a039f4f53e48b8bb963d892fead7395c889bcd95b754dcfc1610087f75ddf1e"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P2_printed_body_with_bosses.3mf",
+      "exists": true,
+      "size_bytes": 5311,
+      "sha256": "202fd212674dbcbbc48a8c6f4d3c15749f5f4f029c1b6fef19b94eaf5935bbb3"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P2_printed_body_with_bosses.stl",
+      "exists": true,
+      "size_bytes": 17884,
+      "sha256": "1bcd06f04611bcb6c650efd3c2401fcceae2c5bfd1327dafedbfdfd7d8b60a5b"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P3_printed_body_with_bosses.3mf",
+      "exists": true,
+      "size_bytes": 5122,
+      "sha256": "dbb806c20021975b080d6d2d46ec774fc203a14f9bedec34881e76e8bae2fec9"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P3_printed_body_with_bosses.stl",
+      "exists": true,
+      "size_bytes": 17484,
+      "sha256": "ba5cae232ae5834e3744c58e4517f07eda6133d3d8dbee67c619037b96da677e"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H0_A_M_AB_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "8143069f32d8e232e99af49ce378bd6e4c1458e16e6b0e3eaf272636e2db5b02"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H4_C_M_CD_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "f561dcf64f7b057d93b1bb86e18bf2784c18f950a4cce3ef98d70edbc930d723"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H7_D_M_CD_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "509d9ad02068d78c6101f8e811a02b3345b916e495be249158636b0241b81c10"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H0_A_M_AB_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "5d463e1bb679839924c2a2e05a47b039fe63281b258d63817c2a6cc460d7e536"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H4_C_M_CD_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "b10f51ca7df6f352d7deead2405fd9907c2a650719850e8b8260359111e0f7c6"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H7_D_M_CD_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "6717c8004d0eac13c38c1e28de3d4153dbe9892e7e88f4bc720472d8a3e0f5df"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H0_A_M_AB_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "c8c2a80789ecb69a4aa59d9f9005159c272cfabab68436c3f3dc5775a743b497"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H4_C_M_CD_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "a9dfc1e7e52895bb37ebed416f2671fccadb92b29d5ddbaafd38e3a5ec6e9685"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H7_D_M_CD_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "exists": true,
+      "size_bytes": 12884,
+      "sha256": "a866fa5870da28023819b450dd5202f40bd595fa004334e7c57a12f05adc1c8e"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/OPERATING_INSTRUCTIONS.md",
+      "exists": true,
+      "size_bytes": 990,
+      "sha256": "9a2212581cff621bc51d4c892009edc545146b93cbad4a1263f71d290bd4e9c7"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/README_RW12_EXTERNAL_FABRICATION_REVIEW.md",
+      "exists": true,
+      "size_bytes": 1305,
+      "sha256": "06b46ee485b21111428aa30b348251ad241bca0c0fbd408aaad011103e0eb56e"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/reference/rw10_digital_final_prototype_package_report.json",
+      "exists": true,
+      "size_bytes": 23595,
+      "sha256": "b1d574f44b487eac511010309e59278600c88d637fb8a1707fb8cd17c08e5634"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/reference/RW11_TOLERANCE_DECISION_MATRIX.csv",
+      "exists": true,
+      "size_bytes": 921,
+      "sha256": "ae65047f35af3490fd394bbfd33237c3360b3f3aeeeeb0ebda6090ed138d37f8"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/reference/rw11_tolerance_variant_package_report.json",
+      "exists": true,
+      "size_bytes": 1695,
+      "sha256": "81816daa2fddfae36f492b7ee948fdbbe173bddaa6a3af7cbc32988bf38318f0"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_manifest.json",
+      "exists": true,
+      "size_bytes": 12556,
+      "sha256": "114aed53e1532340773353169039d13cf8869b7c349fbe36ab10f9c5ed20b770"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json",
+      "exists": true,
+      "size_bytes": 2211,
+      "sha256": "7f7bb09f31d1ae0e3126f365a320dbbec9df81563a919fdaf3813bd8e2f8084f"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/RW12_FABRICATOR_CHECKLIST.csv",
+      "exists": true,
+      "size_bytes": 840,
+      "sha256": "a94c7dc029e9ea93a20271c9fd52a4b7dbb3ae98523dc8562a551bc45ac09d29"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/RW12_FILE_MANIFEST.csv",
+      "exists": true,
+      "size_bytes": 8236,
+      "sha256": "24df0e4b75b62f3dcbbfea003204473279077e33db221126bf788dfabd8e0ef3"
+    },
+    {
+      "path": "results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
+      "exists": true,
+      "size_bytes": 130988,
+      "sha256": "e1109aa7d9b21e95405a585448ba4b1e4e3102da5ac5262c7825931bf730ff71"
+    },
+    {
+      "path": "scripts/check_public_package.py",
+      "exists": true,
+      "size_bytes": 10228,
+      "sha256": "2b2434b4f2f0060bcde5b9f037be1e53fbe0fd0b9ee0a55246bd1a8e0002f0bd"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s2_median.py",
+      "exists": true,
+      "size_bytes": 3980,
+      "sha256": "f6961fdc37580665e25b23e7f595bd328823e964ef33f3c9ce75b9c4641ac9d3"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_ambient_edge_dense_refinement.py",
+      "exists": true,
+      "size_bytes": 15507,
+      "sha256": "1b1e959b4182700f521bf4a30f305f73ed60943a19b473405f891268fc790a50"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_boundary_tree_batch.py",
+      "exists": true,
+      "size_bytes": 15007,
+      "sha256": "244e2d189c274aebf6a0b7d1bf99bc0eda9325d799497eca6a2fd30728c39f85"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_closure_overlay.py",
+      "exists": true,
+      "size_bytes": 18501,
+      "sha256": "5a82ae916ea843e28a6184fa16c28a2b2953b26f03992d6b6e700e7d7babcbac"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_cover_protocol_spec.py",
+      "exists": true,
+      "size_bytes": 17408,
+      "sha256": "351c4d8dbe513280dc7726c5ea6f4af79032dea354c3797853460a2814983752"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_g1_fixed_axis_guard.py",
+      "exists": true,
+      "size_bytes": 36867,
+      "sha256": "815a63e2a5a27daebcf20d2c5c362d2af319cef848d10ee364df48a01bca2845"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_g2_multi_axis_guard.py",
+      "exists": true,
+      "size_bytes": 24066,
+      "sha256": "d4e2bd007e3142502f74af5d5fb2751c93fd53ecc68a3010176f358c6cef55a6"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_g3_hybrid_guard.py",
+      "exists": true,
+      "size_bytes": 24190,
+      "sha256": "4219f6d4c666a7a80ef68d91f920bece676d6141f4158d86679cb2161f8c891a"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_g4_adaptive_isolation_guard.py",
+      "exists": true,
+      "size_bytes": 20006,
+      "sha256": "77a7301b32e64333fb46a17d1b700b958ba2e4742497b21a499070e36509d591"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_guard_plan.py",
+      "exists": true,
+      "size_bytes": 14976,
+      "sha256": "a6c35bf789fdaa474c2365a8720be74c27257e3ac456f9ff478c9aa5deb7306e"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_edge_branch_stability_classifier.py",
+      "exists": true,
+      "size_bytes": 21804,
+      "sha256": "015daa7d894ecd0fab9603cf94eb5ff9266367516eab7c44754bd95e2b11a7e2"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_face_normal_formula_guard.py",
+      "exists": true,
+      "size_bytes": 18618,
+      "sha256": "41f66d253880e020acf1f06029f78f5e72e71ac1f5d74c3f8e3a6a35f1681ba0"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_guard_first_pass.py",
+      "exists": true,
+      "size_bytes": 26488,
+      "sha256": "3c727b14fb15c19ceeead0b28480e0be32823625fe9e0a12da7079940bbdc0a0"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_residual_shared_face_inventory.py",
+      "exists": true,
+      "size_bytes": 15405,
+      "sha256": "89985da02e350605c46c2e6fa0e9dbc3c6fc2abcccaa12b930248cc987c73e49"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_shared_edge_common_edge_overlay.py",
+      "exists": true,
+      "size_bytes": 17627,
+      "sha256": "c551ee7af24f6c69a07ca414d97a053f2c30077d7809f55424051122e8d6eb77"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree007_shared_edge_closure_stack.py",
+      "exists": true,
+      "size_bytes": 9953,
+      "sha256": "b146c44c2aa78a8ead0eca3f695cc543318811066494fcff2bb299e97f04e8a4"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree021_p0p3_closure_stack.py",
+      "exists": true,
+      "size_bytes": 22404,
+      "sha256": "c2b61267eabc466853057d6be87c6f508fe110c416a270e56a53f60de425b7ed"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree021_p1p2_endgame_failure_classifier.py",
+      "exists": true,
+      "size_bytes": 15876,
+      "sha256": "75fe48e4a1d5479b4df9c2b937c49cb00723b6c33f34b7def33b5403dbcfc41c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree021_p1p2_margin_endgame_guard.py",
+      "exists": true,
+      "size_bytes": 16119,
+      "sha256": "612a8a402345fd71e025dc9f7758a68ec912219deecdf581136ce6b0cb11f3f4"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree021_p1p2_shared_edge_adaptive_probe.py",
+      "exists": true,
+      "size_bytes": 24283,
+      "sha256": "69f4955efea8cfb3cb51cbbcc497fcb3a5a6569f23d20cffd142b6c5ee52117b"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_cell_tree021_p1p2_support_stability_endgame_guard.py",
+      "exists": true,
+      "size_bytes": 23675,
+      "sha256": "382edd830dda837349b9bc3c0552079d012758359636bf3a0620b3a6358786bc"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_component_edge_refinement.py",
+      "exists": true,
+      "size_bytes": 11317,
+      "sha256": "681d848c7989e23e3e5b54e1303af64c36997dd38884438335e1f0c0e197d5dc"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_bounded_component_graph_certificate.py",
+      "exists": true,
+      "size_bytes": 11881,
+      "sha256": "aea6d87b44ba2304ba7835da848e696daa1181f01ac6366c132da11123b718e8"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_median_planes.py",
+      "exists": true,
+      "size_bytes": 4891,
+      "sha256": "0c1212d93b11d2fb4edb2b7c1c7897a1a23c62e1f3413c63397058b7a8a2f339"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_near_zero_gap_inventory.py",
+      "exists": true,
+      "size_bytes": 9707,
+      "sha256": "56e5e2813bfc753ccada3a406ccdc49c2ec5ad08f281739ddd7c2049dd71238c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_open_limit_ray_certificate.py",
+      "exists": true,
+      "size_bytes": 11040,
+      "sha256": "ae8d55627547f8cb283dcb3344323003c287d939c00fd073f199a3cd358787e7"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_axis_switch_backlog_guard.py",
+      "exists": true,
+      "size_bytes": 19553,
+      "sha256": "f264fc25a6dc1515b4baefbfaa10cc9bb32fe59fffb9b2d39238a2fcd7816f11"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_edge_branch_failure_classification.py",
+      "exists": true,
+      "size_bytes": 13968,
+      "sha256": "8680b67019dc97203b9104b23ed481d60837c16d94eba7dfcfae97a853a419ed"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_edge_branch_lower_bound_probe.py",
+      "exists": true,
+      "size_bytes": 15896,
+      "sha256": "260701db2a18ec3ceec47a33a28afd57e9700884658711db1e1f021d8f09fd4f"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_face_normal_formula_guard.py",
+      "exists": true,
+      "size_bytes": 19602,
+      "sha256": "d927c481231c5a7dffa466b5d9e2f0dc062b563c21fe4c4a5606b54a5800b66c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_refinement_sensitivity_probe.py",
+      "exists": true,
+      "size_bytes": 22604,
+      "sha256": "84a3c0db3b8d8b9e7c24cd9694469a9bd9fe7ac0e3fa9b8f0504137d52279875"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_residual_base_classification.py",
+      "exists": true,
+      "size_bytes": 16369,
+      "sha256": "7085482a21ffe80bd03432eb5d9aaa3afd1f9e9e2b232e0afc5b4a67780aa0ea"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_same_branch_support_bound_probe.py",
+      "exists": true,
+      "size_bytes": 22416,
+      "sha256": "bfdac2e3f2db748fec1eace25a0bcc00c1a47b35c0b6de81f840ddb24cb0da34"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_targeted_endgame_guard.py",
+      "exists": true,
+      "size_bytes": 24769,
+      "sha256": "9382b6a59cf1d6d3df6b2dea36dca08b3ef8308e99630c2aa6b49ee79a54378a"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_p0p2_theta_projection_component_bound_probe.py",
+      "exists": true,
+      "size_bytes": 26541,
+      "sha256": "0701e7ea2998490faa4c16681fee59e3eae43b2f102ea16cdcbc0b4463f547ec"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_refined_edge_interval_guard_probe.py",
+      "exists": true,
+      "size_bytes": 17035,
+      "sha256": "8bceb5c77133112c95dd7b5d21036f5ebefddddc5b628536310760c97b891c28"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_contact_failure_classification.py",
+      "exists": true,
+      "size_bytes": 17034,
+      "sha256": "5013f4e41e6dcd7b9eb6cce6768cc47d9211f7e260731a136125a7f9edfb128d"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_contact_gap_diagnostic.py",
+      "exists": true,
+      "size_bytes": 8365,
+      "sha256": "9511923b48a40324d6008b2ac0bcc80dee748ee9b0848e756179252a35f0ab2f"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_contact_interval_model_spec.py",
+      "exists": true,
+      "size_bytes": 8020,
+      "sha256": "a61d2cff205bde22f26b1c19c471e42ee23cc71c6fc945d4ce823e553b4d7815"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_shared_edge_formula_check.py",
+      "exists": true,
+      "size_bytes": 7678,
+      "sha256": "6f4939cb0a8858c1a681a693e0f34bb459d18cbd405c27ed0c579196aecfb224"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_shared_face_analytic_certificate.py",
+      "exists": true,
+      "size_bytes": 8807,
+      "sha256": "da9ff2fce2ea4736e20d0ad2574339d07d3508b4c771dbb6b22fb8119f135084"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_residual_shared_face_formula_check.py",
+      "exists": true,
+      "size_bytes": 7900,
+      "sha256": "9092417875a33a9be6d9e5143e411b1cdb729478d3f4fcc4e0fdac31fa8c5d76"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_signed_ray_symmetry.py",
+      "exists": true,
+      "size_bytes": 14083,
+      "sha256": "fce5d389dbb16444ccf2b03a053091d446d3a9ec2144c02f81a945a8b7fa090c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_theta_zero_closed_contact_certificate.py",
+      "exists": true,
+      "size_bytes": 11042,
+      "sha256": "079c016a328214e7dc6dc01c78948b30f91400cb44ef25af9758a413a218d073"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_motion.py",
+      "exists": true,
+      "size_bytes": 8567,
+      "sha256": "90d1a0ea7c7ecc23b0bccb4351f7f5be003a1d4f4055825c36b9d59c252efcca"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_edge_branch_lower_bound_probe.py",
+      "exists": true,
+      "size_bytes": 17613,
+      "sha256": "e4adcc68eda6b15bcb9367eb2f08dfd3816f4205b4725326c8a771164a64eec8"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_edge_branch_projection_component_bound_probe.py",
+      "exists": true,
+      "size_bytes": 26841,
+      "sha256": "55de2a97c02358630c663df117df3c794e049b247972c953314d6dc2d2e55309"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_edge_branch_refinement_sensitivity_probe.py",
+      "exists": true,
+      "size_bytes": 17002,
+      "sha256": "c2a74a09a5c59c7665bf61acaac7cacc9cd771dbaba2055de25cd7aa7fd1335c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_edge_branch_support_bound_probe.py",
+      "exists": true,
+      "size_bytes": 23767,
+      "sha256": "69531d8094786009acd358f3dab771c8ae56d3db5813ace492d5eaf7ef15745c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_edge_branch_targeted_endgame_guard.py",
+      "exists": true,
+      "size_bytes": 25054,
+      "sha256": "5433166c6ff91d943ff570821d23f72f50ade2606df586fa97dbbf09216e9fa2"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_face_normal_formula_guard.py",
+      "exists": true,
+      "size_bytes": 25095,
+      "sha256": "7286b0d862fe3dcb54428b56568c186189eadf701b23cdc68927dc7641d9034e"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_p2p3_local_best_axis_component_diagnostic.py",
+      "exists": true,
+      "size_bytes": 10194,
+      "sha256": "79ab00b658531271f06bfdc85bf398fd0ef91144ddf2748b5bc0a10fb46c310d"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_ray_refinement.py",
+      "exists": true,
+      "size_bytes": 9102,
+      "sha256": "09480c21667cff0ac28b281df64efc2e4fcf88b440832a76028034259d0dc37c"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_refined_edge_interval_certificate_overlay.py",
+      "exists": true,
+      "size_bytes": 11558,
+      "sha256": "87f665601cf63911381891ad34033080ca0b1f35cbef6f17e5d7c557567ee6aa"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_refined_edge_interval_guard_probe.py",
+      "exists": true,
+      "size_bytes": 3920,
+      "sha256": "eadcf9ff7d504139b4e3fd52fff6ec2fc42a0a4e1cb1a655c04a79f36087c1cb"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_residual_contact_closure_overlay.py",
+      "exists": true,
+      "size_bytes": 19035,
+      "sha256": "5d5349c1156c50b7ffc1a7663ff0b17b0755d36bbf47c6b20d90b3bc88344a83"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_residual_contact_failure_classification.py",
+      "exists": true,
+      "size_bytes": 3401,
+      "sha256": "60d587e636e694434b9946872e96cf0d162835da75b5eb9b62fc7df1148d8c96"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree007_shared_edge_common_edge_guard.py",
+      "exists": true,
+      "size_bytes": 2923,
+      "sha256": "dadcf0f130e3927f57963d1ece776e433df04e62379ec67b2378382edc6146f9"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree021_refined_edge_interval_certificate_overlay.py",
+      "exists": true,
+      "size_bytes": 11578,
+      "sha256": "64c8f83eee96b46aefb5d8336acc426dfdc07db46fcb72f2ef2631b377837099"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree021_residual_contact_closure_overlay.py",
+      "exists": true,
+      "size_bytes": 13773,
+      "sha256": "82da3f4dfc994308428a25b544884fd0c35d91320278f2f13c84607d2dc7e4c2"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree021_residual_contact_reconciliation_ledger.py",
+      "exists": true,
+      "size_bytes": 19897,
+      "sha256": "63b6cd6c47b8cceac3c5b94629ab91f9bbeaa1f7a98c038e79dbed5b4700377d"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree021_residual_edge_targeted_guard.py",
+      "exists": true,
+      "size_bytes": 7959,
+      "sha256": "11d6440842cc0a16fa0bcf9c56bbc1c7e3f748b31e0798dedf56aa40997c6160"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_tree021_shared_edge_common_edge_guard.py",
+      "exists": true,
+      "size_bytes": 30818,
+      "sha256": "4e3aad9ea5f9235b6d0646e59bea67ee3fa0f652ed76607526a847ce5172b33e"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_two_class_component_search.py",
+      "exists": true,
+      "size_bytes": 12634,
+      "sha256": "31ce0d99d2623a942c70a33431b46347dfaaab7708c1a2533243d14b6e79b599"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_two_class_contact_orientation.py",
+      "exists": true,
+      "size_bytes": 14261,
+      "sha256": "d75e9b32904452620aa75a13d45212303405a5503c2679bb946cd185450ecfb2"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_two_class_ray_cell_guard.py",
+      "exists": true,
+      "size_bytes": 18996,
+      "sha256": "d1fd5aaf72bb13ba5a76aa5dcf0beaaf3ea59ab17715fcababea96dba80cfe52"
+    },
+    {
+      "path": "scripts/computation/audit_historical_s4_two_class_representatives.py",
+      "exists": true,
+      "size_bytes": 15083,
+      "sha256": "c3c0cb087dc4b20de2978c4a8c4678d9e40b045b9125ad865a99b9515d4f1110"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw8c_tree007_mechanical_sanity.py",
+      "exists": true,
+      "size_bytes": 17939,
+      "sha256": "a9a438a5425ba4705264a3b8a3798fae3911fcd8eaaeaf0d5d451fb88196f152"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw8e_refined_tree007_export_integrity.py",
+      "exists": true,
+      "size_bytes": 15522,
+      "sha256": "d83e68c9869571278da18e007bdb40af0edc284731cb29bb93b51788ed7dd531"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw8f_tree007_geometry_regression.py",
+      "exists": true,
+      "size_bytes": 14258,
+      "sha256": "8c6cfa1ceade869ccc613b5faff31f1c56732ebd548ac751687a6e164b38569d"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw8h_body_preserving_tree007_export_integrity.py",
+      "exists": true,
+      "size_bytes": 15642,
+      "sha256": "8ac8390097454bf66ca3d87758ff2cb575b1752f0eca9c82c0c3f0578a3a84cf"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw9b_static_fit_measurement_ingest.py",
+      "exists": true,
+      "size_bytes": 14749,
+      "sha256": "bebd66aa83f908ac5b17d9aac80fdc20f044ec7197ef25ea40269edb8ec2fc70"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_rw9e_printer_profile_gate.py",
+      "exists": true,
+      "size_bytes": 15414,
+      "sha256": "bb2194c0e2a34b8fb5ab4ec37f82ef947b1e1b1b407aa71c266f767a1f233e4b"
+    },
+    {
+      "path": "scripts/computation/audit_s4_real_world_tree007_export_integrity.py",
+      "exists": true,
+      "size_bytes": 15388,
+      "sha256": "c06b2e3dc0e3df389c4f37c3fc2175655250cf3cf2472a671a5bfa9d509fd6c4"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a2_symbolic_ray_model_pilot.py",
+      "exists": true,
+      "size_bytes": 18181,
+      "sha256": "1f5c68421daa58c75d12f2d2325dcb9d467e962eb01d08dd4dc405899ee69692"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a3_a4_weierstrass_sturm_certificate.py",
+      "exists": true,
+      "size_bytes": 18282,
+      "sha256": "f4db4fcf422ed349974f86c1859c805cbba8bf481a252044a1bdb7e513c4f8ba"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a5_support_switch_root_audit.py",
+      "exists": true,
+      "size_bytes": 14306,
+      "sha256": "eef15b0362158d478269f955a09ceb9f71b8ae39ee5e8960c6da4db535d79823"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a6_one_parameter_ray_closure_package.py",
+      "exists": true,
+      "size_bytes": 9222,
+      "sha256": "87a48e0aafcd9976b6ccdd4864f8759d39c19e1d5124dc685b062347dbd2f898"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a7a_shared_face_residual_sturm_certificate.py",
+      "exists": true,
+      "size_bytes": 11251,
+      "sha256": "572214bc3a4e258ef9dfaa33b1b89ba3a3b74e66708b37343048e1b187a5f276"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a7b_b03_ray_vacuity_certificate.py",
+      "exists": true,
+      "size_bytes": 8759,
+      "sha256": "89cc5dc4b2e50db4d4b93ba3ad4bce0a8dbea69a9772badb773741009ef9a037"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a7c_b04_contact_side_bridge_certificate.py",
+      "exists": true,
+      "size_bytes": 18442,
+      "sha256": "d83999ea50e2634bb5ea3ab9a3f9aba030033020c7fbb90520cfd99af7cc9fc2"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a7c_selected_hinge_contact_side_certificate.py",
+      "exists": true,
+      "size_bytes": 14360,
+      "sha256": "b07186622d28133457c792e11a3e58d3fe5d31ad43ae7f38a3625fd07e88ff1f"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a7d_one_parameter_theorem_wrapper.py",
+      "exists": true,
+      "size_bytes": 14961,
+      "sha256": "23f7ac2d5b7c762e45687fb08aa68ad27f2518d70a86e08fd2e1222c23420892"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a85_package_closure_review.py",
+      "exists": true,
+      "size_bytes": 8477,
+      "sha256": "0713b26f2657e3bbf653ef8a8bd9cfa757d16f2edd44930dc1de3ce9e92adaf2"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a8_red_team_report.py",
+      "exists": true,
+      "size_bytes": 11727,
+      "sha256": "17e4257e97ebdb6352b368383c392c455b33535666078a2c2e22b36431e71471"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a8_review_ledgers.py",
+      "exists": true,
+      "size_bytes": 20881,
+      "sha256": "1c2af12596686d6d51f1a771a3e622baacd323aa9f38bb47155c109fe46bdf54"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_a8_review_package_scaffold.py",
+      "exists": true,
+      "size_bytes": 18982,
+      "sha256": "73a7eb707aed18ef3711215f6635669eae8286d915e0909bda4943ae442cee4d"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b03_exact_margin_source_layer.py",
+      "exists": true,
+      "size_bytes": 13437,
+      "sha256": "d05d7d44e4ac1bdc4a144a5478c778b981cd6721582b6c6c634b8a2178dc6f05"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_axis_nondegeneracy_endpoint_transform_emitter.py",
+      "exists": true,
+      "size_bytes": 17356,
+      "sha256": "0e076b3eaac65690d0fdb6e672dfa945fded96de665061c49c1ed1c13396dcd4"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_axis_norm_symbolic_lower_bound_backend.py",
+      "exists": true,
+      "size_bytes": 16425,
+      "sha256": "19fbbfc1c119b06b929eb82c6e0dba48340519e25f0188d944437b70d269bdd3"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_center_projection_non_support_endpoint_backend.py",
+      "exists": true,
+      "size_bytes": 25353,
+      "sha256": "ecfb95a08e0d5cdcbd87b95ab711de23ae7ab807d1e19d5499beaf49d565c48a"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_center_support_seed_tightening_budget_backend.py",
+      "exists": true,
+      "size_bytes": 19442,
+      "sha256": "aca2b915039f83ddb2d3ffc220faa42dee8b8eadb511db97fe0a085c4780f52f"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_checker_draft_audit_backend.py",
+      "exists": true,
+      "size_bytes": 21616,
+      "sha256": "9fac92e133abb676a2732ce757e5af39d3ede0be8b3b32e222bdc3317247086e"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_common_edge_projection_exact_gap_source_layer.py",
+      "exists": true,
+      "size_bytes": 11253,
+      "sha256": "b6acf82c17943b9fbce4663017c675d180e79379ebae59ff247b405c53c36a2e"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_component_bound_interval_extractor_backend.py",
+      "exists": true,
+      "size_bytes": 17280,
+      "sha256": "e5319bc07c7d691dd12953741fdf79fb6ae8821c09806e7a369a6151873f26ce"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_component_bound_margin_skeleton_reextract_backend.py",
+      "exists": true,
+      "size_bytes": 28743,
+      "sha256": "7373cebff56386ea052cc9976d1584bfb8ba96885e70303bf98d3fdb9d636925"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_component_motion_bound_objects_backend.py",
+      "exists": true,
+      "size_bytes": 20382,
+      "sha256": "d791e17a10e9f95490bea39a6300f526617ba63f38baf69610732626b42fad16"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_exact_gap_formula_source_inventory.py",
+      "exists": true,
+      "size_bytes": 16597,
+      "sha256": "c756dcefef6c5e32b09e70509323444b3c0b03c9a0f1af4942bb7071cd2213d1"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_exact_seed_replay_source_audit_backend.py",
+      "exists": true,
+      "size_bytes": 28044,
+      "sha256": "904990b88eb4789eb95b9a40615b2f1887a7c1c8ac1b8d2a8d648c3e74ba719a"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_formula_backend_bridge.py",
+      "exists": true,
+      "size_bytes": 18654,
+      "sha256": "b8da4bd27d5ff85a268293c4474989c7819fe4b82978c78afb3d90dd960358c5"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_g0_support_competition_seed_isolation_backend.py",
+      "exists": true,
+      "size_bytes": 23462,
+      "sha256": "673d06a91f2e5add0f401dd866961c9bcd1c5ad12b71565b6bfd84e8bfcbe565"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_geometric_seed_arithmetic_backend.py",
+      "exists": true,
+      "size_bytes": 22114,
+      "sha256": "b14097b11af4b121bb48efc975f1537c599a8342637369b2ffad0b8e8bd17a1e"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_local_centered_trig_replay_backend.py",
+      "exists": true,
+      "size_bytes": 25428,
+      "sha256": "65ea5659420c73b98e10fa0eebbb4444ba7ddae8b89e6630004b39db34db637c"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_local_taylor_trig_proof_locked_replay_backend.py",
+      "exists": true,
+      "size_bytes": 20615,
+      "sha256": "2f5ef656d3c51223ba0956e6d220a12aa5dbbfa55410f6549ae69a053d8bed7e"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_margin_interval_extractor_backend.py",
+      "exists": true,
+      "size_bytes": 16441,
+      "sha256": "2401350f310a4d206665bfe46c6b13b98585253bc8b959cdaca75883616a53a9"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_missing_support_seed_reconstruction_backend.py",
+      "exists": true,
+      "size_bytes": 22526,
+      "sha256": "b3675e94472449d8e751d0c566c09e811041792fb6ac75a5352ee89586cf5670"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_rational_seed_interval_extractor_backend.py",
+      "exists": true,
+      "size_bytes": 18705,
+      "sha256": "4d2dc6bbe807f0de2b2f753606cef87f270b8c1887a3ca2ac13b72a319eea325"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_report_field_extraction_audit_backend.py",
+      "exists": true,
+      "size_bytes": 20281,
+      "sha256": "ff2836f108392a4321c906d8e970f67f17d8072dab7473684a429890ac681eb1"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_rodrigues_interval_composition_backend.py",
+      "exists": true,
+      "size_bytes": 18516,
+      "sha256": "04b52681314ffdac1ce38278e91bcf62724595383e636c3d1012e8758ba82c5f"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_support_component_gap_margin_contract_backend.py",
+      "exists": true,
+      "size_bytes": 23580,
+      "sha256": "5579a7650b11145865351c61d8b4cbfb0568917e652935902629374d0223bc90"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_support_finite_extrema_extractor_backend.py",
+      "exists": true,
+      "size_bytes": 20045,
+      "sha256": "0e316b4772877b4d3a4790f5949732c119b01e974d4a0e93fc1cf1e9ef60a211"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_support_partition_contract_records_backend.py",
+      "exists": true,
+      "size_bytes": 15470,
+      "sha256": "36a1b44afcdb4e3d9139525b985ad40edcb7d3008bf7927789930c9af2c6f1f9"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_b05_trig_fraction_interval_backend.py",
+      "exists": true,
+      "size_bytes": 16531,
+      "sha256": "78f8063f00ce55a7abf0083dce95d9766dd2680b207ed26157ad08c06fbe7c7f"
+    },
+    {
+      "path": "scripts/computation/build_s4_cl5_residual_route_exact_source_layer.py",
+      "exists": true,
+      "size_bytes": 12716,
+      "sha256": "b4c8e41746e3f1b1646979849359abe113330043e980bef86aa33b8be805fdd9"
+    },
+    {
+      "path": "scripts/computation/build_s4_post_rw12_public_paper_package.py",
+      "exists": true,
+      "size_bytes": 728,
+      "sha256": "e5ade5bc408b96f93f1d7712c4cdf4f42353b502a5d7776a6b23d53066311b68"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw10_digital_final_prototype_package.py",
+      "exists": true,
+      "size_bytes": 15998,
+      "sha256": "ec2db224ba777f2376ef95ed318467a1754cd03e6d4bbe3b7e4d6e201752fbab"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw11_tolerance_variant_package.py",
+      "exists": true,
+      "size_bytes": 15554,
+      "sha256": "44b96bc34ecbfd5d26f53ee527fa17d096b2d489a5ef3c3850dde17e904c169b"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw12_external_fabrication_review_package.py",
+      "exists": true,
+      "size_bytes": 15795,
+      "sha256": "72a163f035f44044ab96b38ef54d0bfbc1e868d018e973c4ae798ce0a0abb409"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw1_physical_source_lock.py",
+      "exists": true,
+      "size_bytes": 11235,
+      "sha256": "a8f45bf6576c9201893efc25312a3358d4ccfd159e84b974745001bf07acdf4a"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw2_mesh_payload.py",
+      "exists": true,
+      "size_bytes": 16517,
+      "sha256": "07afe967459dc1f71814fdd0f5b43b56a3be06101b0ba382cbc96b99833eb210"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw3_kinematics_adapter.py",
+      "exists": true,
+      "size_bytes": 18155,
+      "sha256": "d5ac8042db4a75c1cf77d75a1c8fc8066f788b35cbb5db2773315068cbc7dc33"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4_collision_sweep_evidence.py",
+      "exists": true,
+      "size_bytes": 22961,
+      "sha256": "075cc9c5888c0ac306426448596abac4d46e71c57cefe312c2dcdb74a533c26c"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4b_interval_sweep_validation.py",
+      "exists": true,
+      "size_bytes": 20888,
+      "sha256": "4fd949f7eb68e2d0df0335b1300f2fe2c35a6754e01dddd15c47a8a34293f541"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4c_blocker_reduction.py",
+      "exists": true,
+      "size_bytes": 17601,
+      "sha256": "8c3616f310e468ac5bdca89a55af5677799724a05b782f0824bc7fc316a6f972"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4d_clearance_hardware_model.py",
+      "exists": true,
+      "size_bytes": 20147,
+      "sha256": "feaee0c9f21d8b15b5e71a2ab1eb56a36d4f6d5a79550aac74050ee22de6cd44"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4e_relief_hardware_payload.py",
+      "exists": true,
+      "size_bytes": 21004,
+      "sha256": "8bcbfe34a6fd986c3da6278614326ca067b4a0706b051beddf56cdf5866da022"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4f_cad_envelope_replay.py",
+      "exists": true,
+      "size_bytes": 25290,
+      "sha256": "6573a168c7646e75c7580d23ad91b2d76d7e4cf253cbf68c569b5d859d347da7"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4g_hardware_mitigation_replay.py",
+      "exists": true,
+      "size_bytes": 20793,
+      "sha256": "eb39fcccd97e9dc5ff330ba7f11bca329a9945849fdffd5506e4af3333d969d5"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw4h_combined_cad_mesh_proxy.py",
+      "exists": true,
+      "size_bytes": 21132,
+      "sha256": "b90176707037c540d822a07f95fd20b2547f3026143e8125b98f8ade942f32e4"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw5_printability_fabrication_preflight.py",
+      "exists": true,
+      "size_bytes": 21506,
+      "sha256": "bce5a65baa100b89aca4f9b38ee925f0e69fc1aa71ed9d1e4519903f4c8c368e"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw6_physical_red_team_package.py",
+      "exists": true,
+      "size_bytes": 30845,
+      "sha256": "85c736a74ccfa13996f995b2abb52674c0ec775b7a9db0c29d64e0758809085c"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7_selected_candidate_cad_boolean_hardware_prep.py",
+      "exists": true,
+      "size_bytes": 24244,
+      "sha256": "9258b883df4acb5ab87510d7673da56579fbfecb5f637fcf9f0aac474a878c70"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7b_candidate_boolean_rebuild.py",
+      "exists": true,
+      "size_bytes": 17134,
+      "sha256": "c4a6d708ea691058d8153e439524dd10d74f3c751d968712307325af5ad287e2"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7c_hinge_hardware_solidization.py",
+      "exists": true,
+      "size_bytes": 29243,
+      "sha256": "f66f3c996e21de41388dd787bcc83c09bb824118e14b94e9cf2629ab285a7391"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7d_hinge_connectivity_repair.py",
+      "exists": true,
+      "size_bytes": 29975,
+      "sha256": "2967e0dbfb8c8b9fa149082ceae7b4f363973b7674812bda8c79c2d455414cde"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7e_hinge_mechanical_refinement.py",
+      "exists": true,
+      "size_bytes": 34029,
+      "sha256": "a823e59b4e1ff0a2e543e319a79bc1f6d12e7a2affe9ff6d57b0fed90919433f"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw7f_body_preserving_rebuild.py",
+      "exists": true,
+      "size_bytes": 36981,
+      "sha256": "1ea9f5c09173899d42dc98c4237efa7a8b081688827165e014e80a281ec339a6"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw8_export_slicer_preflight.py",
+      "exists": true,
+      "size_bytes": 27803,
+      "sha256": "92dc6ab16451f08d5af7dd4fb8036c3303be7e601da51014c65e5590ae4313ed"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw8d_export_refined_tree007.py",
+      "exists": true,
+      "size_bytes": 27726,
+      "sha256": "1fc20c3319aea84813f9f85a7e76f1d5ede7916f2163f5773f0703958c5205f1"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw8g_export_body_preserving_tree007.py",
+      "exists": true,
+      "size_bytes": 28054,
+      "sha256": "31437aa5bbcf996eddde3cf1ecfad6d22f4be6b2b5cc058a6e1af5ef9c650c6f"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw9_static_fit_coupon_package.py",
+      "exists": true,
+      "size_bytes": 29631,
+      "sha256": "f919b0a716739f501f6149dcc8df06d70e84d1905d7c0775ac36e5cece33c061"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw9c_static_fit_print_handoff.py",
+      "exists": true,
+      "size_bytes": 20594,
+      "sha256": "b540ee2ad7563092cf83d3e4a67e2699197b06863dc4bd341df1b3ddd65dcadc"
+    },
+    {
+      "path": "scripts/computation/build_s4_real_world_rw9d_prusaslicer_cli_preflight.py",
+      "exists": true,
+      "size_bytes": 12078,
+      "sha256": "f2f40af38042420a880529e1e431cf8dc594269cdd02ff3b59746bebb95a3875"
+    },
+    {
+      "path": "scripts/computation/generate_s4_cl5_b03_strict_convex_sat_reports.py",
+      "exists": true,
+      "size_bytes": 18746,
+      "sha256": "c1436fab768c04c92294eb4b2a5844f8d465b77f472830bd246c1995f7c6ed6f"
+    },
+    {
+      "path": "scripts/computation/generate_s4_cl5_b05_common_edge_projection_reports.py",
+      "exists": true,
+      "size_bytes": 13718,
+      "sha256": "ef4b59925853d58cbdf78ce23f2090ce5c58089fbb0148d6f5a545ae2623d2ef"
+    },
+    {
+      "path": "scripts/computation/generate_s4_cl5_b05_formula_shape_fixtures.py",
+      "exists": true,
+      "size_bytes": 16386,
+      "sha256": "8b037f542162779b9e54a5fa79b2dba51398d619f13947269fa0eb29b7ea8fd5"
+    },
+    {
+      "path": "scripts/computation/mechanical_audit_lib.py",
+      "exists": true,
+      "size_bytes": 19856,
+      "sha256": "c81a0f4ca6725d55be7cb8595dc2133b0b73501e7e7591d197ad413fb822a3e3"
+    },
+    {
+      "path": "scripts/computation/promote_s4_cl5_b03_strict_convex_sat_exact_margins.py",
+      "exists": true,
+      "size_bytes": 9067,
+      "sha256": "ca9d9a8af831f0f39a3c4584ffbc71e579cce53779bcd37cfdc9c137b8f33173"
+    },
+    {
+      "path": "scripts/computation/README.md",
+      "exists": true,
+      "size_bytes": 34727,
+      "sha256": "71e68a4add7e97bc868ac37b2cba97ef5512ffe3b8c95bc477cf568c7eea0ecb"
+    },
+    {
+      "path": "scripts/computation/replay_s4_cl5_a8_package_gate.py",
+      "exists": true,
+      "size_bytes": 5026,
+      "sha256": "b2cfc91cf0de1b702d8ec9705aad2094f49c0c15f0c96fab7a467ddd6a62ca85"
+    },
+    {
+      "path": "scripts/computation/replay_s4_cl5_exact_interval_report.py",
+      "exists": true,
+      "size_bytes": 32148,
+      "sha256": "d29dbe147b760c3b84ed739aa25a854e39fd3cd195fe290600d38083fb56b246"
+    },
+    {
+      "path": "scripts/run_all_reproducibility_checks.py",
+      "exists": true,
+      "size_bytes": 239,
+      "sha256": "28ece6b15c54b79941eb4dcbb7f585dfd3b34d79611c62072a059a6ce075c544"
+    },
+    {
+      "path": "tests/test_public_package.py",
+      "exists": true,
+      "size_bytes": 376,
+      "sha256": "26db80f8846238d65dc30424824830bed159ead7cb6373110bdaaa41ef3e1347"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "exists": true,
+      "size_bytes": 1140,
+      "sha256": "8813f3063f4a06e7fe902265e6ba28df6fbe26441860a4ff988c9368898d861f"
+    }
+  ],
+  "gate_results": {
+    "pytest": {
+      "command": "python -m pytest -q",
+      "status": "pass",
+      "summary": "1 passed"
+    },
+    "public_package_checker": {
+      "command": "python scripts/run_all_reproducibility_checks.py",
+      "status": "pass",
+      "summary": "419/419 checks passed"
+    },
+    "paper_build_after_deterministic_fix": {
+      "command": "pdflatex/bibtex/pdflatex/pdflatex",
+      "status": "pass",
+      "pdf_sha256": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6"
+    }
+  }
+}

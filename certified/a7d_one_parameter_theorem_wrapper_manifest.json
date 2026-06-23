@@ -1,0 +1,78 @@
+{
+  "case_id": "historical_s4_median_planes",
+  "claim_level": "ONE_PARAMETER_RAY_THEOREM_WRAPPER",
+  "manifest_id": "S4-CL5-A7D-ONE-PARAMETER-THEOREM-WRAPPER-2026-06-22",
+  "nonclaim": [
+    "no_accepted_schema_v1_report_claim",
+    "no_operation_enclosure_claim",
+    "no_three_parameter_bounded_cell_claim",
+    "no_physical_hingeability_claim",
+    "no_dynamic_connectedness_between_representatives_claim",
+    "no_global_s4_hingeability_claim",
+    "no_positive_clearance_at_theta_zero_claim",
+    "no_positive_clearance_for_selected_hinge_pairs_claim",
+    "no_theorem_for_domains_outside_0_lt_theta_le_120_claim"
+  ],
+  "object_status_counts": {
+    "a7d_one_parameter_ray_wrapper_closed": 2
+  },
+  "open_ray_domain": {
+    "certified_open_superset": "0 < t < 2",
+    "half_angle": "0 < t <= sqrt(3)",
+    "theta": "0 < theta <= 120 degrees"
+  },
+  "predicate_id": "S4_ONE_PARAMETER_ZERO_THICKNESS_RAY_WRAPPER",
+  "predicate_route_counts": {
+    "B04_SELECTED_HINGE_CONTACT_SIDE": 6,
+    "B05_COMMON_EDGE_PROJECTION": 4,
+    "B06_B07_SHARED_FACE_RESIDUAL": 2
+  },
+  "recommended_next_task": "Post-A7d review/red-team of the scoped one-parameter wrapper; keep 3-parameter bounded cells and physical hingeability as later extensions.",
+  "record_count": 2,
+  "records": [
+    {
+      "object_status": "a7d_one_parameter_ray_wrapper_closed",
+      "pair_count": 6,
+      "predicate_route_counts": {
+        "B04_SELECTED_HINGE_CONTACT_SIDE": 3,
+        "B05_COMMON_EDGE_PROJECTION": 2,
+        "B06_B07_SHARED_FACE_RESIDUAL": 1
+      },
+      "tree_id": "TREE_007",
+      "zero_thickness_one_parameter_wrapper_closed": true,
+      "source_original_object_record": "results/historical_s4_median_planes/exact_interval/one_parameter_ray_theorem_wrapper/a7d_one_parameter_theorem_wrapper/records/tree_007_a7d_one_parameter_theorem_wrapper.json",
+      "package_local_record_ref": "certified/a7d_one_parameter_theorem_wrapper_manifest.json#/records/0"
+    },
+    {
+      "object_status": "a7d_one_parameter_ray_wrapper_closed",
+      "pair_count": 6,
+      "predicate_route_counts": {
+        "B04_SELECTED_HINGE_CONTACT_SIDE": 3,
+        "B05_COMMON_EDGE_PROJECTION": 2,
+        "B06_B07_SHARED_FACE_RESIDUAL": 1
+      },
+      "tree_id": "TREE_021",
+      "zero_thickness_one_parameter_wrapper_closed": true,
+      "source_original_object_record": "results/historical_s4_median_planes/exact_interval/one_parameter_ray_theorem_wrapper/a7d_one_parameter_theorem_wrapper/records/tree_021_a7d_one_parameter_theorem_wrapper.json",
+      "package_local_record_ref": "certified/a7d_one_parameter_theorem_wrapper_manifest.json#/records/1"
+    }
+  ],
+  "scoped_wrapper_statement": "For the catalogued S4 median-plane pieces, TREE_007 and TREE_021 have a zero-thickness one-parameter ray wrapper on theta=0 plus 0<theta<=120 degrees: theta=0 is the closed-contact endpoint, and all open-ray unordered piece pairs route to completed A6, A7a, A7b, and A7c-plus-B04/A7c-bridge certificate layers.",
+  "tree_count": 2,
+  "wrapper_closed_count": 2,
+  "package_local_sources": {
+    "a6_b05_source_doc": "certified/source_docs/S4_CL5_A6_ONE_PARAMETER_RAY_CLOSURE_PACKAGE.md",
+    "a7a_shared_face_source_doc": "certified/source_docs/S4_CL5_A7A_SHARED_FACE_RESIDUAL_STURM_CERTIFICATE.md",
+    "a7b_b03_vacuity_source_doc": "certified/source_docs/S4_CL5_A7B_B03_RAY_VACUITY_CERTIFICATE.md",
+    "a7c_b04_contact_side_manifest": "certified/a7c_selected_hinge_contact_side_certificate_manifest.json",
+    "b04_a7c_bridge_manifest": "certified/b04_a7c_contact_side_bridge_manifest.json",
+    "a7d_source_doc": "certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md"
+  },
+  "source_original_manifests": {
+    "a6_b05_manifest": "results/historical_s4_median_planes/exact_interval/b05_common_edge_projection/manifests/b05_a6_one_parameter_ray_closure_package_manifest.json",
+    "a7a_shared_face_manifest": "results/historical_s4_median_planes/exact_interval/shared_face_residual/manifests/shared_face_a7a_residual_sturm_certificate_manifest.json",
+    "a7b_b03_vacuity_manifest": "results/historical_s4_median_planes/exact_interval/b03_strict_convex_sat/manifests/b03_a7b_ray_vacuity_certificate_manifest.json",
+    "a7c_b04_contact_side_manifest": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/manifests/b04_a7c_selected_hinge_contact_side_certificate_manifest.json"
+  },
+  "package_publication_note": "This release-review manifest uses package_local_sources as operational package dependencies; source_original_* fields are provenance breadcrumbs and are not required files in the public repository."
+}

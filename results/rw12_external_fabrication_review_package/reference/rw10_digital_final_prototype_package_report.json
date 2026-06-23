@@ -1,0 +1,524 @@
+{
+  "acceptance": {
+    "all_packaged_fabrication_components_have_hashes": true,
+    "assembly_preview_separated_as_inspection_only": true,
+    "claim_boundary_preserved": true,
+    "four_primary_printed_body_components_present": true,
+    "physical_claim_promoted": false,
+    "rw7f_body_preservation_passed": true,
+    "rw8g_component_exports_passed": true,
+    "three_pin_reference_components_present": true
+  },
+  "artifacts": {
+    "doc": "docs/S4_RW10_DIGITAL_FINAL_PROTOTYPE_PACKAGE.md",
+    "external_fabrication_request_md": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/RW10_EXTERNAL_FABRICATION_REQUEST.md",
+    "fabrication_files_dir": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files",
+    "inspection_only_dir": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/inspection_only",
+    "manifest_json": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/rw10_digital_final_prototype_manifest.json",
+    "report_json": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/rw10_digital_final_prototype_package_report.json"
+  },
+  "blocked_claims": [
+    "local physical prototype exists",
+    "measured coupon validation",
+    "printer-specific G-code approved",
+    "moving hingeability measured",
+    "physical hingeability theorem"
+  ],
+  "bom_guidance": {
+    "nominal_diametral_clearance_mm": 0.6000000000000001,
+    "nominal_hole_diameter_mm": 3.1,
+    "nominal_pin_diameter_mm": 2.5,
+    "nominal_radial_clearance_mm": 0.3,
+    "physical_note": "pin length, retention, and final fit must be reviewed by the external fabricator; this package does not validate actual printed dimensions",
+    "pin_count_reference": 3,
+    "pin_reference_components": [
+      "TREE_007_H0_A_M_AB_removable_pin",
+      "TREE_007_H4_C_M_CD_removable_pin",
+      "TREE_007_H7_D_M_CD_removable_pin"
+    ],
+    "preferred_physical_pin_strategy": "external metal/dowel pins should be considered before printed pins for a real prototype, because diameter tolerance and wear are more reliable than FDM printed rods",
+    "printed_body_components": [
+      "TREE_007_P0_printed_body_with_bosses",
+      "TREE_007_P1_printed_body_with_bosses",
+      "TREE_007_P2_printed_body_with_bosses",
+      "TREE_007_P3_printed_body_with_bosses"
+    ]
+  },
+  "case_id": "historical_s4_median_planes",
+  "date": "2026-06-23",
+  "fabrication_components": [
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 61684,
+          "sha256": "b86a2bdb6be675eb57e480cbc95bf1b5f596d2be4edb1d53b86bec86eb42cbed",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P0_printed_body_with_bosses.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P0_printed_body_with_bosses/TREE_007_P0_printed_body_with_bosses.stl"
+        },
+        "threemf": {
+          "bytes": 14276,
+          "sha256": "0d1e2cab35bd735b7d9f8971074d47c4b731eab3b90a0e5eb3412461aa3ca568",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P0_printed_body_with_bosses.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P0_printed_body_with_bosses/TREE_007_P0_printed_body_with_bosses.3mf"
+        }
+      },
+      "component_id": "TREE_007_P0_printed_body_with_bosses",
+      "component_kind": "printed_pieces",
+      "fabrication_role": "primary_print_component",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          33.4000003338,
+          55.76183795928,
+          25.71243166926
+        ],
+        "bounds_max_model": [
+          0.55666667223,
+          0.929363965988,
+          0.428540527821
+        ],
+        "bounds_min_mm": [
+          0.0,
+          -6.5014994144400005,
+          -5.5927433073540005
+        ],
+        "bounds_min_model": [
+          0.0,
+          -0.108358323574,
+          -0.0932123884559
+        ],
+        "euler_number": -6,
+        "face_count": 1232,
+        "is_volume": true,
+        "size_mm": [
+          33.4000003338,
+          62.26333737372,
+          31.305174976614
+        ],
+        "surface_area_mm2": 3396.774486702169,
+        "surface_area_model_units": 0.9435484685283803,
+        "vertex_count": 610,
+        "volume_mm3": 6685.56064965454,
+        "volume_model_units": 0.03095166967432657,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 50484,
+          "sha256": "6a039f4f53e48b8bb963d892fead7395c889bcd95b754dcfc1610087f75ddf1e",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P1_printed_body_with_bosses.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P1_printed_body_with_bosses/TREE_007_P1_printed_body_with_bosses.stl"
+        },
+        "threemf": {
+          "bytes": 12557,
+          "sha256": "794cbe86936fa7cfaf557a5e7428072f985e5e5dbd3bc81e486096b9da3a937c",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P1_printed_body_with_bosses.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P1_printed_body_with_bosses/TREE_007_P1_printed_body_with_bosses.3mf"
+        }
+      },
+      "component_id": "TREE_007_P1_printed_body_with_bosses",
+      "component_kind": "printed_pieces",
+      "fabrication_role": "primary_print_component",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          33.4000003338,
+          38.4413301945,
+          50.20732998846
+        ],
+        "bounds_max_model": [
+          0.55666667223,
+          0.640688836575,
+          0.836788833141
+        ],
+        "bounds_min_mm": [
+          0.0,
+          -6.5014994144400005,
+          -5.5927433073540005
+        ],
+        "bounds_min_model": [
+          0.0,
+          -0.108358323574,
+          -0.0932123884559
+        ],
+        "euler_number": -4,
+        "face_count": 1008,
+        "is_volume": true,
+        "size_mm": [
+          33.4000003338,
+          44.942829608939995,
+          55.800073295814
+        ],
+        "surface_area_mm2": 3255.4904207209215,
+        "surface_area_model_units": 0.9043028946447005,
+        "vertex_count": 500,
+        "volume_mm3": 6605.1608136629075,
+        "volume_model_units": 0.03057944821140235,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 17884,
+          "sha256": "1bcd06f04611bcb6c650efd3c2401fcceae2c5bfd1327dafedbfdfd7d8b60a5b",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P2_printed_body_with_bosses.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P2_printed_body_with_bosses/TREE_007_P2_printed_body_with_bosses.stl"
+        },
+        "threemf": {
+          "bytes": 5311,
+          "sha256": "202fd212674dbcbbc48a8c6f4d3c15749f5f4f029c1b6fef19b94eaf5935bbb3",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P2_printed_body_with_bosses.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P2_printed_body_with_bosses/TREE_007_P2_printed_body_with_bosses.3mf"
+        }
+      },
+      "component_id": "TREE_007_P2_printed_body_with_bosses",
+      "component_kind": "printed_pieces",
+      "fabrication_role": "primary_print_component",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          60.0,
+          51.961523294459994,
+          24.49489831926
+        ],
+        "bounds_max_model": [
+          1.0,
+          0.866025388241,
+          0.408248305321
+        ],
+        "bounds_min_mm": [
+          26.5999996662,
+          0.0,
+          0.0
+        ],
+        "bounds_min_model": [
+          0.44333332777,
+          0.0,
+          0.0
+        ],
+        "euler_number": 0,
+        "face_count": 356,
+        "is_volume": true,
+        "size_mm": [
+          33.4000003338,
+          51.961523294459994,
+          24.49489831926
+        ],
+        "surface_area_mm2": 2972.922107104624,
+        "surface_area_model_units": 0.8258116964179512,
+        "vertex_count": 178,
+        "volume_mm3": 6444.360674075011,
+        "volume_model_units": 0.029835003120717643,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 17484,
+          "sha256": "ba5cae232ae5834e3744c58e4517f07eda6133d3d8dbee67c619037b96da677e",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P3_printed_body_with_bosses.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P3_printed_body_with_bosses/TREE_007_P3_printed_body_with_bosses.stl"
+        },
+        "threemf": {
+          "bytes": 5122,
+          "sha256": "dbb806c20021975b080d6d2d46ec774fc203a14f9bedec34881e76e8bae2fec9",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/printed_pieces/TREE_007_P3_printed_body_with_bosses.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/printed_pieces/TREE_007_P3_printed_body_with_bosses/TREE_007_P3_printed_body_with_bosses.3mf"
+        }
+      },
+      "component_id": "TREE_007_P3_printed_body_with_bosses",
+      "component_kind": "printed_pieces",
+      "fabrication_role": "primary_print_component",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          60.0,
+          34.64101552962,
+          48.98979663846
+        ],
+        "bounds_max_model": [
+          1.0,
+          0.577350258827,
+          0.816496610641
+        ],
+        "bounds_min_mm": [
+          26.5999996662,
+          0.0,
+          0.0
+        ],
+        "bounds_min_model": [
+          0.44333332777,
+          0.0,
+          0.0
+        ],
+        "euler_number": 0,
+        "face_count": 348,
+        "is_volume": true,
+        "size_mm": [
+          33.4000003338,
+          34.64101552962,
+          48.98979663846
+        ],
+        "surface_area_mm2": 2972.922152598392,
+        "surface_area_model_units": 0.8258117090551089,
+        "vertex_count": 174,
+        "volume_mm3": 6444.361109992563,
+        "volume_model_units": 0.029835005138854457,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 19284,
+          "sha256": "bc6bb0ac8708707396769dc159dd97e07a0fe6b29278e6e330c3659f7f989573",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H0_A_M_AB_removable_pin.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H0_A_M_AB_removable_pin/TREE_007_H0_A_M_AB_removable_pin.stl"
+        },
+        "threemf": {
+          "bytes": 4788,
+          "sha256": "0eb236b4c60fe02c5cf6971ddc39b7b149adc18c13ee2c38fe39ca7b2397c830",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H0_A_M_AB_removable_pin.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H0_A_M_AB_removable_pin/TREE_007_H0_A_M_AB_removable_pin.3mf"
+        }
+      },
+      "component_id": "TREE_007_H0_A_M_AB_removable_pin",
+      "component_kind": "removable_pin_references",
+      "fabrication_role": "optional_printed_pin_or_metal_pin_reference",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          27.450000000000003,
+          0.29612543767919997,
+          1.204881422286
+        ],
+        "bounds_max_model": [
+          0.4575,
+          0.00493542396132,
+          0.0200813570381
+        ],
+        "bounds_min_mm": [
+          2.5500000000000003,
+          -6.50149945272,
+          -5.5927434681240005
+        ],
+        "bounds_min_model": [
+          0.0425,
+          -0.108358324212,
+          -0.0932123911354
+        ],
+        "euler_number": 2,
+        "face_count": 384,
+        "is_volume": true,
+        "size_mm": [
+          24.900000000000002,
+          6.7976248903992005,
+          6.797624890410001
+        ],
+        "surface_area_mm2": 351.41070489066396,
+        "surface_area_model_units": 0.09761408469185111,
+        "vertex_count": 194,
+        "volume_mm3": 171.37436210978314,
+        "volume_model_units": 0.0007933998245823294,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 19284,
+          "sha256": "da921484a32839950d0e8bf6c9ebbda6d03e1075ceeadf2bf8870634d769d3e1",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H4_C_M_CD_removable_pin.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H4_C_M_CD_removable_pin/TREE_007_H4_C_M_CD_removable_pin.stl"
+        },
+        "threemf": {
+          "bytes": 5348,
+          "sha256": "06831bbb8c3220348ea126139d6648d090f6b37ce247df0fefb41e04c3f309b3",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H4_C_M_CD_removable_pin.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H4_C_M_CD_removable_pin/TREE_007_H4_C_M_CD_removable_pin.3mf"
+        }
+      },
+      "component_id": "TREE_007_H4_C_M_CD_removable_pin",
+      "component_kind": "removable_pin_references",
+      "fabrication_role": "optional_printed_pin_or_metal_pin_reference",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          33.40000000002,
+          56.3680564233,
+          26.56975308462
+        ],
+        "bounds_max_model": [
+          0.556666666667,
+          0.939467607055,
+          0.442829218077
+        ],
+        "bounds_min_mm": [
+          26.59999999998,
+          36.4398579702,
+          2.31300638904
+        ],
+        "bounds_min_model": [
+          0.443333333333,
+          0.60733096617,
+          0.038550106484
+        ],
+        "euler_number": 2,
+        "face_count": 384,
+        "is_volume": true,
+        "size_mm": [
+          6.800000000040002,
+          19.928198453099995,
+          24.25674669558
+        ],
+        "surface_area_mm2": 351.41070489127037,
+        "surface_area_model_units": 0.09761408469201954,
+        "vertex_count": 194,
+        "volume_mm3": 171.37436211092407,
+        "volume_model_units": 0.0007933998245876115,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    },
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 19284,
+          "sha256": "b10e8d08c62c37eb9fa5784819317a782e626c70edb1a7b716d7347f3ef4f0a8",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H7_D_M_CD_removable_pin.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H7_D_M_CD_removable_pin/TREE_007_H7_D_M_CD_removable_pin.stl"
+        },
+        "threemf": {
+          "bytes": 5358,
+          "sha256": "1ee8817ad4a71f4529f4eceb9821fe31649c2f63aa8ebb21047e28dc0f7f2b85",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/removable_pin_references/TREE_007_H7_D_M_CD_removable_pin.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/fabrication_files/removable_pin_references/TREE_007_H7_D_M_CD_removable_pin/TREE_007_H7_D_M_CD_removable_pin.3mf"
+        }
+      },
+      "component_id": "TREE_007_H7_D_M_CD_removable_pin",
+      "component_kind": "removable_pin_references",
+      "fabrication_role": "optional_printed_pin_or_metal_pin_reference",
+      "layer_preview_passed": true,
+      "passes_export_preflight": true,
+      "printability_gate_passed": true,
+      "source_mesh_metrics_model": {
+        "bounds_max_mm": [
+          33.40000000002,
+          39.047548347660005,
+          51.06465051246
+        ],
+        "bounds_max_model": [
+          0.556666666667,
+          0.650792472461,
+          0.851077508541
+        ],
+        "bounds_min_mm": [
+          26.59999999998,
+          19.1193498945,
+          26.80790381688
+        ],
+        "bounds_min_model": [
+          0.443333333333,
+          0.318655831575,
+          0.446798396948
+        ],
+        "euler_number": 2,
+        "face_count": 384,
+        "is_volume": true,
+        "size_mm": [
+          6.800000000040002,
+          19.92819845316,
+          24.25674669558
+        ],
+        "surface_area_mm2": 351.410704891565,
+        "surface_area_model_units": 0.0976140846921014,
+        "vertex_count": 194,
+        "volume_mm3": 171.37436211150302,
+        "volume_model_units": 0.0007933998245902917,
+        "watertight": true,
+        "winding_consistent": true
+      }
+    }
+  ],
+  "inspection_only_components": [
+    {
+      "artifact_copies": {
+        "stl": {
+          "bytes": 204884,
+          "sha256": "6c16bb9498cfb24135664383106d910224f0c0c755a0e076d5c4278c672c8c68",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/assembly_preview/TREE_007_full_hardware_assembly_preview_not_fabrication_file.stl",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/inspection_only/TREE_007_full_hardware_assembly_preview_not_fabrication_file/TREE_007_full_hardware_assembly_preview_not_fabrication_file.stl"
+        },
+        "threemf": {
+          "bytes": 44211,
+          "sha256": "1408d6c990a709933b2ece4944801f8dffa383d7f7b5c0a1ccbd8c6a42a1e44a",
+          "source": "results/historical_s4_median_planes/real_world/export_slicer_preflight_rw7f_tree007/TREE_007/assembly_preview/TREE_007_full_hardware_assembly_preview_not_fabrication_file.3mf",
+          "target": "results/historical_s4_median_planes/real_world/rw10_digital_final_prototype_package/inspection_only/TREE_007_full_hardware_assembly_preview_not_fabrication_file/TREE_007_full_hardware_assembly_preview_not_fabrication_file.3mf"
+        }
+      },
+      "component_id": "TREE_007_full_hardware_assembly_preview_not_fabrication_file",
+      "component_kind": "assembly_preview",
+      "fabrication_role": "assembly_preview_not_fabrication_file",
+      "passes_export_preflight": false,
+      "why_inspection_only": "assembly preview is not a fabrication file and may fail manifold/winding checks"
+    }
+  ],
+  "next_task": "Send RW10 package to external fabrication review or create tolerance-variant digital packages before external fabrication.",
+  "open_blockers": [
+    "External fabricator/printer profile not selected.",
+    "No local physical coupon or prototype measurement exists.",
+    "Pin material, exact retained length, and assembly workflow require external review.",
+    "Measured hinge insertion/rotation remains unvalidated."
+  ],
+  "precondition": {
+    "rw7f_report": "results/historical_s4_median_planes/real_world/rw7f_body_preserving_rebuild_report.json",
+    "rw7f_status": "rw7f_body_preserving_rebuild_passes_body_mesh_clearance_gates",
+    "rw8g_report": "results/historical_s4_median_planes/real_world/rw8g_export_body_preserving_tree007_report.json",
+    "rw8g_status": "rw8g_body_preserving_tree007_component_exports_and_review_layer_preview_pass_external_slicer_cli_blocked",
+    "rw8h_report": "results/historical_s4_median_planes/real_world/rw8h_body_preserving_tree007_export_audit/body_preserving_tree007_export_integrity_audit.json",
+    "rw8h_status": "tree007_body_preserving_component_exports_complete_assembly_preview_not_viewer_safe",
+    "rw9e_report": "results/historical_s4_median_planes/real_world/rw9e_printer_profile_gate/rw9e_printer_profile_gate_report.json",
+    "rw9e_status": "rw9e_printer_profile_gate_blocked_profile_or_operator_approval_missing"
+  },
+  "report_id": "S4-RW10-DIGITAL-FINAL-PROTOTYPE-PACKAGE-2026-06-23",
+  "scope": {
+    "local_physical_validation_available": false,
+    "physical_claim_promoted": false,
+    "printer_specific_profile_available": false,
+    "target": "digital final prototype package for external fabrication review"
+  },
+  "status": "rw10_digital_final_prototype_package_ready_external_fabrication_review_no_physical_claim",
+  "summary": {
+    "all_fabrication_components_pass_export_preflight": true,
+    "body_preservation_passed_rw7f": true,
+    "external_fabrication_review_ready": true,
+    "fabrication_component_count": 7,
+    "inspection_only_component_count": 1,
+    "physical_hingeability_claim_ready": false,
+    "pin_reference_component_count": 3,
+    "printed_body_component_count": 4,
+    "rw8g_all_component_exports_pass": true,
+    "rw9e_printer_profile_gate_currently_blocked": true
+  }
+}

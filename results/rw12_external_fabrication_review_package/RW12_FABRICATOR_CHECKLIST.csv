@@ -1,0 +1,10 @@
+phase,item,status_requirement
+pre_fabrication,"Confirm body pieces are printed separately, not as a combined assembly",required
+pre_fabrication,Confirm printer/material/nozzle/profile selection,required
+pre_fabrication,"Choose pin strategy: metal dowel, v02, v03, or v04",required
+pre_fabrication,Verify file hashes against RW12_FILE_MANIFEST.csv,required
+fabrication,Print body pieces with supports/orientation chosen by fabricator,required
+fabrication,Do not rely on generic G-code from previous diagnostic gates,required
+post_fabrication,Measure hole diameters and pin diameters,required_for_physical_claim
+post_fabrication,Record insertion and rotation result for each hinge,required_for_physical_claim
+post_fabrication,"Report any cracking, binding, support cleanup damage, or tolerance mismatch",required_for_physical_claim

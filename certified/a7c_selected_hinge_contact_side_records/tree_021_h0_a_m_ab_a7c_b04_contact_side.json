@@ -1,0 +1,111 @@
+{
+  "accepted_real_report": false,
+  "axis_labels": [
+    "A",
+    "M_AB"
+  ],
+  "axis_length": 0.5,
+  "axis_points": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.0,
+      0.0
+    ]
+  ],
+  "axis_support": "ambient_edge_subsegment",
+  "case_id": "historical_s4_median_planes",
+  "claim_level": "SELECTED_HINGE_CONTACT_SIDE_CERTIFICATE",
+  "class_id": "CLASS_B_TREE021_TREE093",
+  "contact_side_semantics": {
+    "closed_endpoint_contact_source": "S4_LEMMA_02_CLOSED_ENDPOINT",
+    "hinge_axis_preservation_source": "S4_LEMMA_03_KINEMATICS_AND_SIGNS",
+    "local_contact_side_review_source": "S4_CL5_SELECTED_HINGE_CONTACT_ORIENTATION_REVIEW",
+    "meaning": "opening on the package-approved signed side gives boundary hinge contact for the selected shared-face route, not positive SAT clearance"
+  },
+  "hinge_id": "H0_A_M_AB",
+  "manifest_id": "S4-CL5-A7C-SELECTED-HINGE-CONTACT-SIDE-CERTIFICATE-2026-06-22",
+  "nonclaim": [
+    "no_b03_positive_clearance_claim",
+    "no_b04_accepted_schema_v1_report_claim",
+    "no_bounded_cell_b04_claim",
+    "no_non_hinge_contact_claim",
+    "no_residual_contact_claim",
+    "no_operation_enclosure_claim",
+    "no_three_parameter_bounded_cell_claim",
+    "no_physical_hingeability_claim",
+    "no_theorem_promotion_claim"
+  ],
+  "object_id": "A7C-B04-tree_021-h0_a_m_ab",
+  "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+  "pair": [
+    "P0",
+    "P1"
+  ],
+  "predicate_id": "B04_SELECTED_HINGE_CONTACT_SIDE",
+  "ray_sign": 1,
+  "ray_sign_source": "S4_LEMMA_03_KINEMATICS_AND_SIGNS and two_class_contact_orientation_report",
+  "selected_pair_source_summary": {
+    "cell_count": 478,
+    "clearance_certified_cell_count": 0,
+    "coverage_methods": {
+      "selected_hinge_contact_orientation": 478
+    },
+    "covered_cell_count": 478,
+    "first_uncovered_cell": null,
+    "last_uncovered_cell": null,
+    "orientation_certified_cell_count": 478,
+    "pair": [
+      "P0",
+      "P1"
+    ],
+    "role": "selected_hinge_contact",
+    "uncovered_cell_count": 0
+  },
+  "sign_certificate": {
+    "certificate_id": "a7c_selected_hinge_signed_orientation_positive",
+    "constant_nonzero_sign_on_open_interval": true,
+    "endpoint_roots_excluded": [
+      "t=0 (theta=0 closed-contact endpoint excluded)"
+    ],
+    "expected_sign": 1,
+    "open_half_turn_certificate": {
+      "contains_real_s4_ray_domain": "0 < t <= sqrt(3)",
+      "half_turn_reason": "0 < t < 2 implies 0 < theta < 2*atan(2) < pi",
+      "open_interval": "0 < t < 2",
+      "theta_domain_degrees": "0 < theta <= 120",
+      "theta_relation": "theta = 2*atan(t)"
+    },
+    "orientation_sturm": {
+      "open_root_count": 0,
+      "signs_at_left_limit": [
+        1,
+        1
+      ],
+      "signs_at_right_limit": [
+        1,
+        1
+      ],
+      "sturm_sequence": [
+        "t",
+        "1"
+      ],
+      "variation_left": 0,
+      "variation_right": 0
+    },
+    "sample_sign": 1,
+    "sample_t": "1",
+    "signed_orientation_polynomial": "t",
+    "signed_ray_formula": "d_h(theta) = 1 * theta",
+    "weierstrass_substitution": "t = tan(theta/2)"
+  },
+  "source_contact": "C0",
+  "source_contact_type": "shared_face",
+  "tree_id": "TREE_021",
+  "contact_side_certified_current_claim": true,
+  "accepted_real_report_schema_note": "accepted_real_report is a legacy schema-v1 positive-clearance/SAT flag and is not the current claim predicate. The current package claim uses object_status plus contact_side_certified_current_claim and the B04/A7c bridge."
+}

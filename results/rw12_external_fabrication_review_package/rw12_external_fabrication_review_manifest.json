@@ -1,0 +1,238 @@
+{
+  "files": [
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P0_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P0_printed_body_with_bosses.stl",
+      "bytes": 61684,
+      "sha256": "b86a2bdb6be675eb57e480cbc95bf1b5f596d2be4edb1d53b86bec86eb42cbed",
+      "expected_sha256": "b86a2bdb6be675eb57e480cbc95bf1b5f596d2be4edb1d53b86bec86eb42cbed",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P0_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P0_printed_body_with_bosses.3mf",
+      "bytes": 14276,
+      "sha256": "0d1e2cab35bd735b7d9f8971074d47c4b731eab3b90a0e5eb3412461aa3ca568",
+      "expected_sha256": "0d1e2cab35bd735b7d9f8971074d47c4b731eab3b90a0e5eb3412461aa3ca568",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P1_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P1_printed_body_with_bosses.stl",
+      "bytes": 50484,
+      "sha256": "6a039f4f53e48b8bb963d892fead7395c889bcd95b754dcfc1610087f75ddf1e",
+      "expected_sha256": "6a039f4f53e48b8bb963d892fead7395c889bcd95b754dcfc1610087f75ddf1e",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P1_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P1_printed_body_with_bosses.3mf",
+      "bytes": 12557,
+      "sha256": "794cbe86936fa7cfaf557a5e7428072f985e5e5dbd3bc81e486096b9da3a937c",
+      "expected_sha256": "794cbe86936fa7cfaf557a5e7428072f985e5e5dbd3bc81e486096b9da3a937c",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P2_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P2_printed_body_with_bosses.stl",
+      "bytes": 17884,
+      "sha256": "1bcd06f04611bcb6c650efd3c2401fcceae2c5bfd1327dafedbfdfd7d8b60a5b",
+      "expected_sha256": "1bcd06f04611bcb6c650efd3c2401fcceae2c5bfd1327dafedbfdfd7d8b60a5b",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P2_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P2_printed_body_with_bosses.3mf",
+      "bytes": 5311,
+      "sha256": "202fd212674dbcbbc48a8c6f4d3c15749f5f4f029c1b6fef19b94eaf5935bbb3",
+      "expected_sha256": "202fd212674dbcbbc48a8c6f4d3c15749f5f4f029c1b6fef19b94eaf5935bbb3",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P3_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P3_printed_body_with_bosses.stl",
+      "bytes": 17484,
+      "sha256": "ba5cae232ae5834e3744c58e4517f07eda6133d3d8dbee67c619037b96da677e",
+      "expected_sha256": "ba5cae232ae5834e3744c58e4517f07eda6133d3d8dbee67c619037b96da677e",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "fabrication_body_piece",
+      "source_label": "TREE_007_P3_printed_body_with_bosses",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P3_printed_body_with_bosses.3mf",
+      "bytes": 5122,
+      "sha256": "dbb806c20021975b080d6d2d46ec774fc203a14f9bedec34881e76e8bae2fec9",
+      "expected_sha256": "dbb806c20021975b080d6d2d46ec774fc203a14f9bedec34881e76e8bae2fec9",
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "first printed-pin option / loose FDM",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H0_A_M_AB_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "8143069f32d8e232e99af49ce378bd6e4c1458e16e6b0e3eaf272636e2db5b02",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "first printed-pin option / loose FDM",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H4_C_M_CD_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "f561dcf64f7b057d93b1bb86e18bf2784c18f950a4cce3ef98d70edbc930d723",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "first printed-pin option / loose FDM",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v02_loose_fdm_2p40/TREE_007_H7_D_M_CD_removable_pin__v02_loose_fdm_2p40_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "509d9ad02068d78c6101f8e811a02b3345b916e495be249158636b0241b81c10",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "nominal RW10 reference / metal pin target",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H0_A_M_AB_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "5d463e1bb679839924c2a2e05a47b039fe63281b258d63817c2a6cc460d7e536",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "nominal RW10 reference / metal pin target",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H4_C_M_CD_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "b10f51ca7df6f352d7deead2405fd9907c2a650719850e8b8260359111e0f7c6",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "nominal RW10 reference / metal pin target",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v03_nominal_rw10_2p50/TREE_007_H7_D_M_CD_removable_pin__v03_nominal_rw10_2p50_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "6717c8004d0eac13c38c1e28de3d4153dbe9892e7e88f4bc720472d8a3e0f5df",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "after-measurement tighter option",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H0_A_M_AB_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "c8c2a80789ecb69a4aa59d9f9005159c272cfabab68436c3f3dc5775a743b497",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "after-measurement tighter option",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H4_C_M_CD_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "a9dfc1e7e52895bb37ebed416f2671fccadb92b29d5ddbaafd38e3a5ec6e9685",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "optional_pin_variant",
+      "source_label": "after-measurement tighter option",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/fabrication_files/pin_options/v04_tight_2p60/TREE_007_H7_D_M_CD_removable_pin__v04_tight_2p60_simple_dowel.stl",
+      "bytes": 12884,
+      "sha256": "a866fa5870da28023819b450dd5202f40bd595fa004334e7c57a12f05adc1c8e",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "reference_tolerance_matrix",
+      "source_label": "rw11_matrix",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/reference/RW11_TOLERANCE_DECISION_MATRIX.csv",
+      "bytes": 921,
+      "sha256": "ae65047f35af3490fd394bbfd33237c3360b3f3aeeeeb0ebda6090ed138d37f8",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "reference_report",
+      "source_label": "rw10_report",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/reference/rw10_digital_final_prototype_package_report.json",
+      "bytes": 23069,
+      "sha256": "ea8e1ccf0a7ceefd27cf2ccd4e7a67b03ec34c8ac9371c9717b917d745277871",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "reference_report",
+      "source_label": "rw11_report",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/reference/rw11_tolerance_variant_package_report.json",
+      "bytes": 1695,
+      "sha256": "81816daa2fddfae36f492b7ee948fdbbe173bddaa6a3af7cbc32988bf38318f0",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_instruction",
+      "source_label": "generated_readme",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/README_RW12_EXTERNAL_FABRICATION_REVIEW.md",
+      "bytes": 1305,
+      "sha256": "06b46ee485b21111428aa30b348251ad241bca0c0fbd408aaad011103e0eb56e",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_instruction",
+      "source_label": "generated_claim_boundary",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/CLAIM_BOUNDARY.md",
+      "bytes": 580,
+      "sha256": "4e6ed220b9c748a6e373a03a5e547fd3fa236b928fc351f6a4413978a98c9be2",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_instruction",
+      "source_label": "generated_operating_instructions",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/OPERATING_INSTRUCTIONS.md",
+      "bytes": 990,
+      "sha256": "9a2212581cff621bc51d4c892009edc545146b93cbad4a1263f71d290bd4e9c7",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_checklist",
+      "source_label": "generated_fabricator_checklist",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/RW12_FABRICATOR_CHECKLIST.csv",
+      "bytes": 840,
+      "sha256": "a94c7dc029e9ea93a20271c9fd52a4b7dbb3ae98523dc8562a551bc45ac09d29",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_manifest",
+      "source_label": "generated_manifest_csv",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/RW12_FILE_MANIFEST.csv",
+      "bytes": 7754,
+      "sha256": "af3b06d6efc416fa90916911ac4773535fd2965291420943d56a4f3b624a52c4",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    },
+    {
+      "role": "package_manifest",
+      "source_label": "generated_manifest_json",
+      "path": "results/historical_s4_median_planes/real_world/rw12_external_fabrication_review_package/rw12_external_fabrication_review_manifest.json",
+      "bytes": 11736,
+      "sha256": "81314f8d1f90673eb0a9a63f5b6a60e5ac7226646badb46f3e74e571e2fb2ee0",
+      "expected_sha256": null,
+      "matches_expected_sha256": true
+    }
+  ]
+}

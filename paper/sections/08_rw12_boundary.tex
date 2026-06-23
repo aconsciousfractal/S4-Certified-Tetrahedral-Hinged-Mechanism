@@ -1,0 +1,27 @@
+\section{RW12 supplementary digital fabrication handoff}
+\label{sec:rw12}
+
+RW12 is included because it is practically useful, not because it strengthens
+Theorem~\ref{thm:wrapper}.  It is a corrected body-preserving digital handoff
+for \treeA{} containing fabrication-oriented files, checklist material, and a
+compact package zip.  Its governing report is
+\path{results/rw12_external_fabrication_review_package/rw12_external_fabrication_review_report.json}.
+
+\begin{certprop}[RW12 hash and claim boundary]
+The public checker verifies that the RW12 zip hash matches the RW12 report and
+that RW12 does not promote a physical-validation claim.  The RW12 package is
+therefore an appendix-level digital handoff, not theorem evidence.
+\end{certprop}
+
+The practical interpretation is straightforward: RW12 can be passed to a CAD,
+fabrication, or external-review workflow as a digital artifact.  It does not
+certify positive-thickness hinge clearances, material tolerances, assembly
+success, printed prototype behavior, or measured motion.
+
+\begin{remark}
+This distinction matters for publication.  The mathematical result is the
+zero-thickness one-parameter certificate package.  A real-world mechanism would
+require additional positive-thickness modelling, tolerances, fabrication
+measurements, and physical validation.  Those are future work, not hidden
+assumptions of the present theorem.
+\end{remark}

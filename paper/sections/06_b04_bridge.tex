@@ -1,0 +1,100 @@
+\section{The B04/A7c selected-hinge bridge}
+\label{sec:b04}
+
+The B04 rows are zero-margin selected hinge contacts.  They cannot be certified
+by positive SAT clearance: the pieces are meant to remain joined along the
+hinge axis.  The correct local statement is boundary contact plus no strict
+local interior overlap away from the hinge axis.
+
+Fix one selected row.  Let the oriented hinge axis be \(a\to b\), and let
+\(F\) be the third vertex of the source shared face, so the source face is
+\(\conv(a,b,F)\).  Let \(Q_p\) be the parent apex not in this face and \(Q_c\)
+the child apex not in this face.  Define the oriented side form
+\[
+\Omega(X,Y)=(b-a)\cdot((X-a)\times(Y-a)).
+\]
+
+\begin{lemma}[Local selected-hinge wedge]
+\label{lem:wedge}
+For each of the six selected B04 rows, with A7c ray sign \(\sigma\), the package
+records the exact side identities
+\[
+\sigma\Omega(F,Q_p)=-\frac{\sqrt2}{8}<0,
+\qquad
+\sigma\Omega(F,Q_c)=\frac{\sqrt2}{8}>0.
+\]
+Thus the A7c sign identifies the child opening side of the selected source
+face.  Moreover the cross-section angle \(\alpha\) between the source face ray
+and either adjacent tetrahedral apex ray satisfies
+\[
+\cos\alpha=\frac{\sqrt6}{3}>\frac{1}{2},
+\qquad\text{so}\qquad
+0<\alpha<60^\circ.
+\]
+Consequently, for \(0<\theta\le120^\circ\), the opened child sector satisfies
+\(\theta+\alpha<180^\circ\) and cannot wrap behind the hinge axis into the
+parent sector.
+\end{lemma}
+
+\begin{proof}
+The identities for \(\Omega\) are exact coordinate evaluations in the normal
+cross-section about the selected hinge axis.  They place the parent apex and
+child apex on opposite sides of the oriented source face, after multiplying by
+the row sign \(\sigma\).  The angle calculation gives
+\(\cos\alpha=\sqrt6/3>1/2\), hence \(\alpha<60^\circ\).  Since the ray domain
+has \(\theta\le120^\circ\), the sector opened by the child face remains within
+an open half-turn from the source face.  Therefore it cannot cross through the
+opposite parent sector away from the hinge axis.
+\end{proof}
+
+The bridge also checks the actual rotated child vertices using
+\(t=\tan(\theta/2)\).  For the rotated third vertex of the selected source face,
+the signed side is
+\[
+\frac{t}{2(t^2+1)}>0,
+\qquad 0<t\le\sqrt3.
+\]
+For the rotated child apex, each row reduces to a positive rational form
+recorded in the row JSON: the denominator is positive, the sample signs at
+\(t=1\) and \(t=\sqrt3\) are positive, and all positive numerator roots lie
+strictly above \(\sqrt3\).
+
+\begin{certprop}[B04/A7c bridge rows]
+\label{prop:b04-bridge}
+The package-local bridge accepts exactly six records:
+\begin{center}
+\begin{tabular}{llllr}
+\toprule
+Tree & Pair & Hinge & Contact & Ray sign\\
+\midrule
+\treeA{} & \(P_0-P_1\) & H0\_A\_M\_AB & C0 & \(+1\)\\
+\treeA{} & \(P_0-P_2\) & H4\_C\_M\_CD & C1 & \(+1\)\\
+\treeA{} & \(P_1-P_3\) & H7\_D\_M\_CD & C4 & \(-1\)\\
+\treeB{} & \(P_0-P_1\) & H0\_A\_M\_AB & C0 & \(+1\)\\
+\treeB{} & \(P_1-P_3\) & H7\_D\_M\_CD & C4 & \(-1\)\\
+\treeB{} & \(P_2-P_3\) & H9\_B\_M\_AB & C5 & \(+1\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+For these rows, A7c signed orientation plus the local wedge bridge proves
+boundary hinge contact and no strict local interior overlap at the contact
+plane, excluding the hinge axis.
+\end{certprop}
+
+\begin{proof}[Certification]
+The bridge manifest is
+\path{certified/b04_a7c_contact_side_bridge_manifest.json}.  It records
+\texttt{record\_count=6}, \texttt{accepted\_bridge\_record\_count=6}, and the
+policy that bridge rows are consumed from the A7c manifest records while
+asserting equality of \texttt{tree\_id}, \texttt{hinge\_id}, \texttt{pair}, and
+\texttt{ray\_sign}.  The row records live in
+\path{certified/a7c_b04_contact_side_bridge_records/}.  The derivation and
+claim boundary are source-locked in
+\path{certified/source_docs/S4_CL5_A7C_B04_CONTACT_SIDE_BRIDGE_CERTIFICATE.md}.
+\end{proof}
+
+\begin{remark}
+The bridge is local and selected-row scoped.  It does not give positive
+separation for selected hinges, does not handle hinge thickness, and does not
+extend to unselected or three-parameter B04 cases.
+\end{remark}

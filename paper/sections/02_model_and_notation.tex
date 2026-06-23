@@ -1,0 +1,86 @@
+\section{The S4 median-plane model}
+\label{sec:model}
+
+Let \(\T=\conv(A,B,C,D)\subset\R^3\) be the unit-edge regular tetrahedron with
+\[
+A=(0,0,0),\quad B=(1,0,0),\quad
+C=\left(\frac{1}{2},\frac{\sqrt3}{2},0\right),\quad
+D=\left(\frac{1}{2},\frac{\sqrt3}{6},\frac{\sqrt6}{3}\right).
+\]
+Let
+\[
+M_{AB}=\frac{A+B}{2}=\left(\frac{1}{2},0,0\right),\qquad
+M_{CD}=\frac{C+D}{2}=\left(\frac{1}{2},\frac{\sqrt3}{3},\frac{\sqrt6}{6}\right).
+\]
+The S4 pieces are the four closed tetrahedra
+\[
+\begin{aligned}
+P_0&=\conv(A,M_{AB},C,M_{CD}),&
+P_1&=\conv(A,M_{AB},D,M_{CD}),\\
+P_2&=\conv(B,M_{AB},C,M_{CD}),&
+P_3&=\conv(B,M_{AB},D,M_{CD}).
+\end{aligned}
+\]
+
+\begin{lemma}[Median-plane S4 tiling]
+\label{lem:tiling}
+The tetrahedron \(\T\) is partitioned by the two barycentric median planes
+\(\alpha=\beta\) and \(\gamma=\delta\) into the four closed pieces
+\(P_0,P_1,P_2,P_3\).  Their relative interiors are pairwise disjoint, their
+closed union is \(\T\), and each piece has volume \(\sqrt2/48\).  The four
+pieces are congruent tetrahedra with edge-length multiset
+\[
+\left\{ \frac{1}{2},\frac{1}{2},\frac{\sqrt2}{2},\frac{\sqrt3}{2},\frac{\sqrt3}{2},1\right\}.
+\]
+\end{lemma}
+
+\begin{proof}
+Write a point of \(\T\) in barycentric coordinates
+\[
+x=\alpha A+\beta B+\gamma C+\delta D,
+\qquad \alpha,\beta,\gamma,\delta\ge0,
+\qquad \alpha+\beta+\gamma+\delta=1.
+\]
+The plane through \(C,D,M_{AB}\) is \(\alpha=\beta\), and the plane through
+\(A,B,M_{CD}\) is \(\gamma=\delta\).  For example, on the cell
+\(\alpha\ge\beta\), \(\gamma\ge\delta\), one has
+\[
+x=(\alpha-\beta)A+2\beta M_{AB}+(\gamma-\delta)C+2\delta M_{CD},
+\]
+with nonnegative coefficients summing to one, hence \(x\in P_0\).  The other
+three sign cells give the analogous formulas for \(P_1,P_2,P_3\).  Opposite
+strict sign inequalities cannot hold simultaneously, so relative interiors are
+disjoint.
+
+The volume calculation
+\[
+\Vol(P_0)=\frac{1}{6}\left|\det(M_{AB}-A, C-A, M_{CD}-A)\right|=\frac{\sqrt2}{48}
+\]
+applies the same volume for the other pieces by the ambient symmetries
+interchanging \(A,B\) and \(C,D\).  The listed edge lengths follow by direct
+coordinate differences for \(P_0\), and symmetry gives the same multiset for
+all pieces.
+\end{proof}
+
+The closed pair-contact ledger is fixed throughout the package.
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+Pair & Contact ID & Contact type & Shared set\\
+\midrule
+\(P_0-P_1\) & C0 & shared face & \(\conv(A,M_{AB},M_{CD})\)\\
+\(P_0-P_2\) & C1 & shared face & \(\conv(C,M_{AB},M_{CD})\)\\
+\(P_0-P_3\) & C2 & shared edge & \(\conv(M_{AB},M_{CD})\)\\
+\(P_1-P_2\) & C3 & shared edge & \(\conv(M_{AB},M_{CD})\)\\
+\(P_1-P_3\) & C4 & shared face & \(\conv(D,M_{AB},M_{CD})\)\\
+\(P_2-P_3\) & C5 & shared face & \(\conv(B,M_{AB},M_{CD})\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{certprop}[Source-lock for notation]
+The coordinate, piece, pair, contact, and hinge labels in this paper are locked
+by \path{certified/source_docs/S4_LEMMA_00_DEFINITIONS_AND_NOTATION_LOCK.md}
+and \path{certified/source_docs/S4_LEMMA_01_GEOMETRY_AND_TILING.md}.  Later
+certificate rows are interpreted using these labels.
+\end{certprop}

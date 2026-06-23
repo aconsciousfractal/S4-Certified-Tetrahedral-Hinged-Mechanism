@@ -1,0 +1,13 @@
+* text=auto
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.pdf binary
+*.stl binary
+*.3mf binary
+*.zip binary
+*.png binary
+*.obj text eol=lf

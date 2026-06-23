@@ -1,0 +1,32 @@
+\section{Related work and remaining obligations}
+\label{sec:related}
+
+The general hinged-dissection landscape is much broader than this paper.  Hinged
+dissections exist in substantial generality~\cite{abbott2007hinged}; reversible
+hinged dissections and reversible nets are studied in
+\cite{akiyama2018polyhedral,akiyama2016reversible}; and standard background on
+geometric folding, linkages, and polyhedra is given by Demaine and
+O'Rourke~\cite{demaine2007gfalop}.  Continuous flattening, vertex-unfolding,
+and digital jointed assembly systems provide adjacent contexts
+\cite{demaine2024continuous,demaine2001vertex,rodsteward2019,joinable2021}.
+
+The novelty candidate here is not a new universal hinged-dissection theorem.
+It is the combination of a fixed tetrahedral median-plane model, exact
+zero-thickness rooted hinge-tree kinematics, row-level route-wrapper
+certificates, and a public companion repository that keeps theorem evidence separate
+from digital fabrication artifacts.
+
+\paragraph{Remaining obligations.}
+The following are deliberately open or out of scope.
+\begin{itemize}[leftmargin=*]
+  \item Positive-thickness hinge design and physical fabrication validation.
+  \item Global collision-free motion beyond the audited one-parameter domain.
+  \item Dynamic connectedness between \treeA{} and \treeB{}.
+  \item Three-parameter bounded-cell closure.
+  \item Extension of the B04 bridge beyond the six selected rows.
+  \item A general theorem for all S4 hinge trees or all tetrahedral dissections.
+\end{itemize}
+
+The package is therefore best read as a scoped certificate paper: it identifies
+what has been proved for a concrete object, ships the evidence in a reproducible
+layout, and makes the boundaries visible enough for independent review.
