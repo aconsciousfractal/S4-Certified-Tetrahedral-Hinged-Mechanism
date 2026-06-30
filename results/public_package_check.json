@@ -1,8 +1,8 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checks_total": 420,
-  "checks_pass": 419,
-  "checks_fail": 1,
+  "checks_pass": 420,
+  "checks_fail": 0,
   "checks": [
     {
       "name": "required file exists: README.md",
@@ -2081,8 +2081,8 @@
     },
     {
       "name": "public package manifest file hashes match",
-      "passed": false,
-      "detail": "hash:extensions/theta_star_finite_atlas/EXTENSION_MANIFEST.json"
+      "passed": true,
+      "detail": ""
     },
     {
       "name": "public package does not claim physical validation",

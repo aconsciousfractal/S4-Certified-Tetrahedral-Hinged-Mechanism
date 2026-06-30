@@ -486,8 +486,8 @@
         },
         {
             "path": "extensions/theta_star_finite_atlas/EXTENSION_MANIFEST.json",
-            "size_bytes": 11814,
-            "sha256": "4f2fc05985b1de1d8db6de9d5a6ba1a8ce49777745f12e90c09cb72f7c0d646c"
+            "size_bytes": 12122,
+            "sha256": "177542f7793e10a05b592c25fa4f26bff1af2338b4cc7c6ee12fcbe5db19126d"
         },
         {
             "path": "extensions/theta_star_finite_atlas/EXTERNAL_RED_TEAM_HANDOFF.md",
@@ -816,8 +816,8 @@
         },
         {
             "path": "results/public_package_check.json",
-            "size_bytes": 75839,
-            "sha256": "00879568eada955a24e98b6dc46c13858bae7e20c7db01ff08eb429372d8a22b"
+            "size_bytes": 75887,
+            "sha256": "6da4062158be98b41f73d0c0968b1720748f677df09635757f46c7fb38290503"
         },
         {
             "path": "results/rw12_external_fabrication_review_package/CLAIM_BOUNDARY.md",
