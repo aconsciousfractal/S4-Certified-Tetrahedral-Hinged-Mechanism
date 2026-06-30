@@ -1,9 +1,9 @@
 {
-  "package": "s4_theta_star_finite_atlas_review_extension",
-  "status": "addendum_review_candidate",
+  "package": "s4_theta_star_finite_atlas_public_addendum",
+  "status": "public_companion_addendum",
   "branch": "theta-star-addendum-review",
   "main_paper_update": false,
-  "public_theorem_promotion": false,
+  "public_theorem_promotion": true,
   "scope": "zero-thickness equal-magnitude finite S4 theta-star atlas over 108 connected three-hinge trees",
   "not_claimed": [
     "physical hingeability",
@@ -38,30 +38,28 @@
       "public_wrapper_scope_certificate": 1
     }
   },
-  "remaining_review_obligations": [
-    "external mathematical red-team"
-  ],
+  "remaining_review_obligations": [],
   "checker": "scripts/check_theta_star_extension.py",
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 2615,
-      "sha256": "c1ed9b818234f164772dd2f8ac5659e469da1ad724bd578ca01e9f567e378cfc"
+      "size_bytes": 2268,
+      "sha256": "51121ace0b1e0097b2e7f2d25480cfbdc358b832cf7d1a43eba073d598b4fb1f"
     },
     {
       "path": "ROADMAP_TO_PAPER.md",
-      "size_bytes": 6145,
-      "sha256": "dd210f69d0e1ebd2ac2ddd4d3ced3a48eee04fb9b929c5097d7f425702d705e7"
+      "size_bytes": 3372,
+      "sha256": "5ee58dbbe6f77503631819a378cf3bd08f0e863f19399bd0f0189250987d82cd"
     },
     {
       "path": "THETA_STAR_CLAIM_BOUNDARY.md",
-      "size_bytes": 1259,
-      "sha256": "3033d25be6181ba468980aa9154d6906a7da916d3e344e1238db6579189a4a54"
+      "size_bytes": 1303,
+      "sha256": "705a556ced5cf53b8710b5b10811b70ed037d7c6c8989c25779364231ba3adbf"
     },
     {
       "path": "THETA_STAR_EXTERNAL_RED_TEAM_PROMPT.md",
-      "size_bytes": 2322,
-      "sha256": "d6ad21491ac1cbeb8293c8b1c2b3c00be57b3474da5a2baac60a80fbaf475356"
+      "size_bytes": 2531,
+      "sha256": "447363c4882ebb9e71168e47a4fd8b94f7c8efa4b22e006cd5baa8e8893499e6"
     },
     {
       "path": "THETA_STAR_EXTERNAL_RED_TEAM_SCOPE.md",
@@ -70,13 +68,13 @@
     },
     {
       "path": "THETA_STAR_REPRODUCE.md",
-      "size_bytes": 2896,
-      "sha256": "abafb19a2252ff53f5830fc2ceda9c6f8b26e69bda27aff1b729c3287258053c"
+      "size_bytes": 2893,
+      "sha256": "c704434351b2e6be4ef3be77befa1180d6b3ab68991022d8f4692db510d19cb3"
     },
     {
       "path": "artifacts/README.md",
-      "size_bytes": 886,
-      "sha256": "9d65ae3636ee6f948e614bbd6792be261cd39fbac4929752b6c9094192c78bcb"
+      "size_bytes": 863,
+      "sha256": "81ff86aa9a702a6e7c665eb49ae0198a2216eb7ff045759f9b90481a703efb9c"
     },
     {
       "path": "artifacts/s4_theta_star_108_tree_theorem_proof_package_gate.json",
@@ -110,8 +108,8 @@
     },
     {
       "path": "docs/S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md",
-      "size_bytes": 10693,
-      "sha256": "b5655f68e2c5c8697c1a0155ecbbef77d223c7f666e3939224dd0b9297a82008"
+      "size_bytes": 10690,
+      "sha256": "1fe64381281a81762536f79c35b791212fe7b7a699bad1f8100dd9415a395f0b"
     },
     {
       "path": "docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md",
@@ -125,13 +123,13 @@
     },
     {
       "path": "docs/S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md",
-      "size_bytes": 3515,
-      "sha256": "8d9b99ca0dfe85369a2ff251c9599f2a1cb4351335392251f138ae2bedd4150d"
+      "size_bytes": 3524,
+      "sha256": "59d10edb24cf4b34c76a01b569ce5471a583eb57cd23920c836ae7d6b19ef0d2"
     },
     {
       "path": "paper_draft/README.md",
-      "size_bytes": 1474,
-      "sha256": "a592d97132720eb7c47abcc016df302bce676ac5aebacfbdb83927ecdaee86f6"
+      "size_bytes": 1456,
+      "sha256": "f228263c0afa7ede8cfe7d26594a5fa7a153d5d6fbd3ee742c6defe08000496f"
     },
     {
       "path": "paper_draft/sections/02_formal_objects_and_tree_status_table.tex",
@@ -175,18 +173,18 @@
     },
     {
       "path": "paper_package/PAPER_PACKAGE_MANIFEST.json",
-      "size_bytes": 5003,
-      "sha256": "eed931bad317f3eafb32e97f36a30d33fa5d30aeca507f673206570d1e4fbe61"
+      "size_bytes": 5074,
+      "sha256": "1e53e02339b00b7d65c284d5624ca879432c17ac950f81fb974fcfe11098387b"
     },
     {
       "path": "paper_package/README.md",
-      "size_bytes": 1072,
-      "sha256": "76fd82b2298d7a74c277a8493e12edd9098a905510b7fa1754cdb718560f2bca"
+      "size_bytes": 1281,
+      "sha256": "1a8fdf1f7aee7a2ee29df9a7ebf3bd30e80c5095eac1546b338865d975705f4c"
     },
     {
       "path": "paper_package/SHA256SUMS.txt",
-      "size_bytes": 2140,
-      "sha256": "8cc9d3eba01cb0906f481a552189e9e8adf2d71c684457ac53dc058279cb5664"
+      "size_bytes": 2164,
+      "sha256": "415e1dc186d84ae2ed51fb7469cd0b99433221bcf217c6b3cd443328358b0633"
     },
     {
       "path": "paper_package/artifacts/proof_spine/s4_theta_star_108_tree_theorem_assembly_gate.json",
@@ -255,28 +253,28 @@
     },
     {
       "path": "EXTERNAL_RED_TEAM_HANDOFF.md",
-      "size_bytes": 3051,
-      "sha256": "39da72950070edd2e1ec54601c0ed31d2946287abde16161f774c37a15ea2748"
+      "size_bytes": 3053,
+      "sha256": "8e4c9eb397bb737ff6b2e8d20b380a31ac6f62d7fe4a6fe7c5863c60e343ce81"
     },
     {
       "path": "paper_draft/BUILD.md",
-      "size_bytes": 546,
-      "sha256": "215ee0644fdc030a13a9bbf210506970b5792e5aae174a409c2a40ab3f137ba5"
+      "size_bytes": 534,
+      "sha256": "2ddd966e5faa63215be05bc5650dcd19cbfacea02c0fac6b00437cc308bca690"
     },
     {
       "path": "paper_draft/theta_star_finite_atlas.tex",
-      "size_bytes": 3818,
-      "sha256": "80810e69626c689b7e74aac994bb8bae2c7b1a11abf1c676723ead4f5275247c"
+      "size_bytes": 3836,
+      "sha256": "b064b7c24b8f6076a2feab529e81d44ecfab7c71ace4bc032614f684ccef9815"
     },
     {
       "path": "paper_draft/theta_star_finite_atlas.pdf",
-      "size_bytes": 377066,
-      "sha256": "58c1298c2c12ae7714ab28ef737b0807ce61e35a1b8a328e7ffe9714e0a8e588"
+      "size_bytes": 377123,
+      "sha256": "69e902b8228b7e5bcd23e4c1eb3fe0efe24522357bfb96b30f53b404a1a98303"
     },
     {
       "path": "paper_draft/theta_star_finite_atlas_flat.tex",
-      "size_bytes": 61865,
-      "sha256": "df7f45b0b65626125291d10ee1efe8e938be5fa7e37059b5bb6b24f6c62a2802"
+      "size_bytes": 61971,
+      "sha256": "aad5613addf945ad33475158400127d7dcc2e640550cd63f0a46b8b78197bb0a"
     },
     {
       "path": "paper_draft/refs.bib",
@@ -285,18 +283,18 @@
     },
     {
       "path": "paper_package/PAPER_PROOF_SPINE_CLOSURE.json",
-      "size_bytes": 1726,
-      "sha256": "9b9beb9d5676553ac8245322061c3bc4ec265a4dc2772842ac504e989bf224e8"
+      "size_bytes": 1821,
+      "sha256": "f8e410f0806e2257b8cc8d709b2bebc967b90934accee034dbfa337718252e59"
     },
     {
       "path": "paper_package/RED_TEAM_CLOSURE_REPORT.md",
-      "size_bytes": 1907,
-      "sha256": "a93ff29ea09e9007b703da42c3c2b4bc5bbc8ced6938e6d9fec108d51622e259"
+      "size_bytes": 1272,
+      "sha256": "7fc9e271cbad3597df7c99689c039dae2dab20084061eccd2bd947293051495d"
     },
     {
       "path": "paper_package/PAPER_PROMOTION_DECISION.md",
-      "size_bytes": 589,
-      "sha256": "4d48bba80faac6136846b5647e41ce47f9370e183993d093160efbff46becace"
+      "size_bytes": 959,
+      "sha256": "b3cbbdbd2fb9c2cf81e04c11d925fc91bcfabe13e90b1c23d7a03f1857f2fcc9"
     }
   ],
   "proof_prose_status": "P0 closure polish: row-reach/cap semantics, scaffold/isometry/SAT definitions, wrapper four records, bibliography, closure artifacts",
@@ -304,5 +302,12 @@
   "proof_prose_formal_table": "paper_draft/sections/02_formal_objects_and_tree_status_table.tex",
   "local_addendum_skeleton": "paper_draft/theta_star_addendum_skeleton.tex",
   "proof_prose_entrypoint": "paper_draft/theta_star_finite_atlas.tex",
-  "proof_prose_pdf": "paper_draft/theta_star_finite_atlas.pdf"
+  "proof_prose_pdf": "paper_draft/theta_star_finite_atlas.pdf",
+  "main_paper_companion_note": true,
+  "external_mathematical_red_team": {
+    "status": "pass",
+    "date": "2026-06-30",
+    "scope": "zero-thickness equal-magnitude one-parameter S4 finite atlas",
+    "mathematical_blockers_found": false
+  }
 }

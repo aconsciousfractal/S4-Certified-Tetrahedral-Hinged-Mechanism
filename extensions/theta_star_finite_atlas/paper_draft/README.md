@@ -1,6 +1,6 @@
 # Theta-star proof-prose draft
 
-Status: standalone review draft for P0-03/P0-07. This is not a main-paper update and not a public theorem promotion.
+Status: standalone addendum paper for P0-03/P0-07. This is not a main-paper update and not a public theorem promotion.
 
 Purpose: turn the T4/T5/T6 proof spine into self-contained mathematical prose before any addendum decision.
 

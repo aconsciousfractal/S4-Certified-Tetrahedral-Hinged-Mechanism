@@ -1,6 +1,6 @@
 # Theta-star reproduce notes
 
-Status: addendum-review candidate.
+Status: public companion addendum.
 
 ## Branch-level gate
 
@@ -46,7 +46,7 @@ proof-spine records.
 
 ## Build the standalone PDF
 
-If `pdflatex`/`bibtex` are available, rebuild the active addendum-review draft:
+If `pdflatex`/`bibtex` are available, rebuild the active companion addendum:
 
 ```powershell
 cd extensions/theta_star_finite_atlas/paper_draft

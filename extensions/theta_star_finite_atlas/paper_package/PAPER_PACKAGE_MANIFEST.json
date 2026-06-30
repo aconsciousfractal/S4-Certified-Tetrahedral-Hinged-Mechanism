@@ -1,6 +1,6 @@
 {
   "package": "s4_theta_star_proof_spine_paper_package",
-  "status": "proof_spine_materialized_with_review_closure_not_tex_promotion",
+  "status": "proof_spine_materialized_with_public_addendum_promotion",
   "date": "2026-06-29",
   "scope": "zero-thickness equal-magnitude finite S4 theta-star atlas over 108 connected three-hinge trees",
   "not_claimed": [
@@ -103,5 +103,11 @@
     "PAPER_PROOF_SPINE_CLOSURE.json",
     "RED_TEAM_CLOSURE_REPORT.md",
     "PAPER_PROMOTION_DECISION.md"
-  ]
+  ],
+  "promotion_decision": "public_companion_addendum",
+  "external_mathematical_red_team": {
+    "status": "pass",
+    "date": "2026-06-30",
+    "mathematical_blockers_found": false
+  }
 }

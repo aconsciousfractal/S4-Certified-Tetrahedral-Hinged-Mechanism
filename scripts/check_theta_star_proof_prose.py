@@ -70,7 +70,7 @@ combined_lower = combined.lower()
 for name in section_names:
     stem = name[:-4]
     check(f"final TeX inputs section: {name}", f"\\input{{sections/{stem}}}" in draft_text_main, name)
-check("final TeX declares standalone review status", "Standalone review draft" in draft_text_main, "standalone-review")
+check("final TeX declares companion addendum status", "Public companion addendum" in draft_text_main, "companion-addendum")
 check("compatibility skeleton points to final TeX", "\\input{theta_star_finite_atlas}" in skeleton_text, "wrapper")
 
 assembly = load_json(ASSEMBLY)
@@ -96,7 +96,7 @@ expected_theta = {
 
 check("assembly status pass", assembly.get("status") == "pass", assembly.get("status"))
 check("assembly local theorem supported", assembly.get("local_theorem_supported") is True, assembly.get("local_theorem_supported"))
-check("assembly public promotion false", assembly.get("public_promotion_ready") is False, assembly.get("public_promotion_ready"))
+check("assembly source artifact public promotion false", assembly.get("public_promotion_ready") is False, assembly.get("public_promotion_ready"))
 check("assembly final class counts exact", summary.get("final_class_counts") == expected_final, summary.get("final_class_counts"))
 check("assembly t-star counts exact", summary.get("t_star_counts") == expected_t, summary.get("t_star_counts"))
 check("assembly theta status counts exact", summary.get("theta_status_counts") == expected_theta, summary.get("theta_status_counts"))

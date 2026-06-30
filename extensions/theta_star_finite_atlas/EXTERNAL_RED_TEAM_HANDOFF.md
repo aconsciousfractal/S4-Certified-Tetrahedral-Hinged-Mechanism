@@ -67,4 +67,4 @@ The first five commands are specific to this extension. The last two are reposit
 
 `paper_package/` is not the paper. It is the supporting proof-spine package: manifests, hashes, replay JSON, and source-locked certificates.
 
-The review draft is `paper_draft/theta_star_finite_atlas.pdf`. For source review without many files, use `paper_draft/theta_star_finite_atlas_flat.tex`. The modular repo source is `paper_draft/theta_star_finite_atlas.tex` plus `paper_draft/sections/`.
+The addendum paper is `paper_draft/theta_star_finite_atlas.pdf`. For source review without many files, use `paper_draft/theta_star_finite_atlas_flat.tex`. The modular repo source is `paper_draft/theta_star_finite_atlas.tex` plus `paper_draft/sections/`.

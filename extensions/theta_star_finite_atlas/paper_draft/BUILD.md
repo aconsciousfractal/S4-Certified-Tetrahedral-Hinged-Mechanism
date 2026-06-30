@@ -11,4 +11,4 @@ pdflatex -interaction=nonstopmode -halt-on-error theta_star_finite_atlas.tex
 
 Expected output: `theta_star_finite_atlas.pdf`.
 
-This is a standalone review draft for the theta-star extension. It is not part of the main public paper unless explicitly promoted after review.
+This is a standalone addendum paper for the theta-star extension. It is not part of the main public paper unless explicitly promoted after review.

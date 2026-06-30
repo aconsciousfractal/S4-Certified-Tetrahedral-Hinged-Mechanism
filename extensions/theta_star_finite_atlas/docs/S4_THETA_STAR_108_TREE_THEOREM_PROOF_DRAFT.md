@@ -1,11 +1,11 @@
 # S4 theta-star 108-tree theorem proof draft
 
-Status: local theorem-support draft, generated from T6/T6b plus sabotage hygiene.  Not a public-paper update.  T6b records remaining review obligations before theorem promotion.
+Status: theorem-support proof draft for the promoted public companion addendum.  Not a main-paper theorem update; T6b records the historical review obligations that were closed before promotion.
 Date: 2026-06-29
 
 ## Scope
 
-This document states the local finite-atlas theorem candidate currently supported by the S4 mechanical-extension artifacts.  It concerns only:
+This document states the local finite-atlas theorem supported by the S4 mechanical-extension artifacts.  It concerns only:
 
 ```text
 historical S4 median-plane zero-thickness scaffold;

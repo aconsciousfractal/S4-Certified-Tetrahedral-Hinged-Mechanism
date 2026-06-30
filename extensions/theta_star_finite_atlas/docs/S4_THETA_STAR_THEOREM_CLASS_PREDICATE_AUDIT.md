@@ -3,7 +3,7 @@
 Status: T6b proof-prose audit. Not a public-paper update.
 Date: 2026-06-29
 
-This document records which predicates are geometrically transported, which are source-locked, which are directly replayed, and which remain open before theorem promotion.
+This document records which predicates are geometrically transported, which are source-locked, which are directly replayed, and which were tracked before public addendum promotion.
 
 | final class | geometric transport by Theorem A/B | source-locked predicates | directly replayed gates | not applicable | open / required fix |
 | --- | --- | --- | --- | --- | --- |

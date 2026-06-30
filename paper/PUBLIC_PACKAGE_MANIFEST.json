@@ -12,12 +12,12 @@
         "paper_pdf_present": true,
         "tex_source_present": true,
         "paper_pdf_pages_observed_from_pdflatex": 10,
-        "paper_pdf_sha256_after_deterministic_build": "c101a6125cdb0cfb1d70e36b77f3d534da7830c214f20f9f5d23c459ff07a317",
+        "paper_pdf_sha256_after_deterministic_build": "ad4546f0abf3161ac1f9ee9480e06bae4dfd164cee7f2aff672ca5001fc98368",
         "physical_validation_claimed": false,
         "rw12_supplementary_only": true,
         "source_scripts_included": true,
         "development_workspace_dump": false,
-        "next_gate": "external mathematical red-team of theta-star finite-atlas PDF/flat TeX; then decide whether to promote extension, keep as companion addendum, or leave local"
+        "next_gate": "theta-star companion addendum promoted after external mathematical red-team; future gates are release tagging or optional exposition polish"
     },
     "recommended_status": "LOCAL_RELEASE_GATES_PASSED",
     "public_export_ready": true,
@@ -31,7 +31,7 @@
             "pdfsuppressptexinfo=-1",
             "pdftrailerid{}"
         ],
-        "observed_double_build_sha256": "c101a6125cdb0cfb1d70e36b77f3d534da7830c214f20f9f5d23c459ff07a317",
+        "observed_double_build_sha256": "ad4546f0abf3161ac1f9ee9480e06bae4dfd164cee7f2aff672ca5001fc98368",
         "observed_double_build_result": "same hash across two consecutive full pdflatex/bibtex builds"
     },
     "guardrails": [
@@ -107,7 +107,7 @@
         ".pytest_cache",
         "__pycache__"
     ],
-    "paper_package_file_count": 330,
+    "paper_package_file_count": 334,
     "paper_package_files": [
         {
             "path": ".gitattributes",
@@ -123,6 +123,51 @@
             "path": ".gitignore",
             "size_bytes": 795,
             "sha256": "9043d795a33351a77cc31a82424cb6227e0efe7a236db9f2304cdcd6a4697c56"
+        },
+        {
+            "path": "CITATION.cff",
+            "size_bytes": 1139,
+            "sha256": "1ac7dfb60214f57e1d956b7b9a0bcb2b8f1e6ed2a328c535cb9ec9a213aea4e2"
+        },
+        {
+            "path": "LICENSE",
+            "size_bytes": 1308,
+            "sha256": "c4e08d4904cd3f9362381315e6e954e6d442480f799dec084e3b92fab465f19f"
+        },
+        {
+            "path": "LICENSE_NOTE.md",
+            "size_bytes": 1138,
+            "sha256": "d6c6dfe38b3ff2fe96478c24fce89f9db83f23c3a6391cca07ec81628d6d68c6"
+        },
+        {
+            "path": "PUBLICATION_PLAN.md",
+            "size_bytes": 2882,
+            "sha256": "e5ec1116b3e34ac9b50171b570d423d771efcd55a6d4d2f76f99d6b40ab2d201"
+        },
+        {
+            "path": "README.md",
+            "size_bytes": 2763,
+            "sha256": "3a36f6a2ece6e5b21d3a64d66759db64cb1e130327a55d73b356acc5f7f3cf36"
+        },
+        {
+            "path": "README_REVIEWER.md",
+            "size_bytes": 2323,
+            "sha256": "128ef827d3f0991f5f49fbc7f74d46dc26e80ace2e563a6dd5e61e95ad7edaea"
+        },
+        {
+            "path": "REPRODUCE.md",
+            "size_bytes": 1912,
+            "sha256": "e92b813911d2ce6fe9dd881c0feedeb534e3a3bb750f716076b9ae7d3fde9a00"
+        },
+        {
+            "path": "THIRD_PARTY_NOTICES.md",
+            "size_bytes": 1140,
+            "sha256": "8813f3063f4a06e7fe902265e6ba28df6fbe26441860a4ff988c9368898d861f"
+        },
+        {
+            "path": "certified/README.md",
+            "size_bytes": 587,
+            "sha256": "5b20a120eafce6ee6e70d66b5a50ad081113e573f08db9a9f1ef9b63d25f5514"
         },
         {
             "path": "certified/a7c_b04_contact_side_bridge_records/tree_007_h0_a_m_ab_a7c_b04_bridge.json",
@@ -198,11 +243,6 @@
             "path": "certified/b04_a7c_contact_side_bridge_manifest.json",
             "size_bytes": 8005,
             "sha256": "7f23b36b1a4321267ad6396597b814961a39469c7eaf54d331f89990369245d1"
-        },
-        {
-            "path": "certified/README.md",
-            "size_bytes": 587,
-            "sha256": "5b20a120eafce6ee6e70d66b5a50ad081113e573f08db9a9f1ef9b63d25f5514"
         },
         {
             "path": "certified/source_docs/README.md",
@@ -315,11 +355,6 @@
             "sha256": "6cdb2c3494981c838be75c70582b9176364c4835df547e08d704880d7753e389"
         },
         {
-            "path": "CITATION.cff",
-            "size_bytes": 1139,
-            "sha256": "1ac7dfb60214f57e1d956b7b9a0bcb2b8f1e6ed2a328c535cb9ec9a213aea4e2"
-        },
-        {
             "path": "data/.gitkeep",
             "size_bytes": 2,
             "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
@@ -420,9 +455,54 @@
             "sha256": "84d193a4e073cd30ca9d617679928590bb5961907717d4a122efc7714756678f"
         },
         {
+            "path": "extensions/theta_star_finite_atlas/EXTENSION_MANIFEST.json",
+            "size_bytes": 12331,
+            "sha256": "d10bdc31fd6f25de2b3d44f9895f79163c6b3f02070211514d0a63d010403840"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/EXTERNAL_RED_TEAM_HANDOFF.md",
+            "size_bytes": 3053,
+            "sha256": "8e4c9eb397bb737ff6b2e8d20b380a31ac6f62d7fe4a6fe7c5863c60e343ce81"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/README.md",
+            "size_bytes": 2268,
+            "sha256": "51121ace0b1e0097b2e7f2d25480cfbdc358b832cf7d1a43eba073d598b4fb1f"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/ROADMAP_TO_PAPER.md",
+            "size_bytes": 3372,
+            "sha256": "5ee58dbbe6f77503631819a378cf3bd08f0e863f19399bd0f0189250987d82cd"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/THETA_STAR_CLAIM_BOUNDARY.md",
+            "size_bytes": 1303,
+            "sha256": "705a556ced5cf53b8710b5b10811b70ed037d7c6c8989c25779364231ba3adbf"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/THETA_STAR_EXTERNAL_RED_TEAM_PROMPT.md",
+            "size_bytes": 2531,
+            "sha256": "447363c4882ebb9e71168e47a4fd8b94f7c8efa4b22e006cd5baa8e8893499e6"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/THETA_STAR_EXTERNAL_RED_TEAM_SCOPE.md",
+            "size_bytes": 764,
+            "sha256": "085df35eae727d41a65899c74601a8b1604cf4b743af6b86ee55c82a3ad5090c"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md",
+            "size_bytes": 2893,
+            "sha256": "c704434351b2e6be4ef3be77befa1180d6b3ab68991022d8f4692db510d19cb3"
+        },
+        {
             "path": "extensions/theta_star_finite_atlas/artifacts/README.md",
-            "size_bytes": 886,
-            "sha256": "9d65ae3636ee6f948e614bbd6792be261cd39fbac4929752b6c9094192c78bcb"
+            "size_bytes": 863,
+            "sha256": "81ff86aa9a702a6e7c665eb49ae0198a2216eb7ff045759f9b90481a703efb9c"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/artifacts/SHA256SUMS.txt",
+            "size_bytes": 600,
+            "sha256": "cb60447528d951a6d60c00fabf963f75b0ec2d9c930340f6394e79b546869ede"
         },
         {
             "path": "extensions/theta_star_finite_atlas/artifacts/s4_theta_star_108_tree_theorem_proof_package_gate.json",
@@ -445,11 +525,6 @@
             "sha256": "71c7a0114e3575b0d3c0bc2e44e1f038a23d104702cd0a26ca830222bd662091"
         },
         {
-            "path": "extensions/theta_star_finite_atlas/artifacts/SHA256SUMS.txt",
-            "size_bytes": 595,
-            "sha256": "ec8a2aaf410f3ed24128a56923ac93116beafa41286a2c0b2e3ca70f04b91e7a"
-        },
-        {
             "path": "extensions/theta_star_finite_atlas/docs/S4_FINITE_ANGLE_SCAFFOLD_CONJUGACY_LEMMA.md",
             "size_bytes": 2680,
             "sha256": "3b9c725f2443bce0f3e6677c1f6a937c30f51518e6c28271a7a37f8d8d7a6acd"
@@ -466,8 +541,8 @@
         },
         {
             "path": "extensions/theta_star_finite_atlas/docs/S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md",
-            "size_bytes": 10693,
-            "sha256": "b5655f68e2c5c8697c1a0155ecbbef77d223c7f666e3939224dd0b9297a82008"
+            "size_bytes": 10690,
+            "sha256": "1fe64381281a81762536f79c35b791212fe7b7a699bad1f8100dd9415a395f0b"
         },
         {
             "path": "extensions/theta_star_finite_atlas/docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md",
@@ -481,28 +556,23 @@
         },
         {
             "path": "extensions/theta_star_finite_atlas/docs/S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md",
-            "size_bytes": 3515,
-            "sha256": "8d9b99ca0dfe85369a2ff251c9599f2a1cb4351335392251f138ae2bedd4150d"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/EXTENSION_MANIFEST.json",
-            "size_bytes": 11814,
-            "sha256": "6652d1117f185eac78f19ea6aa0c9e97b8553923a47e0739e6ff8e8332e6d71e"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/EXTERNAL_RED_TEAM_HANDOFF.md",
-            "size_bytes": 3051,
-            "sha256": "39da72950070edd2e1ec54601c0ed31d2946287abde16161f774c37a15ea2748"
+            "size_bytes": 3524,
+            "sha256": "59d10edb24cf4b34c76a01b569ce5471a583eb57cd23920c836ae7d6b19ef0d2"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/BUILD.md",
-            "size_bytes": 546,
-            "sha256": "215ee0644fdc030a13a9bbf210506970b5792e5aae174a409c2a40ab3f137ba5"
+            "size_bytes": 534,
+            "sha256": "2ddd966e5faa63215be05bc5650dcd19cbfacea02c0fac6b00437cc308bca690"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/README.md",
-            "size_bytes": 1474,
-            "sha256": "a592d97132720eb7c47abcc016df302bce676ac5aebacfbdb83927ecdaee86f6"
+            "size_bytes": 1456,
+            "sha256": "f228263c0afa7ede8cfe7d26594a5fa7a153d5d6fbd3ee742c6defe08000496f"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_draft/refs.bib",
+            "size_bytes": 3300,
+            "sha256": "0cbf2d275be13083884cd460d9ee45f139780b1b6c12f5eb1c90c527239c8c60"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/sections/02_formal_objects_and_tree_status_table.tex",
@@ -546,18 +616,48 @@
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/theta_star_finite_atlas.pdf",
-            "size_bytes": 377066,
-            "sha256": "58c1298c2c12ae7714ab28ef737b0807ce61e35a1b8a328e7ffe9714e0a8e588"
+            "size_bytes": 377123,
+            "sha256": "69e902b8228b7e5bcd23e4c1eb3fe0efe24522357bfb96b30f53b404a1a98303"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/theta_star_finite_atlas.tex",
-            "size_bytes": 3818,
-            "sha256": "80810e69626c689b7e74aac994bb8bae2c7b1a11abf1c676723ead4f5275247c"
+            "size_bytes": 3836,
+            "sha256": "b064b7c24b8f6076a2feab529e81d44ecfab7c71ace4bc032614f684ccef9815"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/theta_star_finite_atlas_flat.tex",
-            "size_bytes": 61865,
-            "sha256": "df7f45b0b65626125291d10ee1efe8e938be5fa7e37059b5bb6b24f6c62a2802"
+            "size_bytes": 61971,
+            "sha256": "aad5613addf945ad33475158400127d7dcc2e640550cd63f0a46b8b78197bb0a"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/PAPER_PACKAGE_MANIFEST.json",
+            "size_bytes": 5074,
+            "sha256": "1e53e02339b00b7d65c284d5624ca879432c17ac950f81fb974fcfe11098387b"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/PAPER_PROMOTION_DECISION.md",
+            "size_bytes": 959,
+            "sha256": "b3cbbdbd2fb9c2cf81e04c11d925fc91bcfabe13e90b1c23d7a03f1857f2fcc9"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/PAPER_PROOF_SPINE_CLOSURE.json",
+            "size_bytes": 1821,
+            "sha256": "f8e410f0806e2257b8cc8d709b2bebc967b90934accee034dbfa337718252e59"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/README.md",
+            "size_bytes": 1281,
+            "sha256": "1a8fdf1f7aee7a2ee29df9a7ebf3bd30e80c5095eac1546b338865d975705f4c"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/RED_TEAM_CLOSURE_REPORT.md",
+            "size_bytes": 1272,
+            "sha256": "7fc9e271cbad3597df7c99689c039dae2dab20084061eccd2bd947293051495d"
+        },
+        {
+            "path": "extensions/theta_star_finite_atlas/paper_package/SHA256SUMS.txt",
+            "size_bytes": 2164,
+            "sha256": "415e1dc186d84ae2ed51fb7469cd0b99433221bcf217c6b3cd443328358b0633"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_package/artifacts/proof_spine/s4_theta_star_108_tree_theorem_assembly_gate.json",
@@ -620,61 +720,6 @@
             "sha256": "fff0f1c24f4567a2b434d04e94deeee8bd58eb535682829a69f71d4b4d2513fb"
         },
         {
-            "path": "extensions/theta_star_finite_atlas/paper_package/PAPER_PACKAGE_MANIFEST.json",
-            "size_bytes": 5003,
-            "sha256": "eed931bad317f3eafb32e97f36a30d33fa5d30aeca507f673206570d1e4fbe61"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/paper_package/README.md",
-            "size_bytes": 1072,
-            "sha256": "76fd82b2298d7a74c277a8493e12edd9098a905510b7fa1754cdb718560f2bca"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/paper_package/SHA256SUMS.txt",
-            "size_bytes": 2140,
-            "sha256": "8cc9d3eba01cb0906f481a552189e9e8adf2d71c684457ac53dc058279cb5664"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/README.md",
-            "size_bytes": 2615,
-            "sha256": "c1ed9b818234f164772dd2f8ac5659e469da1ad724bd578ca01e9f567e378cfc"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/ROADMAP_TO_PAPER.md",
-            "size_bytes": 6145,
-            "sha256": "dd210f69d0e1ebd2ac2ddd4d3ced3a48eee04fb9b929c5097d7f425702d705e7"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/THETA_STAR_CLAIM_BOUNDARY.md",
-            "size_bytes": 1259,
-            "sha256": "3033d25be6181ba468980aa9154d6906a7da916d3e344e1238db6579189a4a54"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/THETA_STAR_EXTERNAL_RED_TEAM_PROMPT.md",
-            "size_bytes": 2322,
-            "sha256": "d6ad21491ac1cbeb8293c8b1c2b3c00be57b3474da5a2baac60a80fbaf475356"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/THETA_STAR_EXTERNAL_RED_TEAM_SCOPE.md",
-            "size_bytes": 764,
-            "sha256": "085df35eae727d41a65899c74601a8b1604cf4b743af6b86ee55c82a3ad5090c"
-        },
-        {
-            "path": "extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md",
-            "size_bytes": 2896,
-            "sha256": "abafb19a2252ff53f5830fc2ceda9c6f8b26e69bda27aff1b729c3287258053c"
-        },
-        {
-            "path": "LICENSE",
-            "size_bytes": 1308,
-            "sha256": "c4e08d4904cd3f9362381315e6e954e6d442480f799dec084e3b92fab465f19f"
-        },
-        {
-            "path": "LICENSE_NOTE.md",
-            "size_bytes": 1138,
-            "sha256": "d6c6dfe38b3ff2fe96478c24fce89f9db83f23c3a6391cca07ec81628d6d68c6"
-        },
-        {
             "path": "paper/BUILD.md",
             "size_bytes": 931,
             "sha256": "a3f5f6a93614c8ca8d43731c7987b47158532f07d9286e9e62311ea8e5310d80"
@@ -688,11 +733,6 @@
             "path": "paper/CLAIM_BOUNDARY.md",
             "size_bytes": 1769,
             "sha256": "84c926994f5d2f8135f0c8b07d198c3f4c4cd748e2cf5c031288bd305c26fa37"
-        },
-        {
-            "path": "paper/figures/.gitkeep",
-            "size_bytes": 2,
-            "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
         },
         {
             "path": "paper/LICENSE",
@@ -710,14 +750,24 @@
             "sha256": "f9356a503a265b9bfecc7e1637e1da65a9f260540d73ed8db3b2c333633e4e85"
         },
         {
-            "path": "paper/refs.bib",
-            "size_bytes": 3302,
-            "sha256": "dbe9ebfaeb2d261447045e43d3f2a555987c426ca9c3d0d8a2fcd6ed8a4495eb"
-        },
-        {
             "path": "paper/REPRODUCE.md",
             "size_bytes": 891,
             "sha256": "d7270d5ee48bf9b95a4995a17d19e84a717e5adf9c4cca18e909d9e35a5edad3"
+        },
+        {
+            "path": "paper/SOURCE_MAP.md",
+            "size_bytes": 660,
+            "sha256": "bad7cc5e606e5fd9305c56a9f64781e46be103d60b58febf965e62b598480e29"
+        },
+        {
+            "path": "paper/figures/.gitkeep",
+            "size_bytes": 2,
+            "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+        },
+        {
+            "path": "paper/refs.bib",
+            "size_bytes": 3302,
+            "sha256": "dbe9ebfaeb2d261447045e43d3f2a555987c426ca9c3d0d8a2fcd6ed8a4495eb"
         },
         {
             "path": "paper/requirements.txt",
@@ -726,13 +776,13 @@
         },
         {
             "path": "paper/s4_certified_tetrahedral_hinged_mechanism.pdf",
-            "size_bytes": 357154,
-            "sha256": "c101a6125cdb0cfb1d70e36b77f3d534da7830c214f20f9f5d23c459ff07a317"
+            "size_bytes": 357033,
+            "sha256": "ad4546f0abf3161ac1f9ee9480e06bae4dfd164cee7f2aff672ca5001fc98368"
         },
         {
             "path": "paper/s4_certified_tetrahedral_hinged_mechanism.tex",
-            "size_bytes": 4845,
-            "sha256": "300f21c0831069b174642dfb712737e9429c4a664ac0686e3d734eec2177bc31"
+            "size_bytes": 4870,
+            "sha256": "6c0d7477519e8a5cb5022f7a48fabf3233282ebdb7164eed4478076473ac89d2"
         },
         {
             "path": "paper/sections/01_introduction.tex",
@@ -780,34 +830,9 @@
             "sha256": "28fe33bbf78ea4fb04bf13406faab74e3eaae9f7275a2bc8cd1c7aca0150b886"
         },
         {
-            "path": "paper/SOURCE_MAP.md",
-            "size_bytes": 660,
-            "sha256": "bad7cc5e606e5fd9305c56a9f64781e46be103d60b58febf965e62b598480e29"
-        },
-        {
-            "path": "PUBLICATION_PLAN.md",
-            "size_bytes": 2657,
-            "sha256": "6301e0cc710997471012d6fb848631b198db3b3bd070900ad5e7191aa1849503"
-        },
-        {
             "path": "pytest.ini",
             "size_bytes": 29,
             "sha256": "ddfcf6e0017476e9b9e8e55559c80e166c21f4f1ac242c7468dc85ad9dc69e52"
-        },
-        {
-            "path": "README.md",
-            "size_bytes": 2876,
-            "sha256": "c0cf0f7e6ecde5dd1a1ab20fb8e3b223e5caafdec049e018ede71c42c98b8a6a"
-        },
-        {
-            "path": "README_REVIEWER.md",
-            "size_bytes": 2323,
-            "sha256": "128ef827d3f0991f5f49fbc7f74d46dc26e80ace2e563a6dd5e61e95ad7edaea"
-        },
-        {
-            "path": "REPRODUCE.md",
-            "size_bytes": 1912,
-            "sha256": "e92b813911d2ce6fe9dd881c0feedeb534e3a3bb750f716076b9ae7d3fde9a00"
         },
         {
             "path": "requirements.txt",
@@ -823,6 +848,31 @@
             "path": "results/rw12_external_fabrication_review_package/CLAIM_BOUNDARY.md",
             "size_bytes": 580,
             "sha256": "4e6ed220b9c748a6e373a03a5e547fd3fa236b928fc351f6a4413978a98c9be2"
+        },
+        {
+            "path": "results/rw12_external_fabrication_review_package/OPERATING_INSTRUCTIONS.md",
+            "size_bytes": 990,
+            "sha256": "9a2212581cff621bc51d4c892009edc545146b93cbad4a1263f71d290bd4e9c7"
+        },
+        {
+            "path": "results/rw12_external_fabrication_review_package/README_RW12_EXTERNAL_FABRICATION_REVIEW.md",
+            "size_bytes": 1305,
+            "sha256": "06b46ee485b21111428aa30b348251ad241bca0c0fbd408aaad011103e0eb56e"
+        },
+        {
+            "path": "results/rw12_external_fabrication_review_package/RW12_FABRICATOR_CHECKLIST.csv",
+            "size_bytes": 840,
+            "sha256": "a94c7dc029e9ea93a20271c9fd52a4b7dbb3ae98523dc8562a551bc45ac09d29"
+        },
+        {
+            "path": "results/rw12_external_fabrication_review_package/RW12_FILE_MANIFEST.csv",
+            "size_bytes": 8236,
+            "sha256": "24df0e4b75b62f3dcbbfea003204473279077e33db221126bf788dfabd8e0ef3"
+        },
+        {
+            "path": "results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
+            "size_bytes": 130988,
+            "sha256": "e1109aa7d9b21e95405a585448ba4b1e4e3102da5ac5262c7825931bf730ff71"
         },
         {
             "path": "results/rw12_external_fabrication_review_package/fabrication_files/body_pieces/TREE_007_P0_printed_body_with_bosses.3mf",
@@ -910,24 +960,14 @@
             "sha256": "a866fa5870da28023819b450dd5202f40bd595fa004334e7c57a12f05adc1c8e"
         },
         {
-            "path": "results/rw12_external_fabrication_review_package/OPERATING_INSTRUCTIONS.md",
-            "size_bytes": 990,
-            "sha256": "9a2212581cff621bc51d4c892009edc545146b93cbad4a1263f71d290bd4e9c7"
-        },
-        {
-            "path": "results/rw12_external_fabrication_review_package/README_RW12_EXTERNAL_FABRICATION_REVIEW.md",
-            "size_bytes": 1305,
-            "sha256": "06b46ee485b21111428aa30b348251ad241bca0c0fbd408aaad011103e0eb56e"
+            "path": "results/rw12_external_fabrication_review_package/reference/RW11_TOLERANCE_DECISION_MATRIX.csv",
+            "size_bytes": 921,
+            "sha256": "ae65047f35af3490fd394bbfd33237c3360b3f3aeeeeb0ebda6090ed138d37f8"
         },
         {
             "path": "results/rw12_external_fabrication_review_package/reference/rw10_digital_final_prototype_package_report.json",
             "size_bytes": 23595,
             "sha256": "b1d574f44b487eac511010309e59278600c88d637fb8a1707fb8cd17c08e5634"
-        },
-        {
-            "path": "results/rw12_external_fabrication_review_package/reference/RW11_TOLERANCE_DECISION_MATRIX.csv",
-            "size_bytes": 921,
-            "sha256": "ae65047f35af3490fd394bbfd33237c3360b3f3aeeeeb0ebda6090ed138d37f8"
         },
         {
             "path": "results/rw12_external_fabrication_review_package/reference/rw11_tolerance_variant_package_report.json",
@@ -945,21 +985,6 @@
             "sha256": "7f7bb09f31d1ae0e3126f365a320dbbec9df81563a919fdaf3813bd8e2f8084f"
         },
         {
-            "path": "results/rw12_external_fabrication_review_package/RW12_FABRICATOR_CHECKLIST.csv",
-            "size_bytes": 840,
-            "sha256": "a94c7dc029e9ea93a20271c9fd52a4b7dbb3ae98523dc8562a551bc45ac09d29"
-        },
-        {
-            "path": "results/rw12_external_fabrication_review_package/RW12_FILE_MANIFEST.csv",
-            "size_bytes": 8236,
-            "sha256": "24df0e4b75b62f3dcbbfea003204473279077e33db221126bf788dfabd8e0ef3"
-        },
-        {
-            "path": "results/rw12_external_fabrication_review_package/TREE_007_RW12_external_fabrication_review_package.zip",
-            "size_bytes": 130988,
-            "sha256": "e1109aa7d9b21e95405a585448ba4b1e4e3102da5ac5262c7825931bf730ff71"
-        },
-        {
             "path": "scripts/check_public_package.py",
             "size_bytes": 11356,
             "sha256": "f53ed0edb1c6cba4cb1ea229ccd6dd21b6bb6b860378096568bcf0232fc71503"
@@ -971,18 +996,28 @@
         },
         {
             "path": "scripts/check_theta_star_extension.py",
-            "size_bytes": 9698,
-            "sha256": "425946abdd5c0124eb386a1eb6879a126603fd9755eedcf898d90e1e3c03550a"
+            "size_bytes": 9988,
+            "sha256": "5712395cc7b4e9d162cd50bc21afc16046e9725f07764729b3c6be3135fe4e9b"
         },
         {
             "path": "scripts/check_theta_star_paper_package.py",
-            "size_bytes": 11625,
-            "sha256": "a56ac9653a20f3fb418fd44951efec4bb4310b1e67ca6d390959297dd10b0c87"
+            "size_bytes": 11391,
+            "sha256": "809312ad794c6448b2b40f376acc2e8f5f11db419ca5e2cb17ba436230492882"
         },
         {
             "path": "scripts/check_theta_star_proof_prose.py",
-            "size_bytes": 12987,
-            "sha256": "2d7e666e9027ff296bf58c85aa26d4ab4716c5fbd5e4e7b263fba71c434b96a3"
+            "size_bytes": 13007,
+            "sha256": "6e3632dc81edf0982ee97f83b4f070f1a1dc7ef5adafc68e8c798cb0016b5c16"
+        },
+        {
+            "path": "scripts/check_theta_star_proof_spine_paths.py",
+            "size_bytes": 3795,
+            "sha256": "c3c603dc59beed8db2247ec7bdefd06286ebf05ae4b6b8e5075d48c7d2e3e7a6"
+        },
+        {
+            "path": "scripts/computation/README.md",
+            "size_bytes": 34727,
+            "sha256": "71e68a4add7e97bc868ac37b2cba97ef5512ffe3b8c95bc477cf568c7eea0ecb"
         },
         {
             "path": "scripts/computation/audit_historical_s2_median.py",
@@ -1400,6 +1435,11 @@
             "sha256": "23f7ac2d5b7c762e45687fb08aa68ad27f2518d70a86e08fd2e1222c23420892"
         },
         {
+            "path": "scripts/computation/build_s4_cl5_a85_package_closure_review.py",
+            "size_bytes": 8477,
+            "sha256": "0713b26f2657e3bbf653ef8a8bd9cfa757d16f2edd44930dc1de3ce9e92adaf2"
+        },
+        {
             "path": "scripts/computation/build_s4_cl5_a8_red_team_report.py",
             "size_bytes": 11727,
             "sha256": "17e4257e97ebdb6352b368383c392c455b33535666078a2c2e22b36431e71471"
@@ -1413,11 +1453,6 @@
             "path": "scripts/computation/build_s4_cl5_a8_review_package_scaffold.py",
             "size_bytes": 18982,
             "sha256": "73a7eb707aed18ef3711215f6635669eae8286d915e0909bda4943ae442cee4d"
-        },
-        {
-            "path": "scripts/computation/build_s4_cl5_a85_package_closure_review.py",
-            "size_bytes": 8477,
-            "sha256": "0713b26f2657e3bbf653ef8a8bd9cfa757d16f2edd44930dc1de3ce9e92adaf2"
         },
         {
             "path": "scripts/computation/build_s4_cl5_b03_exact_margin_source_layer.py",
@@ -1560,11 +1595,6 @@
             "sha256": "e5ade5bc408b96f93f1d7712c4cdf4f42353b502a5d7776a6b23d53066311b68"
         },
         {
-            "path": "scripts/computation/build_s4_real_world_rw1_physical_source_lock.py",
-            "size_bytes": 11235,
-            "sha256": "a8f45bf6576c9201893efc25312a3358d4ccfd159e84b974745001bf07acdf4a"
-        },
-        {
             "path": "scripts/computation/build_s4_real_world_rw10_digital_final_prototype_package.py",
             "size_bytes": 15998,
             "sha256": "ec2db224ba777f2376ef95ed318467a1754cd03e6d4bbe3b7e4d6e201752fbab"
@@ -1578,6 +1608,11 @@
             "path": "scripts/computation/build_s4_real_world_rw12_external_fabrication_review_package.py",
             "size_bytes": 15795,
             "sha256": "72a163f035f44044ab96b38ef54d0bfbc1e868d018e973c4ae798ce0a0abb409"
+        },
+        {
+            "path": "scripts/computation/build_s4_real_world_rw1_physical_source_lock.py",
+            "size_bytes": 11235,
+            "sha256": "a8f45bf6576c9201893efc25312a3358d4ccfd159e84b974745001bf07acdf4a"
         },
         {
             "path": "scripts/computation/build_s4_real_world_rw2_mesh_payload.py",
@@ -1725,11 +1760,6 @@
             "sha256": "ca9d9a8af831f0f39a3c4584ffbc71e579cce53779bcd37cfdc9c137b8f33173"
         },
         {
-            "path": "scripts/computation/README.md",
-            "size_bytes": 34727,
-            "sha256": "71e68a4add7e97bc868ac37b2cba97ef5512ffe3b8c95bc477cf568c7eea0ecb"
-        },
-        {
             "path": "scripts/computation/replay_s4_cl5_a8_package_gate.py",
             "size_bytes": 5026,
             "sha256": "b2cfc91cf0de1b702d8ec9705aad2094f49c0c15f0c96fab7a467ddd6a62ca85"
@@ -1748,16 +1778,6 @@
             "path": "tests/test_public_package.py",
             "size_bytes": 376,
             "sha256": "26db80f8846238d65dc30424824830bed159ead7cb6373110bdaaa41ef3e1347"
-        },
-        {
-            "path": "THIRD_PARTY_NOTICES.md",
-            "size_bytes": 1140,
-            "sha256": "8813f3063f4a06e7fe902265e6ba28df6fbe26441860a4ff988c9368898d861f"
-        },
-        {
-            "path": "scripts/check_theta_star_proof_spine_paths.py",
-            "size_bytes": 3795,
-            "sha256": "c3c603dc59beed8db2247ec7bdefd06286ebf05ae4b6b8e5075d48c7d2e3e7a6"
         }
     ],
     "gate_results": {
@@ -1774,8 +1794,8 @@
         "paper_build_after_deterministic_fix": {
             "command": "pdflatex/bibtex/pdflatex/pdflatex",
             "status": "pass",
-            "pdf_sha256": "42b1864f094ecb00387c9040c5c0a2feb6dacf68abcc757a209dc29819f6cfc6"
+            "pdf_sha256": "ad4546f0abf3161ac1f9ee9480e06bae4dfd164cee7f2aff672ca5001fc98368"
         }
     },
-    "theta_star_review_branch_note": "theta-star finite-atlas standalone TeX/PDF review draft refreshed 2026-06-30; not a main-paper update."
+    "theta_star_addendum_note": "theta-star finite-atlas companion addendum promoted 2026-06-30; separate from the main paper theorem."
 }

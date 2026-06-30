@@ -1,9 +1,9 @@
 """
-Bounded consistency checker for the theta-star addendum-review extension.
+Bounded consistency checker for the theta-star public companion addendum.
 
 This is not a full mathematical replay.  It verifies that the curated public
 extension contains the expected artifacts, hashes, scope documents, manifest,
-and summary counts before external review or addendum promotion.
+and summary counts after external mathematical red-team and addendum promotion.
 """
 
 from __future__ import annotations
@@ -43,9 +43,12 @@ def load_json(path: Path) -> dict:
 
 
 manifest = load_json(MANIFEST)
-check("extension status is review candidate", manifest.get("status") == "addendum_review_candidate", manifest.get("status"))
+check("extension status is public companion addendum", manifest.get("status") == "public_companion_addendum", manifest.get("status"))
 check("extension is not main paper update", manifest.get("main_paper_update") is False, manifest.get("main_paper_update"))
-check("extension is not public theorem promotion", manifest.get("public_theorem_promotion") is False, manifest.get("public_theorem_promotion"))
+check("extension public theorem promotion recorded", manifest.get("public_theorem_promotion") is True, manifest.get("public_theorem_promotion"))
+check("extension companion note recorded", manifest.get("main_paper_companion_note") is True, manifest.get("main_paper_companion_note"))
+check("external mathematical red-team pass recorded", manifest.get("external_mathematical_red_team", {}).get("status") == "pass", manifest.get("external_mathematical_red_team"))
+check("no remaining review obligations", manifest.get("remaining_review_obligations") == [], manifest.get("remaining_review_obligations"))
 check("extension branch recorded", manifest.get("branch") == "theta-star-addendum-review", manifest.get("branch"))
 
 for item in manifest.get("files", []):

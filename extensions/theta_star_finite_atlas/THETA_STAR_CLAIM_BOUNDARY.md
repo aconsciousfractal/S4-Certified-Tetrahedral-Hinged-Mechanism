@@ -1,20 +1,21 @@
 # Theta-star claim boundary
 
-Status: review-candidate boundary.  This file governs only
+Status: public companion-addendum claim boundary.  This file governs only
 `extensions/theta_star_finite_atlas/` on branch `theta-star-addendum-review`.
 
-## Allowed review target
+## Allowed target
 
-The review target is the zero-thickness, equal-magnitude, finite S4 theta-star
+The promoted target is the zero-thickness, equal-magnitude, finite S4 theta-star
 atlas for the 108 connected three-hinge trees, with exact values and finite
 case classification supported by local certificates.
 
 Allowed wording:
 
-- theta-star finite-atlas theorem candidate;
+- theta-star finite-atlas theorem;
+- S4 equal-magnitude theta-star finite-atlas theorem;
 - equal-magnitude one-parameter zero-thickness S4 atlas;
-- local exact certificate package under external mathematical review;
-- addendum-review candidate.
+- local exact certificate package;
+- public companion addendum.
 
 ## Disallowed wording
 
@@ -27,10 +28,10 @@ a new release decision:
 - a three-parameter theorem;
 - a non-equal-motion theorem;
 - a theorem for arbitrary hinged dissections or reversible nets;
-- already promoted into the main paper theorem.
+- a theorem already merged into the main paper theorem.
 
-## Promotion rule
+## Promotion status
 
-Promotion requires a dedicated extension checker, imported source artifacts,
-red-team review of the proof chain, and an explicit decision to create an
-addendum or paper revision.
+The companion addendum promotion is closed after external mathematical red-team
+PASS in the stated scope.  The main paper theorem remains unchanged and only
+contains a companion-addendum note.

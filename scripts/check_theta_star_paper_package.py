@@ -35,7 +35,7 @@ def sha256(path: Path) -> str:
 
 check("paper package manifest exists", MANIFEST.exists(), MANIFEST)
 manifest = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
-check("paper package status is proof spine closure", manifest.get("status") in {"proof_spine_materialized_not_tex_promotion", "proof_spine_materialized_with_review_closure_not_tex_promotion"}, manifest.get("status"))
+check("paper package status is proof spine closure", manifest.get("status") == "proof_spine_materialized_with_public_addendum_promotion", manifest.get("status"))
 check("scope mentions zero-thickness", "zero-thickness" in manifest.get("scope", ""), manifest.get("scope"))
 check("scope mentions equal-magnitude", "equal-magnitude" in manifest.get("scope", ""), manifest.get("scope"))
 
@@ -98,7 +98,7 @@ source = load_artifact("s4_theta_star_source_map_visibility_audit.json")
 
 check("assembly gate pass", assembly.get("status") == "pass", assembly.get("status"))
 check("assembly local theorem supported", assembly.get("local_theorem_supported") is True, assembly.get("local_theorem_supported"))
-check("assembly public promotion false", assembly.get("public_promotion_ready") is False, assembly.get("public_promotion_ready"))
+check("assembly source artifact public promotion false", assembly.get("public_promotion_ready") is False, assembly.get("public_promotion_ready"))
 check("assembly replay pass", assembly_replay.get("status") == "pass", assembly_replay.get("status"))
 check("proof gate pass with review obligations", proof_gate.get("status") == "pass_with_review_obligations", proof_gate.get("status"))
 check("T6B pass with review obligations", t6b.get("status") == "pass_with_review_obligations", t6b.get("status"))
@@ -122,7 +122,7 @@ check("t-star counts expected", summary.get("t_star_counts") == {
 
 
 # Proof-prose draft checks added by P0-03/P0-04 and updated for the
-# standalone review draft entry point.
+# companion addendum entry point.
 DRAFT = EXT / "paper_draft"
 final_tex = DRAFT / "theta_star_finite_atlas.tex"
 flat_tex = DRAFT / "theta_star_finite_atlas_flat.tex"
@@ -134,9 +134,9 @@ sec02 = DRAFT / "sections" / "02_formal_objects_and_tree_status_table.tex"
 sec03 = DRAFT / "sections" / "03_finite_angle_conjugacy.tex"
 sec04 = DRAFT / "sections" / "04_transport_and_theta_star_invariance.tex"
 check("proof-prose draft README exists", (DRAFT / "README.md").exists(), DRAFT / "README.md")
-check("standalone TeX review draft exists", final_tex.exists(), final_tex)
-check("single-file flat TeX review source exists", flat_tex.exists(), flat_tex)
-check("standalone PDF review draft exists", final_pdf.exists(), final_pdf)
+check("standalone TeX companion addendum exists", final_tex.exists(), final_tex)
+check("single-file flat TeX companion source exists", flat_tex.exists(), flat_tex)
+check("standalone PDF companion addendum exists", final_pdf.exists(), final_pdf)
 check("paper build instructions exist", build_doc.exists(), build_doc)
 check("draft refs.bib exists", (DRAFT / "refs.bib").exists(), DRAFT / "refs.bib")
 check("external red-team handoff exists", handoff.exists(), handoff)

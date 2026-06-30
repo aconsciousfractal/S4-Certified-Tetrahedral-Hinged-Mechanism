@@ -1,24 +1,27 @@
 # Theta-Star Red-Team Closure Report
 
-Status: standalone review closure, not public promotion.
+Status: external mathematical red-team closed; promoted as public companion
+addendum.
 
-This report records how the 2026-06-30 external red-team blockers were handled before commit.
+The theta-star proof spine was reviewed in the stated scope:
+zero-thickness, equal-magnitude, one-parameter S4 finite atlas over the 108
+connected three-hinge trees.  The external mathematical red-team verdict was:
+PASS for the stated scope, with no mathematical blockers found.
 
-## Closed For Review
+## Closed findings
 
-- P0-01 scaffold definition: the TeX now defines the historical S4 scaffold as finite source-locked zero-thickness data.
-- P0-02 valid scaffold isometry: the TeX now defines catalogue-preserving isometries, determinant, and hinge-axis orientation signs.
-- P0-03 row event/cap semantics: `rho(T,s)` is now row reach; the proof distinguishes lower witnesses, upper caps, and exact events. Positive-jam no longer says every non-best row has first event at `sqrt(2)`.
-- P0-04 closure artifact: this report, `PAPER_PROOF_SPINE_CLOSURE.json`, and `PAPER_PROMOTION_DECISION.md` close the local review-package ambiguity.
-- P0-05 chronology: historical `pass_with_review_obligations` and `public_promotion_ready=false` artifacts are retained as provenance; they are superseded for this standalone review draft by the T5/T6 proof spine plus this closure layer.
-- P0-06 SAT/contact predicate completeness: the TeX now states the finite zero-thickness SAT/contact predicate vocabulary and its invariance under transport.
-- P0-07 wrapper detail: the wrapper class explicitly lists `TREE_007`, `TREE_009`, `TREE_021`, and `TREE_093`, separating public CL5/A7d source locks from local generalized-wedge wrapper scope.
-- P0-08 bibliography: the standalone draft now has `refs.bib` and related-work citations.
+- M1: public reproducibility/checker surface is available through
+  `scripts/run_all_reproducibility_checks.py`.
+- M2: proof-spine path hygiene is checked and private local paths are excluded
+  from the public proof-spine JSON.
+- M3: `THETA_STAR_REPRODUCE.md` explains which gates are mathematical, which are
+  consistency/package gates, and what each gate does not prove.
+- B1: the remaining process-only blocker is closed by this promotion decision:
+  the extension is now explicitly labelled as a promoted public companion addendum.
 
-## Still Not Claimed
+## Boundary retained
 
-This remains outside the main paper until explicitly promoted. It is not a physical hingeability theorem, not a positive-thickness theorem, not a three-parameter theorem, not a non-equal-angle theorem, and not a general hinged-dissection theorem.
-
-## Remaining Review Gate
-
-External mathematical red-team is still required before any promotion decision.
+This closure does not claim physical hingeability, positive-thickness behavior,
+global collision-free physical motion, three-parameter coverage, non-equal-angle
+motion, or a general hinged-dissection theorem.  The main public paper remains
+unchanged except for a companion-addendum note.

@@ -1,13 +1,21 @@
 # Theta-Star Paper Promotion Decision
 
-Decision as of 2026-06-30: **do not merge into the main public paper yet**.
+Decision as of 2026-06-30: **promote as a public companion addendum**.
 
-The theta-star finite-atlas draft is a standalone review extension. The proof spine is staged for external mathematical red-team, and the main paper remains unchanged except for pointers to the extension.
+The theta-star finite-atlas result is promoted in
+`extensions/theta_star_finite_atlas/` as an addendum with its own TeX/PDF,
+bibliography, proof-spine package, and reproducibility gates.  It is not merged
+into the main paper theorem and does not broaden the main paper claim boundary.
 
-Promotion options after external review:
+The promotion is based on:
 
-1. keep as a standalone extension/addendum;
-2. promote selected theorem/proof material into the main paper;
-3. prepare a companion paper around the theta-star finite atlas.
+- proof-spine gates passing in the declared zero-thickness, equal-magnitude,
+  one-parameter S4 scope;
+- internal checker coverage for prose, package consistency, claim language, and
+  reproducibility;
+- external mathematical red-team verdict: PASS for the stated scope, with no
+  mathematical blockers found.
 
-No promotion is made by this package.
+Nonclaims remain unchanged: no physical hingeability, no positive-thickness
+printability, no global physical motion theorem, no three-parameter theorem,
+no non-equal-angle theorem, and no general hinged-dissection theorem.

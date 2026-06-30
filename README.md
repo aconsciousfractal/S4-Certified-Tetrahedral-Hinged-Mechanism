@@ -25,10 +25,10 @@ selected-row route-wrapper/bridge certificate evidence for `TREE_007` and
 `TREE_021`; RW12 is supplementary digital fabrication material only.
 
 On the `theta-star-addendum-review` branch, `extensions/theta_star_finite_atlas/`
-contains a separate addendum-review candidate for the equal-magnitude,
+contains a promoted companion addendum for the equal-magnitude,
 zero-thickness S4 theta-star finite atlas.  It is not part of the main paper
-theorem and does not modify the paper/PDF unless it later passes external
-mathematical red-team and an explicit addendum decision.
+theorem and does not broaden the paper/PDF theorem; the main paper only carries
+a companion-addendum note.
 
 ## Layout
 
@@ -37,7 +37,7 @@ paper/      TeX manuscript source, PDF, bibliography, build notes
 certified/  copied certified manifests and row records used by the paper
 docs/       claim ledger, source locks, proof obligations, red-team notes
 results/    curated package reports and RW12 supplementary fabrication package
-extensions/ addendum-review candidates kept outside the main paper claim
+extensions/ companion addenda kept outside the main paper claim
 scripts/    public checks plus computation source scripts
 tests/      pytest public-package guardrails
 data/       intentionally empty unless curated public inputs are later approved
