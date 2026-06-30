@@ -1,0 +1,351 @@
+{
+  "report_id": "s4_theta_star_t6b_theorem_prose_audit_v1",
+  "generated_utc": "2026-06-29T17:04:26.623261+00:00",
+  "status": "pass_with_review_obligations",
+  "claim_level": "proof_prose_audit_not_theorem_promotion",
+  "passed": 26,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "18 representative self records",
+      "passed": true,
+      "detail": 18
+    },
+    {
+      "name": "representative class counts match expected",
+      "passed": true,
+      "detail": {
+        "exact_free_witness_candidate": 5,
+        "instant_jam_row_gate": 10,
+        "stage3a_stage3b_stage3c_local_tree_package": 2,
+        "public_wrapper_scope_certificate": 1
+      }
+    },
+    {
+      "name": "TREE_002 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": []
+      }
+    },
+    {
+      "name": "TREE_002 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": []
+      }
+    },
+    {
+      "name": "TREE_008 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_008 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_014 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_014 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_015 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_015 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_016 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_016 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct_contact_axis_right_germ"
+        ]
+      }
+    },
+    {
+      "name": "TREE_017 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "interval",
+          "interval-row",
+          "interval-row-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "TREE_017 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "interval",
+          "interval-row",
+          "interval-row-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "TREE_041 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct",
+          "hard_axis_aggregate"
+        ]
+      }
+    },
+    {
+      "name": "TREE_041 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct",
+          "hard_axis_aggregate"
+        ]
+      }
+    },
+    {
+      "name": "TREE_043 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct",
+          "hard_axis_aggregate"
+        ]
+      }
+    },
+    {
+      "name": "TREE_043 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "direct",
+          "hard_axis_aggregate"
+        ]
+      }
+    },
+    {
+      "name": "TREE_044 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "fast-germ-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "TREE_044 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "fast-germ-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "TREE_068 instant gate exists",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "fast-germ-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "TREE_068 instant gate covers 8 rows",
+      "passed": true,
+      "detail": {
+        "exists": true,
+        "status": "pass",
+        "covered_rows": 8,
+        "expected_rows": 8,
+        "methods": [
+          "fast-germ",
+          "fast-germ-slow",
+          "transport"
+        ]
+      }
+    },
+    {
+      "name": "Stage3 local tree gate status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Stage3 local tree gate explicitly selected-row scoped",
+      "passed": true,
+      "detail": "TREE_003 and TREE_000 selected equal-magnitude sign rays only"
+    },
+    {
+      "name": "positive-jam max-over-8 exact certificate pass",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_positive_jam_max_over_8_certificate.json"
+    },
+    {
+      "name": "source-map visibility audit pass",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_source_map_visibility_audit.json"
+    }
+  ],
+  "summary": {
+    "representative_rows": 18,
+    "representative_class_counts": {
+      "exact_free_witness_candidate": 5,
+      "instant_jam_row_gate": 10,
+      "stage3a_stage3b_stage3c_local_tree_package": 2,
+      "public_wrapper_scope_certificate": 1
+    },
+    "instant_representatives_checked": 10,
+    "positive_jam_max_over_8_exact_closed": true,
+    "source_map_visibility_closed": true,
+    "visibility_obligations_closed": [
+      "O-selected-hinge-side-map-visibility",
+      "O-support-feature-map-visibility"
+    ],
+    "open_obligations": [
+      "O-theorem-name-scope"
+    ],
+    "t6_local_theorem_supported_flag_observed": true,
+    "t6b_interpretation": "T6 is assembly evidence; positive-jam max-over-8 is now exact-closed. Remaining work is theorem-prose/source-map visibility and scope hygiene before final theorem promotion."
+  },
+  "outputs": {
+    "representative_source_table": "docs/S4_THETA_STAR_REPRESENTATIVE_SOURCE_CERTIFICATE_TABLE.md",
+    "class_predicate_audit": "docs/S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md"
+  },
+  "nonclaims": [
+    "does not recompute geometry",
+    "does not promote public paper/addendum",
+    "does not claim physical or 3-parameter hingeability"
+  ]
+}

@@ -28,3 +28,18 @@ supplementary digital fabrication handoff.
 - Does any claim become physical, positive-thickness, globally collision-free,
   CAD/STL validated, or three-parameter?
 - Is RW12 still described as supplementary digital material only?
+
+## Optional theta-star addendum-review path
+
+This path applies only on branch `theta-star-addendum-review` and only to the
+review-candidate extension under `extensions/theta_star_finite_atlas/`.  It is
+separate from the current paper theorem.
+
+1. Read `extensions/theta_star_finite_atlas/README.md`.
+2. Read `extensions/theta_star_finite_atlas/THETA_STAR_CLAIM_BOUNDARY.md`.
+3. Read `extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md`.
+4. Run `python scripts/check_theta_star_extension.py`.
+5. Inspect the imported local proof artifacts listed in
+   `extensions/theta_star_finite_atlas/artifacts/README.md`.
+6. Treat the extension as a mathematical review target, not as physical or
+   fabrication evidence.

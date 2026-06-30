@@ -1,0 +1,45 @@
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% Instant-jam class proof. Not a standalone paper and not a main-paper update.
+
+\section{Instant-jam eight-row class}
+
+The instant-jam class has final label
+\[
+  \texttt{exact\_instant\_jam\_8\_row\_gate\_source\_locked}
+\]
+and contains 60 target trees.  Its event value is \(0\).
+
+\begin{lemma}[Instant-jam source representatives]
+The ten representatives
+\[
+\begin{gathered}
+  \texttt{TREE\_002},\ \texttt{TREE\_008},\ \texttt{TREE\_014},\ \texttt{TREE\_015},\ \texttt{TREE\_016},\\
+  \texttt{TREE\_017},\ \texttt{TREE\_041},\ \texttt{TREE\_043},\ \texttt{TREE\_044},\ \texttt{TREE\_068}
+\end{gathered}
+\]
+have all eight equal-magnitude sign rows right-germ obstructed at \(t=0\).
+\end{lemma}
+
+\begin{proof}
+The representative source table records an \texttt{instant\_jam\_row\_gate} for each of these ten representatives, with all 8 sign rows covered.  Where a hard-row override is required, such as the \texttt{TREE\_043} source lock, the source table records that exact override instead of using a scout seed.
+\end{proof}
+
+\begin{lemma}[Instant-jam transport]
+Every target transported from an instant-jam representative is instant-jammed at \(t=0\).
+\end{lemma}
+
+\begin{proof}
+The signed-row transport rule is a bijection on the eight sign rows.  Therefore the eight obstructed source rows map to the eight target rows.  Row predicate preservation carries each right-germ obstruction to the transported row.  Hence every equal-magnitude target row is obstructed at \(t=0\).
+\end{proof}
+
+\begin{proposition}[Instant-jam class count]
+Exactly 60 trees lie in the instant-jam class.
+\end{proposition}
+
+\begin{proof}
+The T6 assembly gate records and checks
+\[
+  \#\texttt{exact\_instant\_jam\_8\_row\_gate\_source\_locked}=60.
+\]
+Together with instant-jam transport, this gives the class contribution of 60 trees with \(t^*=0\).
+\end{proof}

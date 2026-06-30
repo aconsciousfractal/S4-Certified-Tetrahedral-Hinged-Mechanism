@@ -23,3 +23,26 @@ The following claims are not allowed in this package:
 ## Release status
 
 The repository is a local release-review repository with `public_export_ready=true` in `paper/PUBLIC_PACKAGE_MANIFEST.json` after local gates. Remote publication remains a human/operator action. Any release must preserve this claim boundary and rerun the package checks after final metadata edits.
+
+## Theta-star extension review boundary
+
+On branch `theta-star-addendum-review`, material under
+`extensions/theta_star_finite_atlas/` may be used as a review-candidate package
+for the equal-magnitude, zero-thickness S4 theta-star finite atlas.  This is
+not a modification of the current main paper theorem unless a later addendum
+promotion explicitly says so.
+
+Allowed in that extension:
+
+- finite-atlas, zero-thickness, equal-magnitude theta-star classification claims
+  stated as theorem candidates under review;
+- references to local exact certificates and review gates that are imported into
+  the extension package;
+- external red-team prompts focused on the mathematical proof chain.
+
+Still disallowed:
+
+- physical prototype validation or positive-thickness printability;
+- global collision-free physical mechanism claims;
+- three-parameter or non-equal-motion theorems;
+- claims about arbitrary hinged dissections, reversible nets, or fabrication.

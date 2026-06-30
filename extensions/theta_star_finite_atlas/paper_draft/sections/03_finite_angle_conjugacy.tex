@@ -1,0 +1,54 @@
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% This fragment is not a standalone paper and is not a main-paper update.
+
+\section{Finite-angle scaffold conjugacy}
+
+This section records the geometric part of the S4 equal-magnitude theta-star finite-atlas theorem.  The setting is the historical S4 zero-thickness scaffold: four labelled rigid pieces, a finite catalogue of oriented hinge lines, and 108 connected three-hinge trees.  A tree has three oriented hinge axes, and a sign row assigns one sign to each hinge.  Along a row, all three hinge angles have the same magnitude and half-angle coordinate
+\[
+  t = \tan(\theta/2).
+\]
+
+\begin{definition}[Valid scaffold isometry]
+A valid scaffold isometry is a Euclidean isometry of the regular tetrahedral scaffold that maps catalogue pieces to catalogue pieces, maps catalogue hinge lines to catalogue hinge lines, and maps connected three-hinge catalogue trees to connected three-hinge catalogue trees.  Its orthogonal linear part may have determinant \(+1\) or \(-1\).  If a source oriented hinge axis maps to the opposite orientation of the target catalogue axis, that flip is recorded by \(\operatorname{orient}_g(h)=-1\).  Only these finite, catalogue-preserving isometries are used in the transport ledger.
+\end{definition}
+
+Let \(g\) be a valid scaffold isometry.  It induces a piece map, a hinge map, and a tree map.  Write the orthogonal linear part of the isometry as \(R_g\).  If the source oriented hinge axis \(u_h\) maps to the target catalogue axis by
+\[
+  R_g u_h = \operatorname{orient}_g(h) u_{g(h)},
+  \qquad \operatorname{orient}_g(h) \in \{+1,-1\},
+\]
+then the transported sign row is
+\[
+  s'_{g(h)} = \det(R_g)\, \operatorname{orient}_g(h)\, s_h .
+\]
+This is the finite-angle signed transport rule.  It is the same rule used by the transport ledger; here it is stated as a mathematical convention, not as a script-local label.
+
+\begin{lemma}[Finite-angle scaffold conjugacy]
+For every admissible value of \(t\), the configuration obtained from \((T,s)\) is congruent, after piece relabelling and one common root re-gauge, to the configuration obtained from \((g(T),s')\).
+\end{lemma}
+
+\begin{proof}
+Each moving piece is rigid.  The scaffold isometry sends each source hinge line to the corresponding target hinge line and sends each source piece to the corresponding target piece.  Rodrigues rotation about a line is natural under an orthogonal change of frame: conjugating a rotation by \(R_g\) gives the rotation about the image line, with the orientation of the line and the determinant of \(R_g\) accounted for by the sign rule above.  Therefore the product of hinge rotations along every parent-child path in the tree is carried to the product of the transported hinge rotations in the target tree.
+
+If the selected root convention changes under the transport, the two configurations differ by one common rigid transform \(G\).  This is a root re-gauge, not a change in pairwise geometry.  For any two pieces with transforms \(C_i\) and \(C_j\), the pairwise relative transform is unchanged because
+\[
+  (G C_j)^{-1}(G C_i) = C_j^{-1} C_i .
+\]
+Thus all pairwise relative placements are preserved after relabelling.
+
+The separating-axis, contact, and strict-overlap predicates used by the certificates depend only on these pairwise relative placements and on rigidly transported support features.  A SAT axis may be reversed, but this only multiplies the associated scalar row by \(-1\); the ledger records that axis-sign normalization.  Hence strict separation, equality contact, non-overlap, and strict interior overlap are preserved for every admissible \(t\).
+\end{proof}
+
+\begin{lemma}[Finite SAT/contact predicate completeness]
+For the zero-thickness rigid pieces used in this finite atlas, each pairwise certificate is expressed in the complete finite SAT/contact vocabulary for the transported convex support features: face-normal axes, edge-edge axes, selected hinge-side contact rows, and the residual pair rows named by the source locks.  Reversing an axis changes only the sign convention, not the separation/contact/overlap predicate.
+\end{lemma}
+
+\begin{proof}
+The pieces and support features are fixed finite polyhedral data.  For convex polyhedral features, strict separation or strict interior overlap is decided by the finite separating-axis list consisting of face normals and edge cross-product axes, with equality recording contact.  The wrapper rows add selected hinge-side contact semantics only for the explicitly source-locked wrapper class, and the source-map visibility audit records the required pair labels, support features, and axis normalizations.  Therefore no unlisted analytic predicate is being introduced by the transport step.  This is a zero-thickness predicate-completeness statement only; it is not a positive-thickness or physical-clearance claim.
+\end{proof}
+
+\begin{corollary}[Certificate transport]
+Any source certificate whose support features, pair labels, hinge-side labels, SAT-axis families, and event value are written in the transport vocabulary has a transported certificate for the target tree and transported sign row.
+\end{corollary}
+
+The proof-spine artifacts do not replace this geometric argument; they check that the finite maps, signs, root re-gauges, pair maps, and axis normalizations used by this argument have been materialized over the 108-tree atlas.

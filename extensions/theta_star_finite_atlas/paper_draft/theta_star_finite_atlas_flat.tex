@@ -1,0 +1,693 @@
+﻿% Theta-star finite atlas standalone draft.
+% File: theta_star_finite_atlas.tex
+% This file is the review entry point for the theta-star extension.
+% It is not included in the main public paper unless promoted explicitly.
+
+\documentclass[11pt,a4paper]{article}
+
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdfsuppressptexinfo\pdfsuppressptexinfo=-1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  citecolor=blue!55!black,
+  urlcolor=blue!55!black,
+  pdftitle={Theta-Star Finite Atlas for the S4 Zero-Thickness Hinge-Tree Scaffold},
+  pdfauthor={Oleksiy Babanskyy},
+  pdfsubject={Local theta-star finite-atlas theorem candidate},
+  pdfkeywords={tetrahedron, hinged mechanism, theta-star, finite atlas, computational certificate}
+}
+\emergencystretch=2em
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Rows}{\operatorname{Rows}}
+\newcommand{\Rot}{\operatorname{Rot}}
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\title{Theta-Star Finite Atlas for the S4 Zero-Thickness Hinge-Tree Scaffold:\\
+A Local Addendum Draft}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This standalone draft turns the theta-star proof spine for the S4 zero-thickness
+hinge-tree scaffold into mathematical prose.  The scope is finite and narrow:
+108 connected three-hinge trees, eight equal-magnitude sign rows per tree, and
+half-angle parameter \(t=\tan(\theta/2)\) on \([0,\sqrt{3}]\).  The local theorem
+classifies the theta-star values as 40 endpoint records at \(\sqrt{3}\)
+(36 endpoint-free witness records plus 4 source-locked wrapper records), 8
+positive-jam records at \(\sqrt{2}\), and 60 instant-jam records at \(0\).  This is not a main-paper update.  It does not address physical
+hingeability, positive-thickness models, non-equal-angle motion, or
+three-parameter classification.
+\end{abstract}
+
+\noindent\textbf{Status.} Standalone review draft for the theta-star extension.  It is not a published addendum and is not included in the main public paper unless promoted explicitly after review.
+
+\section*{Context and related work}
+This draft sits in the computational-geometry tradition of hinged dissections, polyhedral linkages, and reproducible computational certificates.  Hinged dissections and reversible nets provide the broad geometric setting~\cite{abbott2007hinged,akiyama2018polyhedral,akiyama2016reversible,demaine2007gfalop}; continuous flattening and linkage motion give nearby motion-theoretic context~\cite{demaine2024continuous,demaine2001vertex}.  The contribution here is narrower: a finite zero-thickness equal-magnitude theta-star atlas for one source-locked S4 scaffold, tied to a public proof-spine package rather than a general hingeability theorem.
+
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% This fragment is not a standalone paper and is not a main-paper update.
+% The 108-row status table below is generated from the T6 assembly artifact.
+
+\section{Formal objects and the 108-tree status table}
+
+This section fixes the finite objects used by the local theorem.  It is intended to make the proof prose readable without treating the JSON artifacts as the only definition source.
+
+\begin{definition}[Historical S4 scaffold]
+The historical S4 scaffold is the fixed zero-thickness data set used throughout this repository: four labelled rigid tetrahedral pieces \(P_0,\ldots,P_3\), the finite catalogue of oriented hinge lines inherited from the S4 dissection, and the 108 connected three-hinge trees extracted from that catalogue.  The scaffold is finite input data, not a variable family of mechanisms.
+\end{definition}
+
+\begin{definition}[S4 tree and equal-magnitude row]
+An S4 tree is one of the 108 connected three-hinge trees in the historical zero-thickness S4 scaffold.  If \(H(T)\) is its three-hinge set, then
+\[
+  \operatorname{Rows}(T)=\{s:H(T)\to\{+1,-1\}\}
+\]
+is the eight-row equal-magnitude sign set.  A row specifies only the signs of the three equal hinge rotations; it is not a three-parameter motion.
+\end{definition}
+
+\begin{definition}[Half-angle domain and row reach]
+Write \(t=\tan(\theta/2)\).  The equal-magnitude endpoint \(\theta=120^\circ\) is \(t=\sqrt{3}\), so the local domain is \(0\le t\le\sqrt{3}\).  For a row \((T,s)\), let \(\rho(T,s)\) denote the zero-thickness row reach: the supremum of parameters \(\tau\) for which the row is certified to have no strict interior overlap on the interval \([0,\tau]\) under the finite SAT/contact predicate vocabulary.
+
+The proof spine does not claim to compute every non-attaining row's first contact exactly.  It records the weaker data needed for \(t^*\): lower witnesses proving \(\rho(T,s)\ge a\) for selected rows, upper caps proving \(\rho(T,s)\le a\) for all rows in a class, and exact row events only when both sides meet.  In particular, the positive-jam class uses an attaining row at \(\sqrt{2}\) together with a max-over-8 cap at \(\sqrt{2}\); it does not assert that every non-best row has first event \(\sqrt{2}\).
+\end{definition}
+
+\begin{definition}[Theta-star]
+The equal-magnitude theta-star value of a tree is
+\[
+  t^*(T)=\max_{s\in\operatorname{Rows}(T)} \rho(T,s).
+\]
+The endpoint value \(\sqrt{3}\) means endpoint reached, not first contact.  The theorem class attached to \(t^*(T)\) records the certificate vocabulary used to justify the lower witness and upper cap: endpoint-free witness transport, source-locked wrapper semantics, positive-jam source lock, or instant-jam eight-row gate.
+\end{definition}
+
+\begin{definition}[Finite predicate vocabulary]
+The proof spine uses four final certificate classes:
+\begin{itemize}
+\item \texttt{exact\_endpoint\_free\_witness\_transport\_certificate}: a transported endpoint-free witness proves \(t^*=\sqrt{3}\) for 36 target trees.
+\item \texttt{one\_parameter\_wrapper\_scope\_source\_locked}: the public/local wrapper semantics are source-locked and counted separately as endpoint reached for 4 target trees.
+\item \texttt{exact\_positive\_theta\_jam\_package\_source\_locked}: the positive-jam source package proves \(t^*=\sqrt{2}\) for 8 target trees by an attaining selected row plus a max-over-8 upper cap.
+\item \texttt{exact\_instant\_jam\_8\_row\_gate\_source\_locked}: all eight rows are right-germ obstructed at \(t=0\) for 60 target trees.
+\end{itemize}
+These are zero-thickness, equal-magnitude predicates; they do not assert physical hingeability, positive-thickness clearance, non-equal-angle motion, or any three-parameter classification.
+\end{definition}
+
+\subsection{Generated 108-tree status table}
+
+The following table is generated from the assembly-gate JSON artifact.  The hidden \texttt{\% RECORD} comments are part of the local review contract: the proof-prose checker compares them row-by-row against the JSON \texttt{final\_records}.
+
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.72in}>{\raggedright\arraybackslash}p{0.72in}>{\raggedright\arraybackslash}p{0.35in}>{\raggedright\arraybackslash}p{0.95in}>{\raggedright\arraybackslash}p{0.95in}>{\raggedright\arraybackslash}p{2.05in}@{}}
+\textbf{Target} & \textbf{Source} & \textbf{Orbit} & \textbf{Class} & \textbf{$t^*$} & \textbf{Support gate} \\
+\hline
+\endfirsthead
+\textbf{Target} & \textbf{Source} & \textbf{Orbit} & \textbf{Class} & \textbf{$t^*$} & \textbf{Support gate} \\
+\hline
+\endhead
+% BEGIN GENERATED TREE STATUS TABLE
+% RECORD target=TREE_000 source=TREE_000 orbit=9 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_000} & \texttt{TREE\_000} & 9 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_001 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_001} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_002 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_002} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_003 source=TREE_003 orbit=10 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_003} & \texttt{TREE\_003} & 10 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_004 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_004} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_005 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_005} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_006 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_006} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_007 source=TREE_007 orbit=11 class=one_parameter_wrapper_scope_source_locked t=sqrt(3) endpoint reached theta=full_open_to_120_public_scope support=T5a_wrapper_source-lock
+\texttt{TREE\_007} & \texttt{TREE\_007} & 11 & wrapper-source-locked & sqrt(3) endpoint reached & T5a wrapper source-lock \\
+% RECORD target=TREE_008 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_008} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_009 source=TREE_007 orbit=11 class=one_parameter_wrapper_scope_source_locked t=sqrt(3) endpoint reached theta=full_open_to_120_public_scope support=T5a_wrapper_source-lock
+\texttt{TREE\_009} & \texttt{TREE\_007} & 11 & wrapper-source-locked & sqrt(3) endpoint reached & T5a wrapper source-lock \\
+% RECORD target=TREE_010 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_010} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_011 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_011} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_012 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_012} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_013 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_013} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_014 source=TREE_014 orbit=12 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_014} & \texttt{TREE\_014} & 12 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_015 source=TREE_015 orbit=13 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_015} & \texttt{TREE\_015} & 13 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_016 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_016} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_017 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_017} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_018 source=TREE_003 orbit=10 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_018} & \texttt{TREE\_003} & 10 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_019 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_019} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_020 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_020} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_021 source=TREE_007 orbit=11 class=one_parameter_wrapper_scope_source_locked t=sqrt(3) endpoint reached theta=full_open_to_120_public_scope support=T5a_wrapper_source-lock
+\texttt{TREE\_021} & \texttt{TREE\_007} & 11 & wrapper-source-locked & sqrt(3) endpoint reached & T5a wrapper source-lock \\
+% RECORD target=TREE_022 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_022} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_023 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_023} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_024 source=TREE_015 orbit=13 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_024} & \texttt{TREE\_015} & 13 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_025 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_025} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_026 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_026} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_027 source=TREE_027 orbit=14 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_027} & \texttt{TREE\_027} & 14 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_028 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_028} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_029 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_029} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_030 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_030} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_031 source=TREE_027 orbit=14 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_031} & \texttt{TREE\_027} & 14 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_032 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_032} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_033 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_033} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_034 source=TREE_003 orbit=10 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_034} & \texttt{TREE\_003} & 10 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_035 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_035} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_036 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_036} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_037 source=TREE_000 orbit=9 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_037} & \texttt{TREE\_000} & 9 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_038 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_038} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_039 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_039} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_040 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_040} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_041 source=TREE_041 orbit=15 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_041} & \texttt{TREE\_041} & 15 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_042 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_042} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_043 source=TREE_043 orbit=16 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_043} & \texttt{TREE\_043} & 16 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_044 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_044} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_045 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_045} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_046 source=TREE_027 orbit=14 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_046} & \texttt{TREE\_027} & 14 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_047 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_047} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_048 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_048} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_049 source=TREE_000 orbit=9 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_049} & \texttt{TREE\_000} & 9 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_050 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_050} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_051 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_051} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_052 source=TREE_043 orbit=16 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_052} & \texttt{TREE\_043} & 16 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_053 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_053} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_054 source=TREE_043 orbit=16 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_054} & \texttt{TREE\_043} & 16 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_055 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_055} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_056 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_056} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_057 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_057} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_058 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_058} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_059 source=TREE_041 orbit=15 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_059} & \texttt{TREE\_041} & 15 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_060 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_060} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_061 source=TREE_015 orbit=13 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_061} & \texttt{TREE\_015} & 13 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_062 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_062} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_063 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_063} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_064 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_064} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_065 source=TREE_014 orbit=12 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_065} & \texttt{TREE\_014} & 12 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_066 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_066} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_067 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_067} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_068 source=TREE_068 orbit=17 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_068} & \texttt{TREE\_068} & 17 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_069 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_069} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_070 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_070} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_071 source=TREE_068 orbit=17 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_071} & \texttt{TREE\_068} & 17 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_072 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_072} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_073 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_073} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_074 source=TREE_041 orbit=15 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_074} & \texttt{TREE\_041} & 15 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_075 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_075} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_076 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_076} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_077 source=TREE_014 orbit=12 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_077} & \texttt{TREE\_014} & 12 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_078 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_078} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_079 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_079} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_080 source=TREE_068 orbit=17 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_080} & \texttt{TREE\_068} & 17 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_081 source=TREE_000 orbit=9 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_081} & \texttt{TREE\_000} & 9 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_082 source=TREE_027 orbit=14 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_082} & \texttt{TREE\_027} & 14 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_083 source=TREE_043 orbit=16 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_083} & \texttt{TREE\_043} & 16 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_084 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_084} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_085 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_085} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_086 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_086} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_087 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_087} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_088 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_088} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_089 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_089} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_090 source=TREE_001 orbit=0 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_090} & \texttt{TREE\_001} & 0 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_091 source=TREE_004 orbit=2 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_091} & \texttt{TREE\_004} & 2 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_092 source=TREE_016 orbit=5 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_092} & \texttt{TREE\_016} & 5 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_093 source=TREE_007 orbit=11 class=one_parameter_wrapper_scope_source_locked t=sqrt(3) endpoint reached theta=full_open_to_120_public_scope support=T5a_wrapper_source-lock
+\texttt{TREE\_093} & \texttt{TREE\_007} & 11 & wrapper-source-locked & sqrt(3) endpoint reached & T5a wrapper source-lock \\
+% RECORD target=TREE_094 source=TREE_003 orbit=10 class=exact_positive_theta_jam_package_source_locked t=sqrt(2) theta=jam_at_positive_t support=T5a_Stage3a/3b/3c_positive-jam_source-lock
+\texttt{TREE\_094} & \texttt{TREE\_003} & 10 & positive-jam & sqrt(2) & T5a Stage3a/3b/3c positive-jam source-lock \\
+% RECORD target=TREE_095 source=TREE_015 orbit=13 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_095} & \texttt{TREE\_015} & 13 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_096 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_096} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_097 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_097} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_098 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_098} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_099 source=TREE_002 orbit=1 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_099} & \texttt{TREE\_002} & 1 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_100 source=TREE_029 orbit=7 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_100} & \texttt{TREE\_029} & 7 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_101 source=TREE_044 orbit=8 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_101} & \texttt{TREE\_044} & 8 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_102 source=TREE_008 orbit=4 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_102} & \texttt{TREE\_008} & 4 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_103 source=TREE_005 orbit=3 class=exact_endpoint_free_witness_transport_certificate t=sqrt(3) endpoint reached theta=full_open_to_120 support=T5c_endpoint-free_witness_transport_gate
+\texttt{TREE\_103} & \texttt{TREE\_005} & 3 & endpoint-free & sqrt(3) endpoint reached & T5c endpoint-free witness transport gate \\
+% RECORD target=TREE_104 source=TREE_017 orbit=6 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_104} & \texttt{TREE\_017} & 6 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_105 source=TREE_014 orbit=12 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_105} & \texttt{TREE\_014} & 12 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_106 source=TREE_041 orbit=15 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_106} & \texttt{TREE\_041} & 15 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% RECORD target=TREE_107 source=TREE_068 orbit=17 class=exact_instant_jam_8_row_gate_source_locked t=0 theta=instant_jam_t0 support=T5a_instant-jam_8-row_source-locked_digest
+\texttt{TREE\_107} & \texttt{TREE\_068} & 17 & instant-jam & 0 & T5a instant-jam 8-row source-locked digest \\
+% END GENERATED TREE STATUS TABLE
+\end{longtable}
+\endgroup
+
+The table has exactly 108 generated records.  Its class counts are
+\[
+  36+4+8+60=108,
+\]
+where \(36\) is endpoint-free witness transport, \(4\) is wrapper-source-locked endpoint semantics, \(8\) is positive jam at \(\sqrt{2}\), and \(60\) is instant jam at \(0\).
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% This fragment is not a standalone paper and is not a main-paper update.
+
+\section{Finite-angle scaffold conjugacy}
+
+This section records the geometric part of the S4 equal-magnitude theta-star finite-atlas theorem.  The setting is the historical S4 zero-thickness scaffold: four labelled rigid pieces, a finite catalogue of oriented hinge lines, and 108 connected three-hinge trees.  A tree has three oriented hinge axes, and a sign row assigns one sign to each hinge.  Along a row, all three hinge angles have the same magnitude and half-angle coordinate
+\[
+  t = \tan(\theta/2).
+\]
+
+\begin{definition}[Valid scaffold isometry]
+A valid scaffold isometry is a Euclidean isometry of the regular tetrahedral scaffold that maps catalogue pieces to catalogue pieces, maps catalogue hinge lines to catalogue hinge lines, and maps connected three-hinge catalogue trees to connected three-hinge catalogue trees.  Its orthogonal linear part may have determinant \(+1\) or \(-1\).  If a source oriented hinge axis maps to the opposite orientation of the target catalogue axis, that flip is recorded by \(\operatorname{orient}_g(h)=-1\).  Only these finite, catalogue-preserving isometries are used in the transport ledger.
+\end{definition}
+
+Let \(g\) be a valid scaffold isometry.  It induces a piece map, a hinge map, and a tree map.  Write the orthogonal linear part of the isometry as \(R_g\).  If the source oriented hinge axis \(u_h\) maps to the target catalogue axis by
+\[
+  R_g u_h = \operatorname{orient}_g(h) u_{g(h)},
+  \qquad \operatorname{orient}_g(h) \in \{+1,-1\},
+\]
+then the transported sign row is
+\[
+  s'_{g(h)} = \det(R_g)\, \operatorname{orient}_g(h)\, s_h .
+\]
+This is the finite-angle signed transport rule.  It is the same rule used by the transport ledger; here it is stated as a mathematical convention, not as a script-local label.
+
+\begin{lemma}[Finite-angle scaffold conjugacy]
+For every admissible value of \(t\), the configuration obtained from \((T,s)\) is congruent, after piece relabelling and one common root re-gauge, to the configuration obtained from \((g(T),s')\).
+\end{lemma}
+
+\begin{proof}
+Each moving piece is rigid.  The scaffold isometry sends each source hinge line to the corresponding target hinge line and sends each source piece to the corresponding target piece.  Rodrigues rotation about a line is natural under an orthogonal change of frame: conjugating a rotation by \(R_g\) gives the rotation about the image line, with the orientation of the line and the determinant of \(R_g\) accounted for by the sign rule above.  Therefore the product of hinge rotations along every parent-child path in the tree is carried to the product of the transported hinge rotations in the target tree.
+
+If the selected root convention changes under the transport, the two configurations differ by one common rigid transform \(G\).  This is a root re-gauge, not a change in pairwise geometry.  For any two pieces with transforms \(C_i\) and \(C_j\), the pairwise relative transform is unchanged because
+\[
+  (G C_j)^{-1}(G C_i) = C_j^{-1} C_i .
+\]
+Thus all pairwise relative placements are preserved after relabelling.
+
+The separating-axis, contact, and strict-overlap predicates used by the certificates depend only on these pairwise relative placements and on rigidly transported support features.  A SAT axis may be reversed, but this only multiplies the associated scalar row by \(-1\); the ledger records that axis-sign normalization.  Hence strict separation, equality contact, non-overlap, and strict interior overlap are preserved for every admissible \(t\).
+\end{proof}
+
+\begin{lemma}[Finite SAT/contact predicate completeness]
+For the zero-thickness rigid pieces used in this finite atlas, each pairwise certificate is expressed in the complete finite SAT/contact vocabulary for the transported convex support features: face-normal axes, edge-edge axes, selected hinge-side contact rows, and the residual pair rows named by the source locks.  Reversing an axis changes only the sign convention, not the separation/contact/overlap predicate.
+\end{lemma}
+
+\begin{proof}
+The pieces and support features are fixed finite polyhedral data.  For convex polyhedral features, strict separation or strict interior overlap is decided by the finite separating-axis list consisting of face normals and edge cross-product axes, with equality recording contact.  The wrapper rows add selected hinge-side contact semantics only for the explicitly source-locked wrapper class, and the source-map visibility audit records the required pair labels, support features, and axis normalizations.  Therefore no unlisted analytic predicate is being introduced by the transport step.  This is a zero-thickness predicate-completeness statement only; it is not a positive-thickness or physical-clearance claim.
+\end{proof}
+
+\begin{corollary}[Certificate transport]
+Any source certificate whose support features, pair labels, hinge-side labels, SAT-axis families, and event value are written in the transport vocabulary has a transported certificate for the target tree and transported sign row.
+\end{corollary}
+
+The proof-spine artifacts do not replace this geometric argument; they check that the finite maps, signs, root re-gauges, pair maps, and axis normalizations used by this argument have been materialized over the 108-tree atlas.
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% This fragment is not a standalone paper and is not a main-paper update.
+
+\section{Transport and theta-star invariance}
+
+For a tree \(T\), let \(\operatorname{Rows}(T)\) be the eight equal-magnitude sign rows, and let \(\rho(T,s)\) be the zero-thickness row reach from the preceding section.  The proof spine proves \(t^*(T)\) by combining lower witnesses and upper caps over these eight rows; it does not need an exact first-contact formula for every non-attaining row.  The endpoint value \(\sqrt{3}\) means endpoint reached, not first contact.
+
+\begin{lemma}[Eight-row bijection]
+The signed transport rule
+\[
+  s'_{g(h)} = \det(R_g)\, \operatorname{orient}_g(h)\, s_h
+\]
+defines a bijection \(\operatorname{Rows}(T)\to\operatorname{Rows}(g(T))\).
+\end{lemma}
+
+\begin{proof}
+The hinge map \(h \mapsto g(h)\) is a bijection on the three hinges.  For each hinge, the transported sign is obtained from the source sign by multiplication by one fixed element of \(\{+1,-1\}\).  Therefore the map is an invertible coordinate permutation followed by coordinatewise sign changes.  Such a map is a bijection on \(\{+1,-1\}^3\).
+\end{proof}
+
+\begin{lemma}[Row predicate preservation]
+Let \(s\) be a row of \(T\), and let \(s'\) be its transported row.  For every admissible \(t\), the row \((T,s)\) is free, in contact, or obstructed exactly when \((g(T),s')\) is free, in contact, or obstructed after relabelling by the transported certificate data.  Consequently lower witnesses, upper caps, and exact row events are preserved under transport.
+\end{lemma}
+
+\begin{proof}
+This is the finite-angle scaffold conjugacy lemma applied at the fixed value \(t\).  Pairwise relative transforms are preserved by piece relabelling and root re-gauge.  The finite SAT/contact predicates are rigid-motion invariant after the recorded axis-sign normalization.  Therefore the row status is preserved at that value of \(t\).  Since the same argument applies for every admissible \(t\), the row reach, lower-witness statements, and upper-cap statements are preserved.
+\end{proof}
+
+\begin{theorem}[Theta-star orbit invariance]
+For every valid scaffold isometry \(g\),
+\[
+  t^*(T)=t^*(g(T)).
+\]
+The final theta-star class is also preserved: endpoint reached at \(\sqrt{3}\), positive jam at \(\sqrt{2}\), instant jam at \(0\), or the source-locked one-parameter wrapper class.
+\end{theorem}
+
+\begin{proof}
+By the eight-row bijection, taking the maximum over the eight source rows is the same as taking the maximum over the eight transported target rows.  By row predicate preservation, transported lower witnesses and transported upper caps have the same values as their sources.  Hence the maximum certified row reach is unchanged.  The same argument preserves the semantic class attached to the event value, with \(\sqrt{3}\) interpreted as endpoint reached, not first contact.
+\end{proof}
+
+\begin{theorem}[S4 equal-magnitude theta-star finite-atlas theorem, local form]
+In the historical zero-thickness S4 scaffold, over the finite atlas of 108 connected three-hinge trees and the eight equal-magnitude sign rows for each tree, the theta-star distribution certified by the proof spine is
+\[
+\begin{array}{rcl}
+  40 &:& \sqrt{3} \text{ endpoint reached},\\
+  8  &:& \sqrt{2} \text{ positive jam},\\
+  60 &:& 0 \text{ instant jam}.
+\end{array}
+\]
+Equivalently, the endpoint-reaching records split as \(36+4\), so the final class distribution is
+\[
+  36+4+8+60=108.
+\]
+The value \(\sqrt{2}\) corresponds to \(\theta = 2\arctan(\sqrt{2}) = \arccos(-1/3)\), the tetrahedral bond angle, i.e. the supplement of the regular tetrahedron dihedral angle.
+\end{theorem}
+
+\begin{proof}
+The endpoint-free, positive-jam, and instant-jam classes have exact local theta-star certificates recorded by the representative table and source gates.  The wrapper class is recorded separately: its four records are source-locked one-parameter wrapper semantics inherited from public/local wrapper evidence, not a new broad motion certificate.  The finite-angle transport ledger maps the source records across the 108-tree atlas.  Root re-gauge replay proves that non-root-preserving records do not change pairwise geometry.  Endpoint-free witness transport records replace the historical candidate label for the full-open class.  The positive-jam source packages prove selected rows attaining \(\sqrt{2}\), and the positive-jam max-over-8 certificate proves the matching \(\sqrt{2}\) upper cap for every equal-magnitude row in those representatives.  The instant-jam representatives are closed by eight-row right-germ gates.  The theorem assembly and sabotage gates verify coverage, class counts, event values, and fail-closed behavior of the assembled proof spine.
+\end{proof}
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% Endpoint-free class proof. Not a standalone paper and not a main-paper update.
+
+\section{Endpoint-free transported witness class}
+
+The endpoint-free class has final label
+\[
+  \texttt{exact\_endpoint\_free\_witness\_transport\_certificate}
+\]
+and contains 36 target trees.  Its event value is \(\sqrt{3}\) endpoint reached.  This is an endpoint-reaching statement on the equal-magnitude ray, not a first-contact statement.
+
+\begin{lemma}[Endpoint-free source rows]
+The five representatives
+\[
+  \texttt{TREE\_001},\ \texttt{TREE\_004},\ \texttt{TREE\_005},\ \texttt{TREE\_027},\ \texttt{TREE\_029}
+\]
+have source endpoint-free witness rows over the interval \(0<t\le\sqrt{3}\).
+\end{lemma}
+
+\begin{proof}
+This is the source layer recorded in the representative source certificate table.  The required predicates are the endpoint-free interval predicate, the transported separating or contact-side rows, and the explicit wording lock that \(\sqrt{3}\) is not a first-contact value.  The proof spine materializes these rows through the endpoint-free witness transport gate.
+\end{proof}
+
+\begin{lemma}[Endpoint-free transport]
+Every target transported from these five representatives preserves the endpoint-free witness status over \(0<t\le\sqrt{3}\).
+\end{lemma}
+
+\begin{proof}
+Apply finite-angle scaffold conjugacy and row event preservation to each transported source row.  The T5c endpoint-free witness transport gate records 36 targets and 216 transported pair rows, so each target has all pairwise witness data needed for the endpoint interval.  Root re-gauge replay ensures that non-root-preserving transports only change the common frame and do not change pairwise relative geometry.
+\end{proof}
+
+\begin{proposition}[Endpoint-free class count]
+Exactly 36 trees lie in the endpoint-free transported witness class.
+\end{proposition}
+
+\begin{proof}
+The T6 assembly consumes the T4 transport ledger and the T5c witness transport gate.  It checks target coverage and the final class count
+\[
+  \#\texttt{exact\_endpoint\_free\_witness\_transport\_certificate}=36.
+\]
+Together with the endpoint-free transport lemma, this gives the class contribution of 36 endpoint-reaching records at \(\sqrt{3}\).
+\end{proof}
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% Wrapper-scope class proof. Not a standalone paper and not a main-paper update.
+
+\section{Source-locked wrapper class}
+
+The wrapper class has final label
+\[
+  \texttt{one\_parameter\_wrapper\_scope\_source\_locked}
+\]
+and contains 4 target trees:
+\[
+  \texttt{TREE\_007},\quad \texttt{TREE\_009},\quad
+  \texttt{TREE\_021},\quad \texttt{TREE\_093}.
+\]
+Its event value is \(\sqrt{3}\) endpoint reached, but it is deliberately kept in a separate class because its source proof is wrapper-scoped one-parameter evidence rather than the theta-star local endpoint-free source rows.
+
+\begin{lemma}[Wrapper source lock]
+The records \texttt{TREE\_007} and \texttt{TREE\_021} are source-locked to the public CL5/A7d one-parameter wrapper evidence.  The records \texttt{TREE\_009} and \texttt{TREE\_093} are source-locked to the local generalized-wedge wrapper route for the same one-parameter semantics.  None of the four records is promoted here to a physical, positive-thickness, non-equal-angle, or three-parameter statement.
+\end{lemma}
+
+\begin{proof}
+The class predicate audit records that this class uses public/local wrapper artifacts and selected-hinge B04/A7c contact-side semantics.  The theta-star ledger does not reprove those wrappers.  It checks that the source references, selected hinge-side records, pair maps, and wrapper contact-side semantics needed for transport are visible.  The four tree identifiers above are therefore endpoint-reaching records only within the source-locked one-parameter wrapper scope.
+\end{proof}
+
+\begin{lemma}[Wrapper transport boundary]
+Finite-angle transport can carry the wrapper-scoped endpoint-reaching status only inside the same one-parameter semantics.
+\end{lemma}
+
+\begin{proof}
+The finite-angle scaffold conjugacy transports piece maps, hinge maps, sign rows, pair maps, and root re-gauges.  The source-map visibility audit exposes the selected hinge-side records required by the wrapper/contact-side semantics.  Therefore the transported records inherit the wrapper-scoped endpoint-reaching status, but no broader motion claim is introduced.
+\end{proof}
+
+\begin{proposition}[Wrapper class count]
+Exactly 4 trees lie in the source-locked wrapper class.
+\end{proposition}
+
+\begin{proof}
+The T6 assembly gate records and checks
+\[
+  \#\texttt{one\_parameter\_wrapper\_scope\_source\_locked}=4.
+\]
+The class remains semantically separate from the 36 endpoint-free witness records.  Both contribute endpoint-reaching records at \(\sqrt{3}\), but they have different source proof routes.
+\end{proof}
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% Positive-jam class proof. Not a standalone paper and not a main-paper update.
+
+\section{Positive-jam class at sqrt(2)}
+
+The positive-jam class has final label
+\[
+  \texttt{exact\_positive\_theta\_jam\_package\_source\_locked}
+\]
+and contains 8 target trees.  Its exact event value is
+\[
+  t^* = \sqrt{2}, \qquad \theta = 2\arctan(\sqrt{2}) = \arccos(-1/3), the tetrahedral bond angle.
+\]
+
+\begin{lemma}[Positive-jam source representatives]
+The representatives \texttt{TREE\_000} and \texttt{TREE\_003} have exact positive-jam source packages at \(t=\sqrt{2}\).
+\end{lemma}
+
+\begin{proof}
+The source table records Stage3a full-SAT contact, Stage3b no-earlier-overlap for the selected binding pair, and Stage3c non-hinge residual replay for these two representatives.  The source-map visibility audit exposes binding pair maps, support features, SAT-axis sources, and support witnesses.  The positive-jam max-over-8 certificate proves that no equal-magnitude sign row exceeds \(\sqrt{2}\), while the selected Stage3 rows attain \(\sqrt{2}\).  Therefore the representative value is exactly \(t^*=\sqrt{2}\).
+\end{proof}
+
+\begin{lemma}[Positive-jam transport]
+Every target transported from \texttt{TREE\_000} or \texttt{TREE\_003} preserves the same algebraic event value \(\sqrt{2}\) and the transported binding-contact data.
+\end{lemma}
+
+\begin{proof}
+By finite-angle scaffold conjugacy, the binding pair, support features, SAT-axis families, contact predicates, and no-earlier-obstruction predicates are rigidly transported with the recorded relabellings and axis-sign normalizations.  Root re-gauge does not alter pairwise relative transforms.  Thus the transported selected row attains the same blocking value.  The eight-row bijection carries the max-over-8 upper cap as well, so the target tree has \(t^*=\sqrt{2}\) without claiming exact first-contact values for every non-selected row.
+\end{proof}
+
+\begin{proposition}[Positive-jam class count]
+Exactly 8 trees lie in the positive-jam class.
+\end{proposition}
+
+\begin{proof}
+The T6 assembly gate records and checks
+\[
+  \#\texttt{exact\_positive\_theta\_jam\_package\_source\_locked}=8,
+\]
+and the positive-jam certificate records the closed form \(\sqrt{2}\).  This gives the class contribution of 8 trees with positive jam at the tetrahedral bond angle.
+\end{proof}
+
+
+% Local proof-prose fragment for the theta-star finite-atlas extension.
+% Instant-jam class proof. Not a standalone paper and not a main-paper update.
+
+\section{Instant-jam eight-row class}
+
+The instant-jam class has final label
+\[
+  \texttt{exact\_instant\_jam\_8\_row\_gate\_source\_locked}
+\]
+and contains 60 target trees.  Its event value is \(0\).
+
+\begin{lemma}[Instant-jam source representatives]
+The ten representatives
+\[
+\begin{gathered}
+  \texttt{TREE\_002},\ \texttt{TREE\_008},\ \texttt{TREE\_014},\ \texttt{TREE\_015},\ \texttt{TREE\_016},\\
+  \texttt{TREE\_017},\ \texttt{TREE\_041},\ \texttt{TREE\_043},\ \texttt{TREE\_044},\ \texttt{TREE\_068}
+\end{gathered}
+\]
+have all eight equal-magnitude sign rows right-germ obstructed at \(t=0\).
+\end{lemma}
+
+\begin{proof}
+The representative source table records an \texttt{instant\_jam\_row\_gate} for each of these ten representatives, with all 8 sign rows covered.  Where a hard-row override is required, such as the \texttt{TREE\_043} source lock, the source table records that exact override instead of using a scout seed.
+\end{proof}
+
+\begin{lemma}[Instant-jam transport]
+Every target transported from an instant-jam representative is instant-jammed at \(t=0\).
+\end{lemma}
+
+\begin{proof}
+The signed-row transport rule is a bijection on the eight sign rows.  Therefore the eight obstructed source rows map to the eight target rows.  Row predicate preservation carries each right-germ obstruction to the transported row.  Hence every equal-magnitude target row is obstructed at \(t=0\).
+\end{proof}
+
+\begin{proposition}[Instant-jam class count]
+Exactly 60 trees lie in the instant-jam class.
+\end{proposition}
+
+\begin{proof}
+The T6 assembly gate records and checks
+\[
+  \#\texttt{exact\_instant\_jam\_8\_row\_gate\_source\_locked}=60.
+\]
+Together with instant-jam transport, this gives the class contribution of 60 trees with \(t^*=0\).
+\end{proof}
+
+
+\begin{thebibliography}{1}
+
+\bibitem{abbott2007hinged}
+Timothy~G. Abbott, Zachary Abel, David Charlton, Erik~D. Demaine, Martin~L.
+  Demaine, and Scott~D. Kominers.
+\newblock Hinged dissections exist, 2007.
+
+\bibitem{akiyama2018polyhedral}
+Jin Akiyama, Erik~D. Demaine, and Stefan Langerman.
+\newblock Polyhedral characterization of reversible hinged dissections, 2018.
+
+\bibitem{akiyama2016reversible}
+Jin Akiyama, Stefan Langerman, and Kiyoko Matsunaga.
+\newblock Reversible nets of polyhedra, 2016.
+
+\bibitem{demaine2024continuous}
+Erik~D. Demaine, Martin~L. Demaine, Markus Hecher, Rebecca Lin, Victor~H. Luo,
+  and Chie Nara.
+\newblock Continuous flattening and reversing of convex polyhedral linkages,
+  2024.
+
+\bibitem{demaine2001vertex}
+Erik~D. Demaine, David Eppstein, Jeff Erickson, George~W. Hart, and Joseph
+  O'Rourke.
+\newblock Vertex-unfoldings of simplicial polyhedra, 2001.
+
+\bibitem{demaine2007gfalop}
+Erik~D. Demaine and Joseph O'Rourke.
+\newblock {\em Geometric Folding Algorithms: Linkages, Origami, Polyhedra}.
+\newblock Cambridge University Press, 2007.
+
+\end{thebibliography}
+
+\end{document}

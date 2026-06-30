@@ -1,0 +1,1287 @@
+{
+  "report_id": "s4_theta_star_source_map_visibility_audit_v1",
+  "generated_utc": "2026-06-29T17:04:24.913387+00:00",
+  "status": "pass",
+  "claim_level": "source_map_visibility_audit_not_new_geometry",
+  "sources": {
+    "a7c_selected_hinge_contact_side_manifest": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/manifests/b04_a7c_selected_hinge_contact_side_certificate_manifest.json",
+    "stage2_binding_row_certificate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage2_certificate.json",
+    "stage3a_full_sat_contact_certificate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json",
+    "stage3b_no_earlier_overlap_certificate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json",
+    "stage3c_nonhinge_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json",
+    "positive_jam_max_over_8_certificate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_positive_jam_max_over_8_certificate.json"
+  },
+  "selected_hinge_side_map": [
+    {
+      "tree_id": "TREE_007",
+      "pair": [
+        "P0",
+        "P1"
+      ],
+      "hinge_id": "H0_A_M_AB",
+      "ray_sign": 1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h0_a_m_ab_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    },
+    {
+      "tree_id": "TREE_007",
+      "pair": [
+        "P0",
+        "P2"
+      ],
+      "hinge_id": "H4_C_M_CD",
+      "ray_sign": 1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h4_c_m_cd_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    },
+    {
+      "tree_id": "TREE_007",
+      "pair": [
+        "P1",
+        "P3"
+      ],
+      "hinge_id": "H7_D_M_CD",
+      "ray_sign": -1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h7_d_m_cd_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    },
+    {
+      "tree_id": "TREE_021",
+      "pair": [
+        "P0",
+        "P1"
+      ],
+      "hinge_id": "H0_A_M_AB",
+      "ray_sign": 1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h0_a_m_ab_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    },
+    {
+      "tree_id": "TREE_021",
+      "pair": [
+        "P1",
+        "P3"
+      ],
+      "hinge_id": "H7_D_M_CD",
+      "ray_sign": -1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h7_d_m_cd_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    },
+    {
+      "tree_id": "TREE_021",
+      "pair": [
+        "P2",
+        "P3"
+      ],
+      "hinge_id": "H9_B_M_AB",
+      "ray_sign": 1,
+      "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h9_b_m_ab_a7c_b04_contact_side.json",
+      "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+      "contact_side_certified": true
+    }
+  ],
+  "positive_jam_support_feature_map": [
+    {
+      "tree_id": "TREE_000",
+      "binding_pair": [
+        "P2",
+        "P3"
+      ],
+      "selected_sign_map": {
+        "H0_A_M_AB": 1,
+        "H3_C_M_AB": -1,
+        "H6_D_M_AB": 1
+      },
+      "selected_row_support_feature": {
+        "face_owner": "A",
+        "face_idx": [
+          0,
+          1,
+          3
+        ],
+        "orientation": "A_minus_B",
+        "a_vertex": 0,
+        "b_vertex": 0,
+        "axis_norm2_at_tstar": "1/8"
+      },
+      "stage2_root": {
+        "t_star_closed_form": "sqrt(2)",
+        "theta_star_deg_exact_form": "2*atan(sqrt(2)) = acos(-1/3)",
+        "theta_star_deg_float": 109.47122063449069,
+        "root_certificate": {
+          "has_root_in_open_ray": true,
+          "t_star_bracket": [
+            "353553037/250000000",
+            "1414214977/1000000000"
+          ],
+          "t_star_numeric": 1.4142135623730951,
+          "exact_sign_change_certified": true,
+          "rational_poly_roots_in_bracket": 1,
+          "single_root_certified": true,
+          "theta_star_deg_float": 109.47122063449069,
+          "gap_numerator": "t - sqrt(2)",
+          "rational_poly": "t**4 - 4*t**2 + 4",
+          "note": "t* is the unique root of gap_numerator in the certified bracket; theta* = 2*arctan(t*) is transcendental and only reported numerically."
+        }
+      },
+      "stage3a_axis_summary": {
+        "axis_count": 42,
+        "axis_record_count": 42,
+        "nonseparating_axis_count": 42,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P2:(0, 1, 2)",
+          "face:P2:(0, 1, 3)",
+          "face:P2:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P2:(0, 1, 3)",
+          "face:P3:(0, 1, 3)",
+          "cross:edge:P2:(0, 1)|edge:P3:(0, 3)"
+        ]
+      },
+      "stage3b_branch_summary": {
+        "branch_count": 1,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_000_all",
+            "interval": "0 < t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 2,
+            "right_vertex_count": 4
+          }
+        ]
+      },
+      "max_over_8_summary": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "tree_id": "TREE_003",
+      "binding_pair": [
+        "P1",
+        "P3"
+      ],
+      "selected_sign_map": {
+        "H0_A_M_AB": 1,
+        "H3_C_M_AB": -1,
+        "H9_B_M_AB": -1
+      },
+      "selected_row_support_feature": {
+        "face_owner": "A",
+        "face_idx": [
+          0,
+          1,
+          2
+        ],
+        "orientation": "B_minus_A",
+        "a_vertex": 0,
+        "b_vertex": 2,
+        "axis_norm2_at_tstar": "3/16"
+      },
+      "stage2_root": {
+        "t_star_closed_form": "sqrt(2)",
+        "theta_star_deg_exact_form": "2*atan(sqrt(2)) = acos(-1/3)",
+        "theta_star_deg_float": 109.47122063449069,
+        "root_certificate": {
+          "has_root_in_open_ray": true,
+          "t_star_bracket": [
+            "353553037/250000000",
+            "1414214977/1000000000"
+          ],
+          "t_star_numeric": 1.4142135623730951,
+          "exact_sign_change_certified": true,
+          "rational_poly_roots_in_bracket": 1,
+          "single_root_certified": true,
+          "theta_star_deg_float": 109.47122063449069,
+          "gap_numerator": "t - sqrt(2)",
+          "rational_poly": "t**4 - 4*t**2 + 4",
+          "note": "t* is the unique root of gap_numerator in the certified bracket; theta* = 2*arctan(t*) is transcendental and only reported numerically."
+        }
+      },
+      "stage3a_axis_summary": {
+        "axis_count": 43,
+        "axis_record_count": 43,
+        "nonseparating_axis_count": 43,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P1:(0, 1, 3)",
+          "face:P1:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P3:(0, 1, 2)",
+          "cross:edge:P1:(0, 1)|edge:P3:(1, 2)"
+        ]
+      },
+      "stage3b_branch_summary": {
+        "branch_count": 2,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_003_left",
+            "interval": "0 < t <= 1",
+            "face": [
+              1,
+              2,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 0,
+            "right_vertex_count": 4
+          },
+          {
+            "branch_id": "TREE_003_right",
+            "interval": "1 <= t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              2
+            ],
+            "relation": "right_above_left_face",
+            "left_nonface_vertex": 3,
+            "right_vertex_count": 4
+          }
+        ]
+      },
+      "max_over_8_summary": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    }
+  ],
+  "visibility_obligations_closed": [
+    "O-selected-hinge-side-map-visibility",
+    "O-support-feature-map-visibility"
+  ],
+  "remaining_review_obligations": [
+    "O-theorem-name-scope"
+  ],
+  "transport_visibility_fields": {
+    "selected_hinge_side_map_visible": true,
+    "support_feature_map_visible": true,
+    "SAT_axis_family_map_visible": true,
+    "axis_sign_normalization_witnesses_visible": true
+  },
+  "checks": [
+    {
+      "name": "exists b04_a7c_selected_hinge_contact_side_certificate_manifest.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/manifests/b04_a7c_selected_hinge_contact_side_certificate_manifest.json"
+    },
+    {
+      "name": "exists s4_theta_star_jam_seed_stage2_certificate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage2_certificate.json"
+    },
+    {
+      "name": "exists s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json"
+    },
+    {
+      "name": "exists s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json"
+    },
+    {
+      "name": "exists s4_theta_star_jam_seed_stage3c_nonhinge_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json"
+    },
+    {
+      "name": "exists s4_theta_star_positive_jam_max_over_8_certificate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_positive_jam_max_over_8_certificate.json"
+    },
+    {
+      "name": "A7c selected hinge map has 6 rows",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "A7c manifest predicate is selected hinge contact side",
+      "passed": true,
+      "detail": "B04_SELECTED_HINGE_CONTACT_SIDE"
+    },
+    {
+      "name": "all A7c selected hinge rows contact-side certified",
+      "passed": true,
+      "detail": [
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P0",
+            "P1"
+          ],
+          "hinge_id": "H0_A_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h0_a_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P0",
+            "P2"
+          ],
+          "hinge_id": "H4_C_M_CD",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h4_c_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P1",
+            "P3"
+          ],
+          "hinge_id": "H7_D_M_CD",
+          "ray_sign": -1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h7_d_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P0",
+            "P1"
+          ],
+          "hinge_id": "H0_A_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h0_a_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P1",
+            "P3"
+          ],
+          "hinge_id": "H7_D_M_CD",
+          "ray_sign": -1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h7_d_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P2",
+            "P3"
+          ],
+          "hinge_id": "H9_B_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h9_b_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        }
+      ]
+    },
+    {
+      "name": "all A7c rows expose tree/pair/hinge/ray_sign/object",
+      "passed": true,
+      "detail": [
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P0",
+            "P1"
+          ],
+          "hinge_id": "H0_A_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h0_a_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P0",
+            "P2"
+          ],
+          "hinge_id": "H4_C_M_CD",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h4_c_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_007",
+          "pair": [
+            "P1",
+            "P3"
+          ],
+          "hinge_id": "H7_D_M_CD",
+          "ray_sign": -1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_007_h7_d_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P0",
+            "P1"
+          ],
+          "hinge_id": "H0_A_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h0_a_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P1",
+            "P3"
+          ],
+          "hinge_id": "H7_D_M_CD",
+          "ray_sign": -1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h7_d_m_cd_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        },
+        {
+          "tree_id": "TREE_021",
+          "pair": [
+            "P2",
+            "P3"
+          ],
+          "hinge_id": "H9_B_M_AB",
+          "ray_sign": 1,
+          "object_record": "results/historical_s4_median_planes/exact_interval/b04_selected_hinge_contact_side/a7c_selected_hinge_contact_side_certificate/records/tree_021_h9_b_m_ab_a7c_b04_contact_side.json",
+          "object_status": "a7c_selected_hinge_contact_side_certified_on_open_ray_superset",
+          "contact_side_certified": true
+        }
+      ]
+    },
+    {
+      "name": "Stage2 status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Stage2 has two positive-jam cases",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "TREE_003 Stage2 selected support feature visible",
+      "passed": true,
+      "detail": {
+        "face_owner": "A",
+        "face_idx": [
+          0,
+          1,
+          2
+        ],
+        "orientation": "B_minus_A",
+        "a_vertex": 0,
+        "b_vertex": 2,
+        "axis_norm2_at_tstar": "3/16"
+      }
+    },
+    {
+      "name": "TREE_000 Stage2 selected support feature visible",
+      "passed": true,
+      "detail": {
+        "face_owner": "A",
+        "face_idx": [
+          0,
+          1,
+          3
+        ],
+        "orientation": "A_minus_B",
+        "a_vertex": 0,
+        "b_vertex": 0,
+        "axis_norm2_at_tstar": "1/8"
+      }
+    },
+    {
+      "name": "Stage3a status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "TREE_003 Stage3a axis records match axis_count",
+      "passed": true,
+      "detail": {
+        "axis_count": 43,
+        "axis_record_count": 43,
+        "nonseparating_axis_count": 43,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P1:(0, 1, 3)",
+          "face:P1:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P3:(0, 1, 2)",
+          "cross:edge:P1:(0, 1)|edge:P3:(1, 2)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 Stage3a axes expose source strings",
+      "passed": true,
+      "detail": {
+        "axis_count": 43,
+        "axis_record_count": 43,
+        "nonseparating_axis_count": 43,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P1:(0, 1, 3)",
+          "face:P1:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P3:(0, 1, 2)",
+          "cross:edge:P1:(0, 1)|edge:P3:(1, 2)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 Stage3a axes expose support witnesses",
+      "passed": true,
+      "detail": {
+        "axis_count": 43,
+        "axis_record_count": 43,
+        "nonseparating_axis_count": 43,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P1:(0, 1, 3)",
+          "face:P1:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P3:(0, 1, 2)",
+          "cross:edge:P1:(0, 1)|edge:P3:(1, 2)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 Stage3a has touch axes",
+      "passed": true,
+      "detail": {
+        "axis_count": 43,
+        "axis_record_count": 43,
+        "nonseparating_axis_count": 43,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P1:(0, 1, 3)",
+          "face:P1:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P1:(0, 1, 2)",
+          "face:P3:(0, 1, 2)",
+          "cross:edge:P1:(0, 1)|edge:P3:(1, 2)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3a axis records match axis_count",
+      "passed": true,
+      "detail": {
+        "axis_count": 42,
+        "axis_record_count": 42,
+        "nonseparating_axis_count": 42,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P2:(0, 1, 2)",
+          "face:P2:(0, 1, 3)",
+          "face:P2:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P2:(0, 1, 3)",
+          "face:P3:(0, 1, 3)",
+          "cross:edge:P2:(0, 1)|edge:P3:(0, 3)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3a axes expose source strings",
+      "passed": true,
+      "detail": {
+        "axis_count": 42,
+        "axis_record_count": 42,
+        "nonseparating_axis_count": 42,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P2:(0, 1, 2)",
+          "face:P2:(0, 1, 3)",
+          "face:P2:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P2:(0, 1, 3)",
+          "face:P3:(0, 1, 3)",
+          "cross:edge:P2:(0, 1)|edge:P3:(0, 3)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3a axes expose support witnesses",
+      "passed": true,
+      "detail": {
+        "axis_count": 42,
+        "axis_record_count": 42,
+        "nonseparating_axis_count": 42,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P2:(0, 1, 2)",
+          "face:P2:(0, 1, 3)",
+          "face:P2:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P2:(0, 1, 3)",
+          "face:P3:(0, 1, 3)",
+          "cross:edge:P2:(0, 1)|edge:P3:(0, 3)"
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3a has touch axes",
+      "passed": true,
+      "detail": {
+        "axis_count": 42,
+        "axis_record_count": 42,
+        "nonseparating_axis_count": 42,
+        "touch_axis_count": 8,
+        "all_axes_have_source": true,
+        "all_axes_have_support_witnesses": true,
+        "sample_axis_sources": [
+          "face:P2:(0, 1, 2)",
+          "face:P2:(0, 1, 3)",
+          "face:P2:(0, 2, 3)"
+        ],
+        "sample_touch_axis_sources": [
+          "face:P2:(0, 1, 3)",
+          "face:P3:(0, 1, 3)",
+          "cross:edge:P2:(0, 1)|edge:P3:(0, 3)"
+        ]
+      }
+    },
+    {
+      "name": "Stage3b status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "TREE_003 Stage3b branches visible",
+      "passed": true,
+      "detail": {
+        "branch_count": 2,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_003_left",
+            "interval": "0 < t <= 1",
+            "face": [
+              1,
+              2,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 0,
+            "right_vertex_count": 4
+          },
+          {
+            "branch_id": "TREE_003_right",
+            "interval": "1 <= t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              2
+            ],
+            "relation": "right_above_left_face",
+            "left_nonface_vertex": 3,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 Stage3b branches certified",
+      "passed": true,
+      "detail": {
+        "branch_count": 2,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_003_left",
+            "interval": "0 < t <= 1",
+            "face": [
+              1,
+              2,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 0,
+            "right_vertex_count": 4
+          },
+          {
+            "branch_id": "TREE_003_right",
+            "interval": "1 <= t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              2
+            ],
+            "relation": "right_above_left_face",
+            "left_nonface_vertex": 3,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 Stage3b branch support features visible",
+      "passed": true,
+      "detail": {
+        "branch_count": 2,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_003_left",
+            "interval": "0 < t <= 1",
+            "face": [
+              1,
+              2,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 0,
+            "right_vertex_count": 4
+          },
+          {
+            "branch_id": "TREE_003_right",
+            "interval": "1 <= t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              2
+            ],
+            "relation": "right_above_left_face",
+            "left_nonface_vertex": 3,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3b branches visible",
+      "passed": true,
+      "detail": {
+        "branch_count": 1,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_000_all",
+            "interval": "0 < t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 2,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3b branches certified",
+      "passed": true,
+      "detail": {
+        "branch_count": 1,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_000_all",
+            "interval": "0 < t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 2,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 Stage3b branch support features visible",
+      "passed": true,
+      "detail": {
+        "branch_count": 1,
+        "all_branches_certified": true,
+        "all_branches_have_face_and_support": true,
+        "all_branches_have_right_vertex_records": true,
+        "sample_branches": [
+          {
+            "branch_id": "TREE_000_all",
+            "interval": "0 < t < sqrt(2)",
+            "face": [
+              0,
+              1,
+              3
+            ],
+            "relation": "right_below_left_face",
+            "left_nonface_vertex": 2,
+            "right_vertex_count": 4
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stage3c status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "positive-jam max-over-8 status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "positive-jam support map has two trees",
+      "passed": true,
+      "detail": [
+        "TREE_000",
+        "TREE_003"
+      ]
+    },
+    {
+      "name": "TREE_000 max-over-8 has all 8 rows",
+      "passed": true,
+      "detail": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 max-over-8 has one selected contact row",
+      "passed": true,
+      "detail": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 max-over-8 has seven nonbest strict rows",
+      "passed": true,
+      "detail": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 nonbest rows expose chosen pair axes",
+      "passed": true,
+      "detail": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_000 nonbest rows expose support witnesses",
+      "passed": true,
+      "detail": {
+        "best_index": 2,
+        "best_pair": [
+          "P2",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 max-over-8 has all 8 rows",
+      "passed": true,
+      "detail": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 max-over-8 has one selected contact row",
+      "passed": true,
+      "detail": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 max-over-8 has seven nonbest strict rows",
+      "passed": true,
+      "detail": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 nonbest rows expose chosen pair axes",
+      "passed": true,
+      "detail": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "TREE_003 nonbest rows expose support witnesses",
+      "passed": true,
+      "detail": {
+        "best_index": 3,
+        "best_pair": [
+          "P1",
+          "P3"
+        ],
+        "certified_row_count": 8,
+        "row_type_counts": {
+          "nonbest_strict_overlap_at_sqrt2": 7,
+          "selected_contact_at_sqrt2": 1
+        },
+        "selected_contact_row_count": 1,
+        "nonbest_strict_overlap_row_count": 7,
+        "nonbest_rows_have_chosen_pair_axes": true,
+        "nonbest_rows_have_support_witnesses": true,
+        "sample_nonbest_axis_sources": [
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ],
+          [
+            "face:P0:(0, 1, 2)",
+            "face:P0:(0, 1, 3)",
+            "face:P0:(0, 2, 3)"
+          ]
+        ]
+      }
+    }
+  ],
+  "passed": 43,
+  "failed": 0,
+  "nonclaims": [
+    "does not recompute geometry",
+    "does not promote public paper/addendum",
+    "does not claim physical positive-thickness hingeability",
+    "does not claim non-equal-angle or three-parameter motion"
+  ]
+}

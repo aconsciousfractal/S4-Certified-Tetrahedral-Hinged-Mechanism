@@ -1,0 +1,118 @@
+{
+  "report_id": "s4_theta_star_theorem_sabotage_gate_v1",
+  "claim_level": "proof_hygiene_mutation_gate_not_theorem_certificate",
+  "status": "pass",
+  "summary": {
+    "baseline_checks": 9,
+    "sabotage_checks": 10,
+    "passed": 19,
+    "failed": 0
+  },
+  "sources": {
+    "t4_finite_angle_transport_ledger": "results\\historical_s4_median_planes\\local_theorem\\theta_star_spectrum\\s4_theta_star_finite_angle_transport_ledger.json",
+    "t5c_endpoint_free_witness_transport_gate": "results\\historical_s4_median_planes\\local_theorem\\theta_star_spectrum\\s4_theta_star_endpoint_free_witness_transport_gate.json",
+    "t6_108_tree_theorem_assembly_gate": "results\\historical_s4_median_planes\\local_theorem\\theta_star_spectrum\\s4_theta_star_108_tree_theorem_assembly_gate.json"
+  },
+  "checks": [
+    {
+      "name": "baseline_t4_class_counts_match_status_map",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t4_tstar_matches_certificate_class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t4_axis_multiplier_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t5c_pair_transport_invariants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t6_final_class_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t6_tstar_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t6_target_coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t6_root_and_row_gates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "baseline_t6_orbit_source_alignment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t4_class_count_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t4_tstar_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t4_axis_multiplier_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t5c_piece_map_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t5c_pair_coverage_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t6_final_class_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t6_tstar_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t6_target_coverage_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t6_root_regauge_corruption",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detect_t6_orbit_source_corruption",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "nonclaims": [
+    "This gate mutates in-memory copies only; it does not rebuild T4/T5c/T6 from source scripts.",
+    "This gate is a proof-hygiene replay, not an independent theorem proof.",
+    "This gate does not certify physical thickness, CAD, fabrication, or 3-parameter motion."
+  ]
+}

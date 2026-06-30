@@ -1,0 +1,364 @@
+{
+  "report_id": "s4_theta_star_108_tree_theorem_proof_package_gate",
+  "generated_utc": "2026-06-29T17:10:28.678728+00:00",
+  "status": "pass_with_review_obligations",
+  "claim_level": "proof_prose_package_not_public_promotion",
+  "sources": {
+    "t4_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger.json",
+    "t4_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger_replay.json",
+    "t5a_audit": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit.json",
+    "t5b_root_regauge": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate.json",
+    "t5c_endpoint_witness": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate.json",
+    "t6_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate.json",
+    "t6_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate_replay.json",
+    "sabotage_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_theorem_sabotage_gate.json",
+    "t6b_theorem_prose_audit": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_t6b_theorem_prose_audit.json",
+    "positive_jam_max_over_8_certificate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_positive_jam_max_over_8_certificate.json",
+    "source_map_visibility_audit": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_source_map_visibility_audit.json",
+    "representative_source_table": "docs/S4_THETA_STAR_REPRESENTATIVE_SOURCE_CERTIFICATE_TABLE.md",
+    "class_predicate_audit": "docs/S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md",
+    "finite_conjugacy_lemma": "docs/S4_FINITE_ANGLE_SCAFFOLD_CONJUGACY_LEMMA.md",
+    "transport_lemma": "docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md"
+  },
+  "outputs": {
+    "proof_draft": "docs/S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md",
+    "crosswalk": "docs/S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md",
+    "external_red_team_prompt": "docs/S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md"
+  },
+  "summary": {
+    "final_class_counts": {
+      "exact_positive_theta_jam_package_source_locked": 8,
+      "exact_endpoint_free_witness_transport_certificate": 36,
+      "exact_instant_jam_8_row_gate_source_locked": 60,
+      "one_parameter_wrapper_scope_source_locked": 4
+    },
+    "theta_status_counts": {
+      "full_open_to_120": 36,
+      "instant_jam_t0": 60,
+      "jam_at_positive_t": 8,
+      "full_open_to_120_public_scope": 4
+    },
+    "t_star_counts": {
+      "sqrt(3) endpoint reached": 40,
+      "0": 60,
+      "sqrt(2)": 8
+    },
+    "sabotage_checks": {
+      "baseline_checks": 9,
+      "sabotage_checks": 10,
+      "passed": 19,
+      "failed": 0
+    },
+    "t6b_status": "pass_with_review_obligations",
+    "open_obligations": [
+      "O-theorem-name-scope"
+    ],
+    "visibility_obligations_closed": [
+      "O-selected-hinge-side-map-visibility",
+      "O-support-feature-map-visibility"
+    ]
+  },
+  "checks": [
+    {
+      "name": "exists s4_theta_star_finite_angle_transport_ledger.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger.json"
+    },
+    {
+      "name": "exists s4_theta_star_finite_angle_transport_ledger_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger_replay.json"
+    },
+    {
+      "name": "exists s4_theta_star_transport_theorem_readiness_audit.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit.json"
+    },
+    {
+      "name": "exists s4_theta_star_finite_root_regauge_replay_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate.json"
+    },
+    {
+      "name": "exists s4_theta_star_endpoint_free_witness_transport_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate.json"
+    },
+    {
+      "name": "exists s4_theta_star_108_tree_theorem_assembly_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate.json"
+    },
+    {
+      "name": "exists s4_theta_star_108_tree_theorem_assembly_gate_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate_replay.json"
+    },
+    {
+      "name": "exists s4_theta_star_theorem_sabotage_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_theorem_sabotage_gate.json"
+    },
+    {
+      "name": "exists s4_theta_star_t6b_theorem_prose_audit.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_t6b_theorem_prose_audit.json"
+    },
+    {
+      "name": "exists s4_theta_star_positive_jam_max_over_8_certificate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_positive_jam_max_over_8_certificate.json"
+    },
+    {
+      "name": "exists s4_theta_star_source_map_visibility_audit.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_source_map_visibility_audit.json"
+    },
+    {
+      "name": "exists S4_FINITE_ANGLE_SCAFFOLD_CONJUGACY_LEMMA.md",
+      "passed": true,
+      "detail": "docs/S4_FINITE_ANGLE_SCAFFOLD_CONJUGACY_LEMMA.md"
+    },
+    {
+      "name": "exists S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md"
+    },
+    {
+      "name": "exists S4_THETA_STAR_REPRESENTATIVE_SOURCE_CERTIFICATE_TABLE.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_REPRESENTATIVE_SOURCE_CERTIFICATE_TABLE.md"
+    },
+    {
+      "name": "exists S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_THEOREM_CLASS_PREDICATE_AUDIT.md"
+    },
+    {
+      "name": "T6 status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "T6 replay status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "T6 local theorem supported",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "T6 public promotion false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "T6 has 108 final records",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "T4 representative self records 18",
+      "passed": true,
+      "detail": {
+        "exact_free_witness_candidate": 5,
+        "public_wrapper_scope_certificate": 1,
+        "stage3a_stage3b_stage3c_local_tree_package": 2,
+        "instant_jam_row_gate": 10
+      }
+    },
+    {
+      "name": "T4 representative class counts expected",
+      "passed": true,
+      "detail": {
+        "exact_free_witness_candidate": 5,
+        "public_wrapper_scope_certificate": 1,
+        "stage3a_stage3b_stage3c_local_tree_package": 2,
+        "instant_jam_row_gate": 10
+      }
+    },
+    {
+      "name": "T6 final class counts expected",
+      "passed": true,
+      "detail": {
+        "exact_positive_theta_jam_package_source_locked": 8,
+        "exact_endpoint_free_witness_transport_certificate": 36,
+        "exact_instant_jam_8_row_gate_source_locked": 60,
+        "one_parameter_wrapper_scope_source_locked": 4
+      }
+    },
+    {
+      "name": "T6 theta status counts expected",
+      "passed": true,
+      "detail": {
+        "full_open_to_120": 36,
+        "instant_jam_t0": 60,
+        "jam_at_positive_t": 8,
+        "full_open_to_120_public_scope": 4
+      }
+    },
+    {
+      "name": "T6 t-star counts expected",
+      "passed": true,
+      "detail": {
+        "sqrt(3) endpoint reached": 40,
+        "0": 60,
+        "sqrt(2)": 8
+      }
+    },
+    {
+      "name": "sabotage status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "sabotage 19/19 pass",
+      "passed": true,
+      "detail": {
+        "baseline_checks": 9,
+        "sabotage_checks": 10,
+        "passed": 19,
+        "failed": 0
+      }
+    },
+    {
+      "name": "T6b status pass_with_review_obligations",
+      "passed": true,
+      "detail": "pass_with_review_obligations"
+    },
+    {
+      "name": "T6b records positive-jam max-over-8 closed",
+      "passed": true,
+      "detail": {
+        "representative_rows": 18,
+        "representative_class_counts": {
+          "exact_free_witness_candidate": 5,
+          "instant_jam_row_gate": 10,
+          "stage3a_stage3b_stage3c_local_tree_package": 2,
+          "public_wrapper_scope_certificate": 1
+        },
+        "instant_representatives_checked": 10,
+        "positive_jam_max_over_8_exact_closed": true,
+        "source_map_visibility_closed": true,
+        "visibility_obligations_closed": [
+          "O-selected-hinge-side-map-visibility",
+          "O-support-feature-map-visibility"
+        ],
+        "open_obligations": [
+          "O-theorem-name-scope"
+        ],
+        "t6_local_theorem_supported_flag_observed": true,
+        "t6b_interpretation": "T6 is assembly evidence; positive-jam max-over-8 is now exact-closed. Remaining work is theorem-prose/source-map visibility and scope hygiene before final theorem promotion."
+      }
+    },
+    {
+      "name": "source-map visibility audit status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "source-map visibility closes selected/support obligations",
+      "passed": true,
+      "detail": [
+        "O-selected-hinge-side-map-visibility",
+        "O-support-feature-map-visibility"
+      ]
+    },
+    {
+      "name": "wrote S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains Theorem A",
+      "passed": true,
+      "detail": "Theorem A"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains Theorem B",
+      "passed": true,
+      "detail": "Theorem B"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains Theorem C",
+      "passed": true,
+      "detail": "Theorem C"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains Theorem D",
+      "passed": true,
+      "detail": "Theorem D"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains Sabotage",
+      "passed": true,
+      "detail": "Sabotage"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_PROOF_DRAFT.md contains positive thickness",
+      "passed": true,
+      "detail": "positive thickness"
+    },
+    {
+      "name": "wrote S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md contains Theorem A",
+      "passed": true,
+      "detail": "Theorem A"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md contains Theorem D",
+      "passed": true,
+      "detail": "Theorem D"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md contains Sabotage Hygiene",
+      "passed": true,
+      "detail": "Sabotage Hygiene"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_THEOREM_CROSSWALK.md contains public_promotion_ready=false",
+      "passed": true,
+      "detail": "public_promotion_ready=false"
+    },
+    {
+      "name": "wrote S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md contains configuration-level",
+      "passed": true,
+      "detail": "configuration-level"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md contains sabotage gate",
+      "passed": true,
+      "detail": "sabotage gate"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md contains positive thickness",
+      "passed": true,
+      "detail": "positive thickness"
+    },
+    {
+      "name": "S4_THETA_STAR_108_TREE_EXTERNAL_RED_TEAM_PROMPT.md contains Desired Verdict Format",
+      "passed": true,
+      "detail": "Desired Verdict Format"
+    }
+  ],
+  "passed": 48,
+  "failed": 0,
+  "nonclaims": [
+    "non_equal_angle_motion",
+    "three_parameter_motion_classification",
+    "positive_thickness_or_physical_hingeability",
+    "CAD_or_fabrication_validity",
+    "public_paper_promotion_without_separate_red_team"
+  ]
+}

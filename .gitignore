@@ -20,3 +20,13 @@ paper/*.synctex.gz
 Thumbs.db
 .vscode/
 .idea/
+# Theta-star extension LaTeX auxiliaries
+extensions/theta_star_finite_atlas/paper_draft/*.aux
+extensions/theta_star_finite_atlas/paper_draft/*.bbl
+extensions/theta_star_finite_atlas/paper_draft/*.blg
+extensions/theta_star_finite_atlas/paper_draft/*.log
+extensions/theta_star_finite_atlas/paper_draft/*.out
+extensions/theta_star_finite_atlas/paper_draft/*.toc
+extensions/theta_star_finite_atlas/paper_draft/*.fls
+extensions/theta_star_finite_atlas/paper_draft/*.fdb_latexmk
+extensions/theta_star_finite_atlas/paper_draft/*.synctex.gz

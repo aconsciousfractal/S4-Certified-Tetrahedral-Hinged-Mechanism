@@ -1,0 +1,3251 @@
+{
+  "report_id": "s4_theta_star_108_tree_theorem_assembly_gate",
+  "generated_utc": "2026-06-29T15:14:37.913709+00:00",
+  "claim_level": "local_theorem_assembly_gate_zero_thickness_equal_magnitude_not_public_promotion",
+  "status": "pass",
+  "local_theorem_supported": true,
+  "public_promotion_ready": false,
+  "requires_external_red_team_before_paper_use": true,
+  "sources": {
+    "T4_finite_angle_transport_ledger": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger.json",
+    "T4_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger_replay.json",
+    "T5a_theorem_readiness_audit": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit.json",
+    "T5a_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit_replay.json",
+    "T5b_root_regauge_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate.json",
+    "T5b_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate_replay.json",
+    "T5c_endpoint_free_witness_gate": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate.json",
+    "T5c_replay": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate_replay.json",
+    "status_map": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_status_map.json",
+    "transport_lemma": "docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md",
+    "theorem_target_doc": "docs/S4_THETA_STAR_SPECTRUM_THEOREM_TARGET.md"
+  },
+  "theorem_statement": {
+    "scope": "S4 zero-thickness equal-magnitude one-parameter theta-star spectrum over the 108 hinge trees",
+    "claim": "For every one of the 108 S4 hinge trees, the equal-magnitude theta-star status is classified by the final_records map: full-open to 120 degrees, public-wrapper full-open to 120 degrees, positive jam at t=sqrt(2), or instant jam at t=0.",
+    "counts": {
+      "theta_star_status_counts": {
+        "full_open_to_120": 36,
+        "instant_jam_t0": 60,
+        "jam_at_positive_t": 8,
+        "full_open_to_120_public_scope": 4
+      },
+      "t_star_counts": {
+        "sqrt(3) endpoint reached": 40,
+        "0": 60,
+        "sqrt(2)": 8
+      },
+      "final_certificate_class_counts": {
+        "exact_positive_theta_jam_package_source_locked": 8,
+        "exact_endpoint_free_witness_transport_certificate": 36,
+        "exact_instant_jam_8_row_gate_source_locked": 60,
+        "one_parameter_wrapper_scope_source_locked": 4
+      }
+    },
+    "not_claimed": [
+      "non_equal_angle_motion",
+      "three_parameter_motion_classification",
+      "positive_thickness_or_physical_hingeability",
+      "CAD_or_fabrication_validity",
+      "public_paper_promotion_without_separate_red_team"
+    ]
+  },
+  "summary": {
+    "records": 108,
+    "passed": 41,
+    "failed": 0,
+    "original_class_counts": {
+      "exact_free_witness_candidate": 36,
+      "instant_jam_row_gate": 60,
+      "stage3a_stage3b_stage3c_local_tree_package": 8,
+      "public_wrapper_scope_certificate": 4
+    },
+    "final_class_counts": {
+      "exact_positive_theta_jam_package_source_locked": 8,
+      "exact_endpoint_free_witness_transport_certificate": 36,
+      "exact_instant_jam_8_row_gate_source_locked": 60,
+      "one_parameter_wrapper_scope_source_locked": 4
+    },
+    "theta_status_counts": {
+      "full_open_to_120": 36,
+      "instant_jam_t0": 60,
+      "jam_at_positive_t": 8,
+      "full_open_to_120_public_scope": 4
+    },
+    "t_star_counts": {
+      "sqrt(3) endpoint reached": 40,
+      "0": 60,
+      "sqrt(2)": 8
+    },
+    "root_moving_records": 72,
+    "support_gate_counts": {
+      "T5a Stage3a/3b/3c positive-jam source-lock": 8,
+      "T5c endpoint-free witness transport gate": 36,
+      "T5a instant-jam 8-row source-locked digest": 60,
+      "T5a wrapper source-lock": 4
+    },
+    "closed_obligations": [
+      "O-free-witness-candidate-label-or-proof-polish",
+      "O-root-regauge-row-replay"
+    ]
+  },
+  "checks": [
+    {
+      "name": "required source exists: s4_theta_star_finite_angle_transport_ledger.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_finite_angle_transport_ledger_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_angle_transport_ledger_replay.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_transport_theorem_readiness_audit.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_transport_theorem_readiness_audit_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_transport_theorem_readiness_audit_replay.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_finite_root_regauge_replay_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_finite_root_regauge_replay_gate_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_finite_root_regauge_replay_gate_replay.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_endpoint_free_witness_transport_gate.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_endpoint_free_witness_transport_gate_replay.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_endpoint_free_witness_transport_gate_replay.json"
+    },
+    {
+      "name": "required source exists: s4_theta_star_108_tree_status_map.json",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_status_map.json"
+    },
+    {
+      "name": "required source exists: S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_CERTIFICATE_TRANSPORT_LEMMA.md"
+    },
+    {
+      "name": "required source exists: S4_THETA_STAR_SPECTRUM_THEOREM_TARGET.md",
+      "passed": true,
+      "detail": "docs/S4_THETA_STAR_SPECTRUM_THEOREM_TARGET.md"
+    },
+    {
+      "name": "T4 ledger status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "T4 replay status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T5a audit status is original bounded state",
+      "passed": true,
+      "detail": "pass_with_open_obligations"
+    },
+    {
+      "name": "T5a replay status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T5b status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T5b replay status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T5c status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T5c replay status pass",
+      "passed": true,
+      "detail": {
+        "status": "pass",
+        "failed": 0
+      }
+    },
+    {
+      "name": "T4 has 108 records",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "T5a has 108 records",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "status map has 108 records",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "target/tree sets align over 108",
+      "passed": true,
+      "detail": {
+        "t4": 108,
+        "t5a": 108,
+        "status": 108
+      }
+    },
+    {
+      "name": "T5a open obligations are the expected two",
+      "passed": true,
+      "detail": {
+        "O-free-witness-candidate-label-or-proof-polish": 36,
+        "O-root-regauge-row-replay": 72
+      }
+    },
+    {
+      "name": "T5b closes root-regauge obligation",
+      "passed": true,
+      "detail": "O-root-regauge-row-replay"
+    },
+    {
+      "name": "T5c closes endpoint-free witness obligation",
+      "passed": true,
+      "detail": "O-free-witness-candidate-label-or-proof-polish"
+    },
+    {
+      "name": "all T5a obligations have closing gates",
+      "passed": true,
+      "detail": {
+        "O-free-witness-candidate-label-or-proof-polish": 36,
+        "O-root-regauge-row-replay": 72
+      }
+    },
+    {
+      "name": "original class counts match expected",
+      "passed": true,
+      "detail": {
+        "exact_free_witness_candidate": 36,
+        "instant_jam_row_gate": 60,
+        "stage3a_stage3b_stage3c_local_tree_package": 8,
+        "public_wrapper_scope_certificate": 4
+      }
+    },
+    {
+      "name": "theta status counts match expected",
+      "passed": true,
+      "detail": {
+        "full_open_to_120": 36,
+        "instant_jam_t0": 60,
+        "jam_at_positive_t": 8,
+        "full_open_to_120_public_scope": 4
+      }
+    },
+    {
+      "name": "t-star counts match expected",
+      "passed": true,
+      "detail": {
+        "sqrt(3) endpoint reached": 40,
+        "0": 60,
+        "sqrt(2)": 8
+      }
+    },
+    {
+      "name": "72 root-moving records",
+      "passed": true,
+      "detail": 72
+    },
+    {
+      "name": "all root-moving records covered by T5b",
+      "passed": true,
+      "detail": "72/72"
+    },
+    {
+      "name": "T5b pair rows are 432",
+      "passed": true,
+      "detail": 432
+    },
+    {
+      "name": "T5c records are 36",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "T5c pair rows are 216",
+      "passed": true,
+      "detail": 216
+    },
+    {
+      "name": "all class-specific row gates pass",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "final class counts match expected",
+      "passed": true,
+      "detail": {
+        "exact_positive_theta_jam_package_source_locked": 8,
+        "exact_endpoint_free_witness_transport_certificate": 36,
+        "exact_instant_jam_8_row_gate_source_locked": 60,
+        "one_parameter_wrapper_scope_source_locked": 4
+      }
+    },
+    {
+      "name": "108 final theorem records",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "every final record root-regauge closed",
+      "passed": true,
+      "detail": "108/108"
+    },
+    {
+      "name": "every final record row gate true",
+      "passed": true,
+      "detail": "108/108"
+    },
+    {
+      "name": "no unresolved theta status",
+      "passed": true,
+      "detail": {
+        "full_open_to_120": 36,
+        "instant_jam_t0": 60,
+        "jam_at_positive_t": 8,
+        "full_open_to_120_public_scope": 4
+      }
+    }
+  ],
+  "final_records": [
+    {
+      "target_tree": "TREE_000",
+      "source_tree": "TREE_000",
+      "orbit_id": 9,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_001",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_002",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_003",
+      "source_tree": "TREE_003",
+      "orbit_id": 10,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_004",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_005",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_006",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_007",
+      "source_tree": "TREE_007",
+      "orbit_id": 11,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "public_wrapper_scope_certificate",
+      "final_certificate_class": "one_parameter_wrapper_scope_source_locked",
+      "support_gate": "T5a wrapper source-lock",
+      "theta_star_status": "full_open_to_120_public_scope",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "wrapper_source_kind": "public_cl5_package_source_locked",
+        "wrapper_artifact_count": 5
+      }
+    },
+    {
+      "target_tree": "TREE_008",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_009",
+      "source_tree": "TREE_007",
+      "orbit_id": 11,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "public_wrapper_scope_certificate",
+      "final_certificate_class": "one_parameter_wrapper_scope_source_locked",
+      "support_gate": "T5a wrapper source-lock",
+      "theta_star_status": "full_open_to_120_public_scope",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "wrapper_source_kind": "local_generalized_wedge_wrapper_source_locked",
+        "wrapper_artifact_count": 2
+      }
+    },
+    {
+      "target_tree": "TREE_010",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_011",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_012",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_013",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_014",
+      "source_tree": "TREE_014",
+      "orbit_id": 12,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_015",
+      "source_tree": "TREE_015",
+      "orbit_id": 13,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_016",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_017",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_018",
+      "source_tree": "TREE_003",
+      "orbit_id": 10,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_019",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_020",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_021",
+      "source_tree": "TREE_007",
+      "orbit_id": 11,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "public_wrapper_scope_certificate",
+      "final_certificate_class": "one_parameter_wrapper_scope_source_locked",
+      "support_gate": "T5a wrapper source-lock",
+      "theta_star_status": "full_open_to_120_public_scope",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "wrapper_source_kind": "public_cl5_package_source_locked",
+        "wrapper_artifact_count": 5
+      }
+    },
+    {
+      "target_tree": "TREE_022",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_023",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_024",
+      "source_tree": "TREE_015",
+      "orbit_id": 13,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_025",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_026",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_027",
+      "source_tree": "TREE_027",
+      "orbit_id": 14,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_028",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_029",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_030",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_031",
+      "source_tree": "TREE_027",
+      "orbit_id": 14,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_032",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_033",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_034",
+      "source_tree": "TREE_003",
+      "orbit_id": 10,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_035",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_036",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_037",
+      "source_tree": "TREE_000",
+      "orbit_id": 9,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_038",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_039",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_040",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_041",
+      "source_tree": "TREE_041",
+      "orbit_id": 15,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_042",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_043",
+      "source_tree": "TREE_043",
+      "orbit_id": 16,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_044",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_045",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_046",
+      "source_tree": "TREE_027",
+      "orbit_id": 14,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_047",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_048",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_049",
+      "source_tree": "TREE_000",
+      "orbit_id": 9,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_050",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_051",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_052",
+      "source_tree": "TREE_043",
+      "orbit_id": 16,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_053",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_054",
+      "source_tree": "TREE_043",
+      "orbit_id": 16,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_055",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_056",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_057",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_058",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_059",
+      "source_tree": "TREE_041",
+      "orbit_id": 15,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_060",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_061",
+      "source_tree": "TREE_015",
+      "orbit_id": 13,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_062",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_063",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_064",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_065",
+      "source_tree": "TREE_014",
+      "orbit_id": 12,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_066",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_067",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_068",
+      "source_tree": "TREE_068",
+      "orbit_id": 17,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "representative_exact_status",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_069",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_070",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_071",
+      "source_tree": "TREE_068",
+      "orbit_id": 17,
+      "orbit_size": 4,
+      "root_preserving": true,
+      "root_regauge_gate_required": false,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_072",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_073",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_074",
+      "source_tree": "TREE_041",
+      "orbit_id": 15,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_075",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_076",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_077",
+      "source_tree": "TREE_014",
+      "orbit_id": 12,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_078",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_079",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_080",
+      "source_tree": "TREE_068",
+      "orbit_id": 17,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_081",
+      "source_tree": "TREE_000",
+      "orbit_id": 9,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_082",
+      "source_tree": "TREE_027",
+      "orbit_id": 14,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_083",
+      "source_tree": "TREE_043",
+      "orbit_id": 16,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_084",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_085",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_086",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_087",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_088",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_089",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_090",
+      "source_tree": "TREE_001",
+      "orbit_id": 0,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_091",
+      "source_tree": "TREE_004",
+      "orbit_id": 2,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_092",
+      "source_tree": "TREE_016",
+      "orbit_id": 5,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_093",
+      "source_tree": "TREE_007",
+      "orbit_id": 11,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "public_wrapper_scope_certificate",
+      "final_certificate_class": "one_parameter_wrapper_scope_source_locked",
+      "support_gate": "T5a wrapper source-lock",
+      "theta_star_status": "full_open_to_120_public_scope",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "wrapper_source_kind": "local_generalized_wedge_wrapper_source_locked",
+        "wrapper_artifact_count": 2
+      }
+    },
+    {
+      "target_tree": "TREE_094",
+      "source_tree": "TREE_003",
+      "orbit_id": 10,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "stage3a_stage3b_stage3c_local_tree_package",
+      "final_certificate_class": "exact_positive_theta_jam_package_source_locked",
+      "support_gate": "T5a Stage3a/3b/3c positive-jam source-lock",
+      "theta_star_status": "jam_at_positive_t",
+      "t_star_candidate": "sqrt(2)",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(2)",
+        "theta_degrees": "2*atan(sqrt(2)) = arccos(-1/3)",
+        "meaning": "first contact at regular tetrahedral angle"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "source_theta_star_present": {
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3a_full_sat_contact_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3b_no_earlier_overlap_certificate.json": true,
+          "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_jam_seed_stage3c_nonhinge_gate.json": true
+        }
+      }
+    },
+    {
+      "target_tree": "TREE_095",
+      "source_tree": "TREE_015",
+      "orbit_id": 13,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_096",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_097",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_098",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_099",
+      "source_tree": "TREE_002",
+      "orbit_id": 1,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_100",
+      "source_tree": "TREE_029",
+      "orbit_id": 7,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_101",
+      "source_tree": "TREE_044",
+      "orbit_id": 8,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_102",
+      "source_tree": "TREE_008",
+      "orbit_id": 4,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_103",
+      "source_tree": "TREE_005",
+      "orbit_id": 3,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "exact_free_witness_candidate",
+      "final_certificate_class": "exact_endpoint_free_witness_transport_certificate",
+      "support_gate": "T5c endpoint-free witness transport gate",
+      "theta_star_status": "full_open_to_120",
+      "t_star_candidate": "sqrt(3) endpoint reached",
+      "theta_star_value": {
+        "half_angle_t": "sqrt(3)",
+        "theta_degrees": "120",
+        "meaning": "fully opens to endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "t5c_record_present": true,
+        "t5c_pair_rows": 6
+      }
+    },
+    {
+      "target_tree": "TREE_104",
+      "source_tree": "TREE_017",
+      "orbit_id": 6,
+      "orbit_size": 8,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_105",
+      "source_tree": "TREE_014",
+      "orbit_id": 12,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_106",
+      "source_tree": "TREE_041",
+      "orbit_id": 15,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    },
+    {
+      "target_tree": "TREE_107",
+      "source_tree": "TREE_068",
+      "orbit_id": 17,
+      "orbit_size": 4,
+      "root_preserving": false,
+      "root_regauge_gate_required": true,
+      "root_regauge_gate_closed": true,
+      "original_certificate_class": "instant_jam_row_gate",
+      "final_certificate_class": "exact_instant_jam_8_row_gate_source_locked",
+      "support_gate": "T5a instant-jam 8-row source-locked digest",
+      "theta_star_status": "instant_jam_t0",
+      "t_star_candidate": "0",
+      "theta_star_value": {
+        "half_angle_t": "0",
+        "theta_degrees": "0",
+        "meaning": "instant jam at closed endpoint"
+      },
+      "status_map_scope_before_transport": "orbit_inherited_label_not_finite_angle_transport",
+      "finite_angle_transport_scope": "theorem_assembly_supported_by_T4_T5a_T5b_T5c",
+      "row_gate_check": true,
+      "row_gate_details": {
+        "row_count": 8,
+        "source_gate_rows_all_passed": true,
+        "target_sign_maps_unique": true
+      }
+    }
+  ],
+  "nonclaims": [
+    "non_equal_angle_motion",
+    "three_parameter_motion_classification",
+    "positive_thickness_or_physical_hingeability",
+    "CAD_or_fabrication_validity",
+    "public_paper_promotion_without_separate_red_team"
+  ]
+}

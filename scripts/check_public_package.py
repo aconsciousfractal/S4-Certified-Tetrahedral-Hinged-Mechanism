@@ -178,7 +178,12 @@ manifest_path = ROOT / "paper/PUBLIC_PACKAGE_MANIFEST.json"
 if manifest_path.exists():
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     hash_fail = []
+    report_rel = REPORT.relative_to(ROOT).as_posix()
     for item in manifest.get("paper_package_files", []):
+        # The checker writes REPORT at the end of each run, so hashing that
+        # self-output would make the gate fail on the next replay.
+        if item["path"].replace("\\", "/") == report_rel:
+            continue
         p = ROOT / item["path"]
         if not p.exists():
             hash_fail.append("missing:" + item["path"])

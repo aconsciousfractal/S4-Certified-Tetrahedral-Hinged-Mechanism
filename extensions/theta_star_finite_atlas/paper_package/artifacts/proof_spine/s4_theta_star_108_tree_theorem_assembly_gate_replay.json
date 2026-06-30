@@ -1,0 +1,132 @@
+{
+  "report_id": "s4_theta_star_108_tree_theorem_assembly_gate_replay",
+  "generated_utc": "2026-06-29T15:34:51.212760+00:00",
+  "status": "pass",
+  "source_report": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate.json",
+  "checks": [
+    {
+      "name": "assembly report exists",
+      "passed": true,
+      "detail": "results/historical_s4_median_planes/local_theorem/theta_star_spectrum/s4_theta_star_108_tree_theorem_assembly_gate.json"
+    },
+    {
+      "name": "source report status pass",
+      "passed": true,
+      "detail": "pass"
+    },
+    {
+      "name": "claim level is local bounded theorem assembly",
+      "passed": true,
+      "detail": "local_theorem_assembly_gate_zero_thickness_equal_magnitude_not_public_promotion"
+    },
+    {
+      "name": "local theorem supported true",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "public promotion remains false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "external red-team required",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "108 final records",
+      "passed": true,
+      "detail": {
+        "records": 108,
+        "summary": 108
+      }
+    },
+    {
+      "name": "108 unique target trees",
+      "passed": true,
+      "detail": 108
+    },
+    {
+      "name": "all row gates pass",
+      "passed": true,
+      "detail": "108/108"
+    },
+    {
+      "name": "all root-regauge gates closed",
+      "passed": true,
+      "detail": "108/108"
+    },
+    {
+      "name": "final class counts expected",
+      "passed": true,
+      "detail": {
+        "exact_positive_theta_jam_package_source_locked": 8,
+        "exact_endpoint_free_witness_transport_certificate": 36,
+        "exact_instant_jam_8_row_gate_source_locked": 60,
+        "one_parameter_wrapper_scope_source_locked": 4
+      }
+    },
+    {
+      "name": "theta status counts expected",
+      "passed": true,
+      "detail": {
+        "jam_at_positive_t": 8,
+        "full_open_to_120": 36,
+        "instant_jam_t0": 60,
+        "full_open_to_120_public_scope": 4
+      }
+    },
+    {
+      "name": "t-star counts expected",
+      "passed": true,
+      "detail": {
+        "sqrt(2)": 8,
+        "sqrt(3) endpoint reached": 40,
+        "0": 60
+      }
+    },
+    {
+      "name": "closed obligations are T5a pair",
+      "passed": true,
+      "detail": [
+        "O-free-witness-candidate-label-or-proof-polish",
+        "O-root-regauge-row-replay"
+      ]
+    },
+    {
+      "name": "nonclaims include physical exclusion",
+      "passed": true,
+      "detail": [
+        "non_equal_angle_motion",
+        "three_parameter_motion_classification",
+        "positive_thickness_or_physical_hingeability",
+        "CAD_or_fabrication_validity",
+        "public_paper_promotion_without_separate_red_team"
+      ]
+    },
+    {
+      "name": "nonclaims include three-parameter exclusion",
+      "passed": true,
+      "detail": [
+        "non_equal_angle_motion",
+        "three_parameter_motion_classification",
+        "positive_thickness_or_physical_hingeability",
+        "CAD_or_fabrication_validity",
+        "public_paper_promotion_without_separate_red_team"
+      ]
+    },
+    {
+      "name": "statement scope is S4 equal-magnitude",
+      "passed": true,
+      "detail": "S4 zero-thickness equal-magnitude one-parameter theta-star spectrum over the 108 hinge trees"
+    },
+    {
+      "name": "all source paths exist",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": 18,
+  "failed": 0
+}

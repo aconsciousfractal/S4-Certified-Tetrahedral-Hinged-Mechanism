@@ -22,8 +22,6 @@ pdflatex -interaction=nonstopmode -halt-on-error s4_certified_tetrahedral_hinged
 pdflatex -interaction=nonstopmode -halt-on-error s4_certified_tetrahedral_hinged_mechanism.tex
 ```
 
-
-
 The paper build is intended to be hash-stable: after the build, rerun `python scripts/run_all_reproducibility_checks.py` from the repository root.  The checker verifies the PDF hash against `paper/PUBLIC_PACKAGE_MANIFEST.json` and fails if the build introduced nondeterministic metadata or stale hashes.
 
 ## Computation source
@@ -31,3 +29,18 @@ The paper build is intended to be hash-stable: after the build, rerun `python sc
 The public computation source scripts are under `scripts/computation/`.  They
 are included for auditability; the public package checks use curated manifests
 and certificates rather than rerunning the full exploratory workspace.
+
+## Theta-star extension review checks
+
+On branch `theta-star-addendum-review`, the finite-atlas theta-star material is
+kept under `extensions/theta_star_finite_atlas/`.  This extension has a bounded
+consistency checker:
+
+```powershell
+python scripts/check_theta_star_extension.py
+```
+
+The theta-star checker verifies imported artifact hashes, theorem-class counts,
+source-map visibility, proof-gate status, extension manifest, and claim-boundary
+wording.  It is a review-package consistency check, not a full mathematical
+replay and not theorem promotion.
