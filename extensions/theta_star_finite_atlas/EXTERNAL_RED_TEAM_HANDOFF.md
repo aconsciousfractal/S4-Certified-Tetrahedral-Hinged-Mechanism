@@ -61,7 +61,7 @@ python scripts/check_public_package.py
 python scripts/run_all_reproducibility_checks.py
 ```
 
-The first four commands are specific to this extension. The last two are repository-level sanity gates.
+The first five commands are specific to this extension. The last two are repository-level sanity gates; `run_all_reproducibility_checks.py` replays the same bounded public/theta-star gate set as a single command.
 
 ## Important Distinction
 

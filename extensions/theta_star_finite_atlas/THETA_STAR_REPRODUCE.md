@@ -2,52 +2,60 @@
 
 Status: addendum-review candidate.
 
-The current public paper-package checks remain:
+## Branch-level gate
+
+The branch-level replay command is now a meta-gate for the public package and
+theta-star review package:
 
 ```powershell
-python -m pytest -q
 python scripts/run_all_reproducibility_checks.py
 ```
 
-The theta-star extension has its own bounded consistency checker:
+It runs the public package checker, all theta-star bounded checkers, the
+proof-spine path-hygiene checker, and `pytest -q`.  It does not perform a full
+geometric recomputation from the historical exploratory workspace and does not
+build LaTeX PDFs.
+
+## Individual gates
 
 ```powershell
-python scripts/check_theta_star_extension.py
-```
-
-The theta-star checker verifies the imported artifact hashes, theorem-class
-counts, source-map visibility, proof-gate status, extension manifest, and
-claim-boundary wording.  It is a bounded consistency check for external review,
-not a full mathematical replay and not theorem promotion.
-
-The heavy exploratory local workspace is intentionally not rerun from this
-public repository.  This extension imports a curated, hashable subset of exact
-artifacts and replay docs.
-
-Additional proof-prose hygiene gate:
-
-```powershell
+python scripts/check_public_package.py
+python scripts/check_theta_star_claim_language.py
+python scripts/check_theta_star_paper_package.py
 python scripts/check_theta_star_proof_prose.py
+python scripts/check_theta_star_extension.py
+python scripts/check_theta_star_proof_spine_paths.py
+python -m pytest -q
 ```
 
+## Gate meaning
 
-`python scripts/check_theta_star_proof_prose.py` also validates the generated 108-tree table comments against the T6 assembly `final_records`.
+| Command | Checks | Does not check |
+| --- | --- | --- |
+| `check_public_package.py` | Main paper package files, manifest hashes, PDF hash/page count, public claim guardrails. | Full theta-star proof replay; LaTeX rebuild. |
+| `check_theta_star_claim_language.py` | Addendum claim boundary, forbidden overclaim phrases, required theorem-scope wording. | Geometry/SAT recomputation. |
+| `check_theta_star_paper_package.py` | Proof-spine artifact presence, hashes, closure files, class/t-star counts, draft support files. | Independent regeneration of every proof-spine artifact. |
+| `check_theta_star_proof_prose.py` | Theorem/proof prose, generated 108-tree table comments against T6 records, class statements. | Formal proof verification outside the recorded finite atlas. |
+| `check_theta_star_extension.py` | Extension manifest, imported artifact hashes, source-map visibility, proof-gate status, claim boundary. | Heavy exploratory workspace replay. |
+| `check_theta_star_proof_spine_paths.py` | No private absolute local paths outside whitelisted non-operational provenance fields. | Mathematical validity of source artifacts. |
+| `pytest -q` | Repository unit tests. | Paper theorem proof obligations. |
 
-Optional local TeX smoke build, if `pdflatex` is available:
-
-```powershell
-cd extensions/theta_star_finite_atlas/paper_draft
-pdflatex -interaction=nonstopmode -halt-on-error theta_star_addendum_skeleton.tex
-```
-
-The skeleton is a review draft only and is not included in the main paper.
+The checkers are bounded consistency/review gates.  They support external
+mathematical review; they are not a substitute for reading the TeX proof and
+proof-spine records.
 
 ## Build the standalone PDF
 
+If `pdflatex`/`bibtex` are available, rebuild the active addendum-review draft:
+
 ```powershell
 cd extensions/theta_star_finite_atlas/paper_draft
+pdflatex -interaction=nonstopmode -halt-on-error theta_star_finite_atlas.tex
+bibtex theta_star_finite_atlas
 pdflatex -interaction=nonstopmode -halt-on-error theta_star_finite_atlas.tex
 pdflatex -interaction=nonstopmode -halt-on-error theta_star_finite_atlas.tex
 ```
 
-The output is `theta_star_finite_atlas.pdf`.
+The output is `theta_star_finite_atlas.pdf`.  The legacy
+`theta_star_addendum_skeleton.tex` is retained only as a compatibility/smoke
+entry point and is superseded by `theta_star_finite_atlas.tex`.

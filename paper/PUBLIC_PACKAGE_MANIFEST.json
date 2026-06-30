@@ -107,7 +107,7 @@
         ".pytest_cache",
         "__pycache__"
     ],
-    "paper_package_file_count": 329,
+    "paper_package_file_count": 330,
     "paper_package_files": [
         {
             "path": ".gitattributes",
@@ -487,12 +487,12 @@
         {
             "path": "extensions/theta_star_finite_atlas/EXTENSION_MANIFEST.json",
             "size_bytes": 11814,
-            "sha256": "c01fba327df05a690f546e112016fc326636a49276a363bbd8b2d400a9e1e9fe"
+            "sha256": "6652d1117f185eac78f19ea6aa0c9e97b8553923a47e0739e6ff8e8332e6d71e"
         },
         {
             "path": "extensions/theta_star_finite_atlas/EXTERNAL_RED_TEAM_HANDOFF.md",
-            "size_bytes": 3012,
-            "sha256": "61f108b8f54a9155832aed49fcfc7901a4a924a78dbd2e8855344cffa7dec3ae"
+            "size_bytes": 3051,
+            "sha256": "39da72950070edd2e1ec54601c0ed31d2946287abde16161f774c37a15ea2748"
         },
         {
             "path": "extensions/theta_star_finite_atlas/paper_draft/BUILD.md",
@@ -661,8 +661,8 @@
         },
         {
             "path": "extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md",
-            "size_bytes": 1692,
-            "sha256": "ede783fbd543d1834c4b6d2b20005a10bc325ad2d5ac93f555b8d4f8ba7a01cf"
+            "size_bytes": 2896,
+            "sha256": "abafb19a2252ff53f5830fc2ceda9c6f8b26e69bda27aff1b729c3287258053c"
         },
         {
             "path": "LICENSE",
@@ -806,8 +806,8 @@
         },
         {
             "path": "REPRODUCE.md",
-            "size_bytes": 1770,
-            "sha256": "69c7e96f939ad321e6c64486dfbe57512abffe06493bbb2c08d04f2d58e230ed"
+            "size_bytes": 1912,
+            "sha256": "e92b813911d2ce6fe9dd881c0feedeb534e3a3bb750f716076b9ae7d3fde9a00"
         },
         {
             "path": "requirements.txt",
@@ -961,8 +961,8 @@
         },
         {
             "path": "scripts/check_public_package.py",
-            "size_bytes": 10976,
-            "sha256": "a87798f6fbcf690bc3cb4e41089685564eec5991ea7dce5abf67c95eeffecafa"
+            "size_bytes": 11356,
+            "sha256": "f53ed0edb1c6cba4cb1ea229ccd6dd21b6bb6b860378096568bcf0232fc71503"
         },
         {
             "path": "scripts/check_theta_star_claim_language.py",
@@ -1741,8 +1741,8 @@
         },
         {
             "path": "scripts/run_all_reproducibility_checks.py",
-            "size_bytes": 239,
-            "sha256": "28ece6b15c54b79941eb4dcbb7f585dfd3b34d79611c62072a059a6ce075c544"
+            "size_bytes": 1393,
+            "sha256": "42fb1562507a5b726830cbadfa48e6333a4d3159be8359c3c60b0a7e68ba69f4"
         },
         {
             "path": "tests/test_public_package.py",
@@ -1753,6 +1753,11 @@
             "path": "THIRD_PARTY_NOTICES.md",
             "size_bytes": 1140,
             "sha256": "8813f3063f4a06e7fe902265e6ba28df6fbe26441860a4ff988c9368898d861f"
+        },
+        {
+            "path": "scripts/check_theta_star_proof_spine_paths.py",
+            "size_bytes": 3795,
+            "sha256": "c3c603dc59beed8db2247ec7bdefd06286ebf05ae4b6b8e5075d48c7d2e3e7a6"
         }
     ],
     "gate_results": {

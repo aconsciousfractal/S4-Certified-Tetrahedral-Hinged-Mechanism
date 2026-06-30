@@ -5,11 +5,14 @@
 From repository root:
 
 ```powershell
-python -m pytest -q
 python scripts/run_all_reproducibility_checks.py
 ```
 
-The combined report is written to `results/public_package_check.json`.
+This meta-gate runs the public package checker, the theta-star bounded review
+checkers when present on this branch, the proof-spine path-hygiene checker, and
+`pytest -q`.  The public-package subcheck writes
+`results/public_package_check.json`; the theta-star gates report to stdout and
+validate their manifest/proof-spine artifacts in place.
 
 ## Build the paper
 
@@ -33,14 +36,8 @@ and certificates rather than rerunning the full exploratory workspace.
 ## Theta-star extension review checks
 
 On branch `theta-star-addendum-review`, the finite-atlas theta-star material is
-kept under `extensions/theta_star_finite_atlas/`.  This extension has a bounded
-consistency checker:
-
-```powershell
-python scripts/check_theta_star_extension.py
-```
-
-The theta-star checker verifies imported artifact hashes, theorem-class counts,
-source-map visibility, proof-gate status, extension manifest, and claim-boundary
-wording.  It is a review-package consistency check, not a full mathematical
+kept under `extensions/theta_star_finite_atlas/`.  This extension has bounded review checkers listed in
+`extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md`.  The branch-level
+`run_all_reproducibility_checks.py` command runs them as part of the standard
+replay.  These are review-package consistency checks, not a full mathematical
 replay and not theorem promotion.

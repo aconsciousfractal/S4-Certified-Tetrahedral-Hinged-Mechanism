@@ -70,8 +70,8 @@
     },
     {
       "path": "THETA_STAR_REPRODUCE.md",
-      "size_bytes": 1692,
-      "sha256": "ede783fbd543d1834c4b6d2b20005a10bc325ad2d5ac93f555b8d4f8ba7a01cf"
+      "size_bytes": 2896,
+      "sha256": "abafb19a2252ff53f5830fc2ceda9c6f8b26e69bda27aff1b729c3287258053c"
     },
     {
       "path": "artifacts/README.md",
@@ -255,8 +255,8 @@
     },
     {
       "path": "EXTERNAL_RED_TEAM_HANDOFF.md",
-      "size_bytes": 3012,
-      "sha256": "61f108b8f54a9155832aed49fcfc7901a4a924a78dbd2e8855344cffa7dec3ae"
+      "size_bytes": 3051,
+      "sha256": "39da72950070edd2e1ec54601c0ed31d2946287abde16161f774c37a15ea2748"
     },
     {
       "path": "paper_draft/BUILD.md",

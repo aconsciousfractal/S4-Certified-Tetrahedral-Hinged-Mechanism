@@ -1,6 +1,8 @@
 ﻿from pathlib import Path
 import hashlib
 import json
+import shutil
+import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,8 +60,17 @@ def sha256(path):
     return h.hexdigest()
 
 def pdf_page_count(path):
+    pdfinfo = shutil.which("pdfinfo")
+    if pdfinfo:
+        try:
+            result = subprocess.run([pdfinfo, str(path)], check=True, capture_output=True, text=True)
+            for line in result.stdout.splitlines():
+                if line.startswith("Pages:"):
+                    return int(line.split(":", 1)[1].strip())
+        except Exception:
+            pass
     data = path.read_bytes()
-    # Sufficient for the deterministic pdfTeX output shipped here; catches stale manifest metadata.
+    # Fallback for deterministic pdfTeX output when pdfinfo is unavailable.
     return data.count(b"/Type /Page") - data.count(b"/Type /Pages")
 
 def load_json(rel):
