@@ -35,11 +35,14 @@ This path applies only on branch `theta-star-addendum-review` and only to the
 review-candidate extension under `extensions/theta_star_finite_atlas/`.  It is
 separate from the current paper theorem.
 
-1. Read `extensions/theta_star_finite_atlas/README.md`.
-2. Read `extensions/theta_star_finite_atlas/THETA_STAR_CLAIM_BOUNDARY.md`.
-3. Read `extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md`.
-4. Run `python scripts/check_theta_star_extension.py`.
-5. Inspect the imported local proof artifacts listed in
-   `extensions/theta_star_finite_atlas/artifacts/README.md`.
-6. Treat the extension as a mathematical review target, not as physical or
-   fabrication evidence.
+1. Start from `extensions/theta_star_finite_atlas/EXTERNAL_RED_TEAM_HANDOFF.md`.
+2. Read `extensions/theta_star_finite_atlas/paper_draft/theta_star_finite_atlas.pdf`
+   or the flat source `paper_draft/theta_star_finite_atlas_flat.tex`.
+3. Check that the addendum bibliography is local:
+   `extensions/theta_star_finite_atlas/paper_draft/refs.bib`.
+4. Read `extensions/theta_star_finite_atlas/THETA_STAR_CLAIM_BOUNDARY.md`.
+5. Run the theta-star checkers listed in `extensions/theta_star_finite_atlas/THETA_STAR_REPRODUCE.md`.
+6. Inspect `extensions/theta_star_finite_atlas/paper_package/artifacts/proof_spine/`.
+7. Treat the extension as a mathematical review target, not as physical or
+   fabrication evidence, and not as part of the main paper theorem unless a
+   later promotion decision says so.

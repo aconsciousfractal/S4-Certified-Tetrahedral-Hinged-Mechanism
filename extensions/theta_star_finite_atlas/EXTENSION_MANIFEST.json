@@ -45,13 +45,13 @@
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 2271,
-      "sha256": "78c20f74b05ac1a0c5772e0350188b65459f052d931acfa3ceafc8700adc821d"
+      "size_bytes": 2615,
+      "sha256": "c1ed9b818234f164772dd2f8ac5659e469da1ad724bd578ca01e9f567e378cfc"
     },
     {
       "path": "ROADMAP_TO_PAPER.md",
-      "size_bytes": 7206,
-      "sha256": "0b440c33fa97c6f5270e6d4d5d5b408c3012cd1c5f435da2a1d840261a98a04a"
+      "size_bytes": 6145,
+      "sha256": "dd210f69d0e1ebd2ac2ddd4d3ced3a48eee04fb9b929c5097d7f425702d705e7"
     },
     {
       "path": "THETA_STAR_CLAIM_BOUNDARY.md",

@@ -37,19 +37,36 @@ It is not a proof of positive-thickness hingeability, fabrication, a global
 collision-free physical motion, a three-parameter motion theorem, a non-equal
 motion theorem, or a general hinged-dissection/reversible-net theorem.
 
+## Current review draft
+
+The addendum-review draft now exists as a real TeX/PDF artifact:
+
+```text
+paper_draft/theta_star_finite_atlas.tex
+paper_draft/theta_star_finite_atlas.pdf
+paper_draft/theta_star_finite_atlas_flat.tex
+paper_draft/refs.bib
+```
+
+The bibliography is local to the addendum draft.  LaTeX auxiliary files such as
+`*.bbl` and `*.blg` are generated during build and are intentionally not tracked.
+The `paper_package/` directory is supporting proof-spine material, not the paper
+itself.
+
 ## Roadmap to paper/addendum
 
-The concrete conversion plan from review package to mathematical paper is in `ROADMAP_TO_PAPER.md`.  The next blocker is resolving the historical `STATUS_MAP` conflict before any TeX/PDF promotion.
+The concrete conversion and promotion plan is in `ROADMAP_TO_PAPER.md`.  The
+remaining decision is not whether TeX/PDF exists; it is whether external
+mathematical red-team accepts the proof chain strongly enough to promote this
+review draft as an addendum or companion paper.
 
 ## Review order
 
-1. Read `THETA_STAR_CLAIM_BOUNDARY.md`.
-2. Read `THETA_STAR_REPRODUCE.md`.
-3. Inspect `artifacts/README.md` and the imported artifacts once copied.
-4. Review the proof draft/crosswalk files when they are imported from the local
-   workspace.
-5. Only after a successful mathematical red-team should this extension be
-   considered for a separate addendum TeX/PDF.
-## Review entry point
-
-The human-readable draft is `paper_draft/theta_star_finite_atlas.tex`; the built PDF is `paper_draft/theta_star_finite_atlas.pdf`. The `paper_package/` directory is supporting proof-spine material, not the paper itself.
+1. Start from `EXTERNAL_RED_TEAM_HANDOFF.md`.
+2. Read `paper_draft/theta_star_finite_atlas.pdf` or
+   `paper_draft/theta_star_finite_atlas_flat.tex`.
+3. Read `THETA_STAR_CLAIM_BOUNDARY.md`.
+4. Run the checkers listed in `THETA_STAR_REPRODUCE.md`.
+5. Inspect `paper_package/artifacts/proof_spine/` for the supporting records.
+6. Treat the extension as a mathematical review target, not as physical or
+   fabrication evidence.

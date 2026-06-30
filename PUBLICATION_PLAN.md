@@ -15,11 +15,13 @@ Status: release-review repository.
 Branch: `theta-star-addendum-review`.
 
 Purpose: stage the local S4 theta-star finite-atlas theorem candidate for
-external mathematical review without changing the already closed public paper.
+external mathematical review while keeping the already closed public theorem
+unchanged.  The main paper may carry only a branch-local companion-extension
+note; the theta-star theorem itself remains in the extension draft.
 
 Rules for this branch:
 
-1. Keep the current paper TeX/PDF unchanged until a separate addendum decision.
+1. Keep the current paper theorem unchanged; any main-paper mention must be a non-claim companion-extension note.
 2. Place theta-star material under `extensions/theta_star_finite_atlas/`.
 3. Describe it as an addendum-review candidate, not as a promoted public theorem.
 4. Keep the scope equal-magnitude, zero-thickness, finite S4 atlas only.
@@ -31,7 +33,7 @@ Rules for this branch:
 Possible promotion outcomes after review:
 
 - keep the material as a research extension;
-- create a separate addendum TeX/PDF in this repository;
+- keep the existing separate addendum TeX/PDF as a review draft;
 - later prepare a paper revision only after a human release decision.
 
 ## Theta-star path from review package to paper
@@ -44,9 +46,11 @@ The next sequence is intentionally mathematical, not cosmetic:
 3. add paper-grade checkers for crosswalk artifacts, claim language, tree counts,
    tables, and stale status labels;
 4. rewrite Theorem A/B as self-contained proof prose;
-5. write the four class proofs: positive jam, endpoint-free, instant jam, and
+5. maintain the four class proofs: positive jam, endpoint-free, instant jam, and
    wrapper-scope;
-6. only then build a separate addendum/paper TeX/PDF under the extension.
+6. keep the addendum TeX/PDF, local bibliography, manifest, and proof-spine
+   package synchronized.
 
-No theta-star TeX/PDF is promoted until these items and external mathematical
-red-team closure are complete.
+A theta-star TeX/PDF now exists under the extension.  It is not promoted into
+the main paper unless external mathematical red-team and a human release
+decision explicitly approve that promotion.

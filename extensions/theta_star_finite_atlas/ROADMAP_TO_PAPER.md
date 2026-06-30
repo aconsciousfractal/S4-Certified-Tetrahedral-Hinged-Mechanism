@@ -1,14 +1,24 @@
 # Roadmap to a theta-star paper/addendum
 
-Status: paper-reachable, not paper-form yet.  This roadmap records the exact
-work needed to turn the current theta-star review package into a mathematical
-paper/addendum draft.  It is intentionally scoped to the zero-thickness,
-equal-magnitude, finite S4 atlas over 108 connected three-hinge trees.
+Status: addendum-review draft exists, not release/promoted form yet.  This
+roadmap records the exact work needed to promote the current theta-star TeX/PDF
+review draft and proof-spine package into a public addendum or companion paper.
+It is intentionally scoped to the zero-thickness, equal-magnitude, finite S4
+atlas over 108 connected three-hinge trees.
 
 ## Current verified state
 
-The current extension package has a candidate theorem shape supported by local
-artifacts and review gates:
+The extension now has a real review draft and support package:
+
+```text
+paper_draft/theta_star_finite_atlas.tex
+paper_draft/theta_star_finite_atlas.pdf
+paper_draft/theta_star_finite_atlas_flat.tex
+paper_draft/refs.bib
+paper_package/artifacts/proof_spine/
+```
+
+The local theorem shape supported by the current proof spine is:
 
 ```text
 final classes: 8 positive-jam, 36 endpoint-free, 60 instant-jam, 4 wrapper-scope
@@ -16,155 +26,88 @@ exact t*:      8 at sqrt(2), 40 endpoint-reaching at sqrt(3), 60 at 0
 scope:         zero-thickness, equal-magnitude, one-parameter finite atlas
 ```
 
-The present package is still a review package.  It is not yet a paper proof,
-because the proof spine is distributed across documents and JSON gates rather
-than written as self-contained definitions, lemmas, theorem, proof, tables,
-and a paper-grade checker.
+The draft is still an addendum-review candidate.  It is not yet merged into the
+main paper theorem, and the main paper may only point to it as a separate
+companion review draft.
 
-## P0 blockers before TeX/PDF promotion
+The following earlier P0 hardening items are already closed in the current
+review draft/proof-spine state:
 
-### P0-01: Resolve the status-map conflict
+```text
+- stale status-map labels are superseded by the current T6 proof spine;
+- proof-spine artifacts are materialized under paper_package/artifacts/proof_spine/;
+- finite-angle conjugacy, signed transport, eight-row bijection, theta-star
+  invariance, and 108-tree assembly are written in TeX proof prose;
+- theorem name and scope are locked to the S4 equal-magnitude theta-star
+  finite-atlas theorem;
+- the four class proofs are written: endpoint-free, wrapper-scope,
+  positive-jam, and instant-jam;
+- paper-grade checkers cover claim language, proof prose, table rows,
+  package hashes, and public-package synchronization.
+```
 
-`docs/S4_THETA_STAR_108_TREE_STATUS_MAP.md` is a historical guardrail map and
-still contains pre-T4/T5/T6 labels such as
-`orbit_inherited_label_not_finite_angle_transport`.  This conflicts with the
-current transport proof spine unless it is explicitly superseded.
+## P0 promotion checks still required
+
+### P0-01: External mathematical red-team
+
+The next blocker is external mathematical review of the paper draft, flat TeX,
+claim boundary, and proof-spine package.
 
 Exit criteria:
 
 ```text
-- STATUS_MAP has a top-level supersession note.
-- Historical orbit-inherited labels are marked pre-T4/T5/T6.
-- A checker fails if stale labels appear without that supersession context.
+- external review finds no mathematical blocker in row reach / upper cap semantics;
+- wrapper-scope trees TREE_007/TREE_009/TREE_021/TREE_093 remain correctly scoped;
+- the finite-angle scaffold conjugacy and SAT/contact predicate vocabulary are accepted;
+- no physical, positive-thickness, non-equal, three-parameter, or global claim leaks in.
 ```
 
-### P0-02: Materialize the proof spine inside the paper package
+### P0-02: Main-paper promotion decision
 
-The crosswalk must not point to a private workspace.  Every proof-spine artifact
-named by the crosswalk must be present in the extension package, either as a
-full JSON file or as a digest with source sha256, scope, counts, and replay
-status.
-
-Required proof-spine artifacts or digests:
-
-```text
-s4_theta_star_finite_angle_transport_ledger.json
-s4_theta_star_finite_angle_transport_ledger_replay.json
-s4_theta_star_transport_theorem_readiness_audit.json
-s4_theta_star_finite_root_regauge_replay_gate.json
-s4_theta_star_endpoint_free_witness_transport_gate.json
-s4_theta_star_108_tree_theorem_assembly_gate.json
-s4_theta_star_108_tree_theorem_assembly_gate_replay.json
-s4_theta_star_theorem_sabotage_gate.json
-s4_theta_star_source_map_visibility_audit.json
-s4_theta_star_positive_jam_max_over_8_certificate.json
-s4_theta_star_t6b_theorem_prose_audit.json
-s4_theta_star_108_tree_theorem_proof_package_gate.json
-```
+The current branch may mention the addendum review draft in the main paper only
+as a non-claim companion note.  Promotion into the main theorem, appendix, or a
+separate public addendum requires an explicit human release decision after
+red-team.
 
 Exit criteria:
 
 ```text
-- paper_package/artifacts/proof_spine/ or proof_spine_digest/ exists.
-- hashes are recorded.
-- checker verifies every crosswalk artifact exists or has a digest.
+- choose one: keep extension-only, publish as companion addendum, or revise main paper;
+- if promoted, update claim ledger, proof obligations, public manifest, TeX/PDF, and release notes;
+- if not promoted, keep the extension as a review/research package.
 ```
 
-### P0-03: Promote the proof spine into self-contained mathematics
+### P0-03: Synchronization discipline
 
-The paper must not rely on a phrase like "Source proof note" as the proof.
-The core proof must be written in the paper itself.
-
-Required mathematical sections:
-
-```text
-finite-angle scaffold conjugacy
-signed equal-magnitude row transport
-eight-row bijection
-theta-star orbit invariance
-108-tree assembly
-```
+The addendum has its own bibliography.  The tracked source is `refs.bib`; build
+auxiliaries (`*.bbl`, `*.blg`, `*.aux`, `*.log`, `*.out`) are not part of the
+public source package.
 
 Exit criteria:
 
 ```text
-- Theorem A/B proofs are written in TeX prose.
-- Source artifacts are cited as certificate support, not as substitutes for proof.
+- addendum TeX/PDF/flat TeX are synchronized;
+- extension manifest and public package manifest hashes match;
+- check_theta_star_* gates pass;
+- check_public_package.py and run_all_reproducibility_checks.py pass.
 ```
 
-### P0-04: Lock the theorem name and scope
+## P1 release-shape decision after P0
 
-Use this title/scope language:
+Only after the P0 blockers are closed, decide the release shape of the existing
+review draft.  The current working files live under:
 
 ```text
-S4 equal-magnitude theta-star finite-atlas theorem
+extensions/theta_star_finite_atlas/paper_draft/
+  theta_star_finite_atlas.tex
+  theta_star_finite_atlas.pdf
+  theta_star_finite_atlas_flat.tex
+  refs.bib
+  sections/
 ```
 
-Do not use:
-
-```text
-global motion theorem
-physical hingeability theorem
-positive-thickness theorem
-three-parameter theorem
-non-equal-angle theorem
-general hinged-dissection theorem
-```
-
-Exit criteria:
-
-```text
-- claim-language checker passes.
-- sqrt(3) is always described as endpoint reached, not first contact.
-```
-
-### P0-05: Write the four class proofs
-
-The final theorem needs one proof subsection per class:
-
-```text
-positive jam:   8 trees, t=sqrt(2), selected row attains and max-over-8 caps
-endpoint-free:  36 trees, endpoint sqrt(3), no blocking contact on 0<t<=sqrt(3)
-instant jam:    60 trees, all eight rows obstruct at t=0, TREE_043 override visible
-wrapper scope:   4 trees, endpoint-reaching but kept separate from endpoint-free
-```
-
-Exit criteria:
-
-```text
-- each class proof names its source artifacts and transport route.
-- wrapper-scope class does not widen the current public paper theorem.
-```
-
-### P0-06: Add paper-grade checkers
-
-The existing checker is review-grade.  Add paper-grade checks for:
-
-```text
-crosswalk artifact presence/digests
-status-map supersession
-forbidden claim language
-108 unique tree ids
-18 representatives
-8/36/60/4 final class counts
-40/8/60 t-star distribution
-TeX tables matching JSON/digest counts
-PDF build log/manifests once the paper exists
-```
-
-Exit criteria:
-
-```text
-python scripts/check_theta_star_extension.py
-python scripts/check_theta_star_paper_package.py
-python scripts/check_theta_star_claim_language.py
-python scripts/check_theta_star_tables.py
-python -m pytest -q
-```
-
-## P1 paper construction after P0
-
-Only after the P0 blockers are closed, create the addendum/paper tree:
+For a public addendum/companion release, either keep this tree and add release
+metadata, or promote/copy it to a final paper tree such as:
 
 ```text
 extensions/theta_star_finite_atlas/paper/
@@ -178,7 +121,7 @@ extensions/theta_star_finite_atlas/paper/
   appendix/
 ```
 
-The paper should be an addendum or separate theta-star manuscript, not a silent
+The result should be an addendum or separate theta-star manuscript, not a silent
 change to the current main paper theorem.
 
 ## Promotion decision
@@ -212,4 +155,4 @@ Status: local proof-prose hardening. Added `paper_draft/sections/02_formal_objec
 
 ## P0-08 local addendum skeleton - 2026-06-29
 
-Status: local TeX skeleton only. Added `paper_draft/theta_star_addendum_skeleton.tex`, a standalone review build that inputs sections 02--08. This does not modify the main paper and is not a publication-ready addendum; it exists to expose the proof prose as a single compilable document before external mathematical review.
+Status: superseded by the current `paper_draft/theta_star_finite_atlas.tex` review draft and PDF. The old skeleton step served to expose the proof prose as one compilable document; the active review target is now the full draft listed in the current verified state above.
