@@ -29,7 +29,7 @@ Important: RT-EXT-1, RT-EXT-4, RT-13, RW12 editorial routing, and the current-wo
 ## Required human checks
 
 - [x] Author/citation metadata follows the public-paper convention: Oleksiy Babanskyy, MIT package metadata, CC-BY-4.0 paper text policy.
-- [x] Public repository/license policy matches the other public papers in `P:\GitHub_puba`.
+- [x] Public repository/license policy matches the author's other public paper repositories.
 - [x] Paper text/license policy is explicitly recorded.
 - [x] CAD/STL/3MF artifact policy is recorded as generated package artifacts unless file-specific notice says otherwise.
 - [ ] Copied source docs and generated artifacts are acceptable to redistribute.

@@ -71,3 +71,16 @@ Read `docs/PUBLIC_CLAIM_BOUNDARY.md` before widening any statement.  This repo
 does not claim physical prototype validation, positive-thickness printability,
 global collision-free motion, a three-parameter theorem, or a general hinged
 dissection/reversible-net theorem.
+
+## Provenance Note
+
+Some build/provenance scripts under `scripts/computation/` reference the
+private research workspace where this package was assembled. Those references
+use the neutral placeholder `<private-workspace>/...` and are provenance
+metadata only: they are not runnable paths for external users and are not
+needed to replay the public checks in `REPRODUCE.md`. Two checker scripts
+(`scripts/check_theta_star_paper_package.py`,
+`scripts/check_theta_star_proof_spine_paths.py`) intentionally contain
+private-path tokens because their job is to detect such tokens in package
+text. (Docs-only update, 2026-07-08, after publication; the paper is
+unchanged.)

@@ -146,8 +146,8 @@
         },
         {
             "path": "README.md",
-            "size_bytes": 2763,
-            "sha256": "3a36f6a2ece6e5b21d3a64d66759db64cb1e130327a55d73b356acc5f7f3cf36"
+            "size_bytes": 3514,
+            "sha256": "c70fe75dbf7cf3060911631e8171271cf1a63aed4181e25a1f5b3c12569fd9c9"
         },
         {
             "path": "README_REVIEWER.md",
@@ -381,8 +381,8 @@
         },
         {
             "path": "docs/HUMAN_RELEASE_REVIEW_CHECKLIST.md",
-            "size_bytes": 4085,
-            "sha256": "edc9aeea08ab635b0e23d9d36207d50b84acb885308a6fe3c045f893b055f9de"
+            "size_bytes": 4086,
+            "sha256": "3ee050f9e22432ad96be91bddc5e7999838539e6e0611245937fcfb538fb00b6"
         },
         {
             "path": "docs/NEGATIVE_RESULTS_ATLAS.md",
@@ -421,8 +421,8 @@
         },
         {
             "path": "docs/RED_TEAM_REPORT.md",
-            "size_bytes": 3430,
-            "sha256": "170e1ac62725194233cab0bbef4e07cf488b3ef0c499cb7c32367f1e45980c6e"
+            "size_bytes": 3440,
+            "sha256": "64e50c69a6aa9ac60294f40efc53d495675370f9258e6007faa872391ceb4de8"
         },
         {
             "path": "docs/RELATED_WORK_POSITIONING.md",
@@ -1451,8 +1451,8 @@
         },
         {
             "path": "scripts/computation/build_s4_cl5_a8_review_package_scaffold.py",
-            "size_bytes": 18982,
-            "sha256": "73a7eb707aed18ef3711215f6635669eae8286d915e0909bda4943ae442cee4d"
+            "size_bytes": 18973,
+            "sha256": "9bb6d8fe66fe003b6735531ec5476eafa08b8e8c0b404fcabc2690bb272d8557"
         },
         {
             "path": "scripts/computation/build_s4_cl5_b03_exact_margin_source_layer.py",
@@ -1591,8 +1591,8 @@
         },
         {
             "path": "scripts/computation/build_s4_post_rw12_public_paper_package.py",
-            "size_bytes": 728,
-            "sha256": "e5ade5bc408b96f93f1d7712c4cdf4f42353b502a5d7776a6b23d53066311b68"
+            "size_bytes": 693,
+            "sha256": "182bf36613d653e46c85e3d79bc16cee0376d7cf912f28ce620b0f47326f7959"
         },
         {
             "path": "scripts/computation/build_s4_real_world_rw10_digital_final_prototype_package.py",
@@ -1666,13 +1666,13 @@
         },
         {
             "path": "scripts/computation/build_s4_real_world_rw5_printability_fabrication_preflight.py",
-            "size_bytes": 21506,
-            "sha256": "bce5a65baa100b89aca4f9b38ee925f0e69fc1aa71ed9d1e4519903f4c8c368e"
+            "size_bytes": 21502,
+            "sha256": "2dcaab245ed87b2693aa1740b7f8972fb73bc5e121414b8e7e37bfa977fc06c2"
         },
         {
             "path": "scripts/computation/build_s4_real_world_rw6_physical_red_team_package.py",
-            "size_bytes": 30845,
-            "sha256": "85c736a74ccfa13996f995b2abb52674c0ec775b7a9db0c29d64e0758809085c"
+            "size_bytes": 30808,
+            "sha256": "8ef00eda9f4710ebcd1d48e1297b630a5d1943cd10f734f24fcf53ac58790aa0"
         },
         {
             "path": "scripts/computation/build_s4_real_world_rw7_selected_candidate_cad_boolean_hardware_prep.py",

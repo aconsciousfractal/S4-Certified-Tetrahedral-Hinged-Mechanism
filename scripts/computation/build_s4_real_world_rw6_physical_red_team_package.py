@@ -318,7 +318,7 @@ def build_result() -> dict[str, Any]:
         "case_id": CASE_ID,
         "date": DATE,
         "status": status,
-        "template_source": "FRAMEWORK/04-SOFTWARE/PAPP/projects/PAPP v4/templates/paper_package",
+        "template_source": "<private-workspace>/PAPP/projects/PAPP v4/templates/paper_package",
         "evidence_ledger": evidence,
         "recommended_frontier_candidate": candidate_summary,
         "fabrication_blockers": rw5.get("fabrication_blockers", []),
@@ -471,7 +471,7 @@ def reproduce_markdown() -> str:
     script = "scripts/build_s4_real_world_rw6_physical_red_team_package.py"
     return f"""# RW6 Reproduce
 
-From `FRAMEWORK/04-SOFTWARE/Metatron's Cube/FASE ESPLORATIVA/Tetra/08-mechanical-extension`:
+From `<private-workspace>/Tetra/08-mechanical-extension`:
 
 ```powershell
 python {script}

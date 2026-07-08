@@ -416,8 +416,8 @@ def main() -> int:
             "rw4h_status": rw4h_report.get("status"),
         },
         "papp_assets_used": {
-            "printability_gate": "FRAMEWORK/04-SOFTWARE/PAPP/core/validation/printability_gate.py",
-            "print_profiles": "FRAMEWORK/04-SOFTWARE/PAPP/core/config/print_profiles.py",
+            "printability_gate": "<private-workspace>/PAPP/core/validation/printability_gate.py",
+            "print_profiles": "<private-workspace>/PAPP/core/config/print_profiles.py",
             "profile_keys": PROFILE_KEYS,
         },
         "papp_proxy_gate": papp_gate,

@@ -360,8 +360,8 @@ note.
 def make_license_note() -> str:
     return """# License Note
 
-License/citation policy follows the public paper repositories under
-`P:\\GitHub_puba`: code and package scripts use MIT; paper text and future PDF
+License/citation policy follows the author's other public paper
+repositories: code and package scripts use MIT; paper text and future PDF
 artifacts should use CC-BY-4.0.  Public export is still blocked until the
 package-closure review confirms repository URL, version, release date, and final
 citation metadata.

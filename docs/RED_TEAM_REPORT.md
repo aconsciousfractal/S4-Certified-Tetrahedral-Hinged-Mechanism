@@ -10,7 +10,7 @@ Resolved findings:
 
 - RT-EXT-1 / B04-A7c semantic gap: resolved for six package-local selected hinge rows by `certified/b04_a7c_contact_side_bridge_manifest.json` and `certified/a7c_b04_contact_side_bridge_records/`.
 - Portable replay provenance: resolved as a frozen-snapshot release-review repository, not a full source-replay bundle.
-- License/citation metadata: aligned to the public-paper convention used under `P:\GitHub_puba`.
+- License/citation metadata: aligned to the convention used across the author's public paper repositories.
 - RW12 overclaim risk: resolved by keeping RW12 supplementary-only and explicitly outside theorem evidence.
 
 
