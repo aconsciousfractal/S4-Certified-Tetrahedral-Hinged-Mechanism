@@ -11,3 +11,4 @@
 *.zip binary
 *.png binary
 *.obj text eol=lf
+SHA256SUMS.txt text eol=lf
