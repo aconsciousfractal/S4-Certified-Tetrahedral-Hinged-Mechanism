@@ -2,11 +2,15 @@
 
 Status: release-review scoped paper package after B04/A7c bridge integration and local package gates.
 
+Level lines use the official claim taxonomy (Gate-Disciplined-Computational-Mathematics/docs/CLAIM_LEVELS.md); added 2026-07-17 (ledger A-1).
+
 ## S4-PAPER-001: S4 median-plane geometry
 
 Claim: the unit regular tetrahedron is split by the two opposite-edge median planes into four congruent closed tetrahedral pieces with disjoint relative interiors and closed union equal to the ambient tetrahedron.
 
 Status: paper-level mathematical lemma, source-locked.
+
+Level: CL5 (internal theorem - lemma proved in the paper).
 
 Evidence:
 - `paper/s4_certified_tetrahedral_hinged_mechanism.tex`
@@ -20,6 +24,8 @@ Claim: the package records a scoped zero-thickness, one-parameter route-wrapper 
 
 Status: supported by package-local certified manifest.
 
+Level: CL3 (certified finite result - exact A7d-domain route-wrapper manifest with checker).
+
 Evidence:
 - `certified/a7d_one_parameter_theorem_wrapper_manifest.json`
 - `certified/source_docs/S4_CL5_A7D_ONE_PARAMETER_THEOREM_WRAPPER.md`
@@ -30,6 +36,8 @@ Evidence:
 Claim: for the six selected hinge rows, A7c exact signed orientation plus the package-local B04 bridge proves the selected parent/child contact-side implication and no strict local interior overlap at the contact plane, excluding the hinge axis.
 
 Status: integrated, scoped to six rows.
+
+Level: CL3 (certified finite result - exact signed-orientation certificate over the six selected rows).
 
 Evidence:
 - `certified/a7c_selected_hinge_contact_side_certificate_manifest.json`
@@ -47,6 +55,8 @@ Claim: the release-review repository is locally replayable as a frozen-snapshot 
 
 Status: supported after local gate rerun.
 
+Level: CL2 (finite replay - local frozen-snapshot reproducibility replay).
+
 Evidence:
 - `scripts/check_public_package.py`
 - `scripts/run_all_reproducibility_checks.py`
@@ -60,12 +70,16 @@ Claim: the package includes the RW12 corrected compact handoff as supplementary 
 
 Status: included, supplementary only.
 
+Level: CLM (metadata - supplementary handoff inclusion, not theorem evidence).
+
 Evidence:
 - `results/rw12_external_fabrication_review_package/`
 - `docs/RW12_EDITORIAL_DECISION.md`
 - `paper/sections/08_rw12_boundary.tex`
 
 ## Blocked claims
+
+Level: CLB (blocked - not public-facing as a result).
 
 - Physical mechanism validation.
 - Positive-thickness and global collision-free motion.

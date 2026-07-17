@@ -371,8 +371,8 @@
         },
         {
             "path": "docs/CLAIM_LEDGER.md",
-            "size_bytes": 3550,
-            "sha256": "7bb82d5e109a729aac5f1f6bd158dc9b9d764aec947646ec6cbc740c28c5e841"
+            "size_bytes": 4084,
+            "sha256": "25a6f2d7e8ef1c298b7925d17208b2054b0fdea5d350e3c25a3e6c2a3e3dcc85"
         },
         {
             "path": "docs/EXPERIMENT_LEDGER.md",
